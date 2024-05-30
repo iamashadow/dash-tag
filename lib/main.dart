@@ -1,4 +1,4 @@
-import 'package:dash_and_tag_web_site/controller/main_controller.dart';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -39,6 +39,13 @@ class MyApp extends StatelessWidget {
               backgroundColor: Colors.white,
             ),
             fontFamily: GoogleFonts.poppins().fontFamily,
+          ),
+          scrollBehavior: const MaterialScrollBehavior().copyWith(
+            dragDevices: {
+              PointerDeviceKind.touch,
+              PointerDeviceKind.mouse,
+              PointerDeviceKind.trackpad,
+            },
           ),
           // initialBinding: BindingsBuilder(() {
           //   Get.lazyPut(() => MainController());

@@ -3,7 +3,7 @@ import 'package:dash_and_tag_web_site/Utils/All_Lists/all_lists.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../Universal_Widgets/custom_text.dart';
+import '../../universal_widgets/custom_text.dart';
 
 class HowItWorksCardItem extends StatefulWidget {
   const HowItWorksCardItem({
@@ -22,7 +22,8 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
   void initState() {
     super.initState();
     // Initialize hover state list with false values
-    isHovering = List.generate(AllListsManager.whyChooseUsList.length, (index) => false);
+    isHovering =
+        List.generate(AllListsManager.whyChooseUsList.length, (index) => false);
   }
 
   @override
@@ -44,10 +45,14 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
             duration: const Duration(milliseconds: 240),
             padding: const EdgeInsets.all(32),
             decoration: BoxDecoration(
-              color: isHovering[index] ? ColorManager.whiteColor : ColorManager.whiteColor.withOpacity(0),
+              color: isHovering[index]
+                  ? ColorManager.whiteColor
+                  : ColorManager.whiteColor.withOpacity(0),
               boxShadow: [
                 BoxShadow(
-                  color: isHovering[index] ? ColorManager.textPrimary.withOpacity(0.15) : ColorManager.textPrimary.withOpacity(0),
+                  color: isHovering[index]
+                      ? ColorManager.textPrimary.withOpacity(0.15)
+                      : ColorManager.textPrimary.withOpacity(0),
                   offset: const Offset(0, 6),
                   blurRadius: 10,
                 ),
