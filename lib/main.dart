@@ -1,25 +1,26 @@
+import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
-import 'Pages/home_page/home_page.dart';
+import 'pages/home_page/home_page.dart';
 
-void main(){
-  runApp(myApp());
+void main() {
+  runApp(const MyApp());
 }
 
-
-class myApp extends StatelessWidget {
-  const myApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       minTextAdapt: true,
       splitScreenMode: true,
-      builder: (_, child){
-        return MaterialApp(
-
+      builder: (_, child) {
+        return GetMaterialApp(
           builder: (context, child) => ResponsiveBreakpoints.builder(
             child: child!,
             breakpoints: [
@@ -29,7 +30,19 @@ class myApp extends StatelessWidget {
               const Breakpoint(start: 1921, end: double.infinity, name: '4K'),
             ],
           ),
-
+          debugShowCheckedModeBanner: false,
+          title: 'Dash&Tag',
+          theme: ThemeData(
+            primarySwatch: Colors.blue,
+            scaffoldBackgroundColor: Colors.white,
+            appBarTheme: const AppBarTheme(
+              backgroundColor: Colors.white,
+            ),
+            fontFamily: GoogleFonts.poppins().fontFamily,
+          ),
+          // initialBinding: BindingsBuilder(() {
+          //   Get.lazyPut(() => MainController());
+          // }),
           home: HomePage(),
         );
       },
