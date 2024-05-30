@@ -10,24 +10,22 @@ class WhyChooseUsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      // height: 700,
-      // color: Colors.green,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            height: 10.h,
-          ),
-          CustomText(
-            title: HomePageText.whyChooseUs,
-            fontWeight: FontWeight.bold,
-            fontSize: 5.sp,
-            textAlign: TextAlign.center,
-          ),
-          SizedBox(
-            height: 10.h,
+          Container(
+            width: double.maxFinite,
+            padding: EdgeInsets.only(left: 55.w, top: 50.h, bottom: 50.h),
+            color: const Color(0xFFF1F1F1),
+            child: CustomText(
+              title: HomePageText.whyChooseUs,
+              fontWeight: FontWeight.bold,
+              fontSize: 5.sp,
+              textAlign: TextAlign.start,
+            ),
           ),
           Container(
-            // margin: EdgeInsets.only(left: 30.w, right: 30.w),
+            padding: EdgeInsets.only(left: 50.w, right: 50.w, bottom: 50.h),
             color: const Color(0xFFF1F1F1),
             // decoration: const BoxDecoration(
             //   gradient: LinearGradient(
