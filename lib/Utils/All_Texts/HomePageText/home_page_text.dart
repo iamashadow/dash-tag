@@ -1,5 +1,26 @@
 class HomePageText{
 
+  /*
+   @ About Us
+   */
+
+  static const String aboutUsResources = "Welcome to Dash & Tag Resources";
+  static const String aboutUs = "About Us";
+  static const String aboutUsDescription = "We are  buying exporter of knit & woven garments, home textile and leather products for global buyers. We source, "
+  "organize production, negotiate prices, organize quality inspection & technical evaluation including pattern designing and arrange shipping at most"
+  "competitive rates. With all your sourcing needs covered under one roof, we offer a complete peace of mind to all our buyers. Since our establishment"
+  "in 2021; we mainly export goods from India and Bangladesh. We have a very strong manufacturing / supplier base and are quality and environment "
+  "cautious organization having state of the art compliant factories equipped with the most modern machineries, capable of producing any style / quantity "
+  "in a shorter lead-time. We offer quality conscious and dedicated services to our customers. We export all kind Knitted and woven product across "
+  "all the categories-Men's, Women's, Girls, Boys, Infants, kids and woven garments & home textile products. Our service will utilize every possible"
+  " resource to maximize the potential of your business and protect its interests as if they were our own, while offering you the "
+  " freedom to focus on your core business objectives.";
+
+
+
+  /*
+   @ Why Choose Us
+   */
   // static const String whyChooseUs = "";
   // static const String whyChooseUsDescription = "";
 

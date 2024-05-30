@@ -34,13 +34,15 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
         crossAxisCount: 3,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
-        childAspectRatio: 1.5,
+        childAspectRatio: 1.7,
       ),
       itemBuilder: (context, index) {
         return MouseRegion(
           onEnter: (val) => setState(() => isHovering[index] = true),
           onExit: (val) => setState(() => isHovering[index] = false),
           child: AnimatedContainer(
+            width: 200,
+            height: 200,
             duration: const Duration(milliseconds: 240),
             padding: const EdgeInsets.all(32),
             decoration: BoxDecoration(

@@ -1,6 +1,8 @@
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'about_us.dart';
 import 'header_section.dart';
 import 'why_choose_us.dart';
 import 'widgets/footer_bottom_social_buttons.dart';
@@ -31,7 +33,13 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(children: [
         HeaderSection(),
+        SizedBox(height: 20.h,),
+
+        AboutUsPage(),
+        SizedBox(height: 10.h,),
+
         WhyChooseUsSection(),
+        SizedBox(height: 10.h,),
       ]),
     );
   }
