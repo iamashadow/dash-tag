@@ -10,6 +10,7 @@ class CustomText extends StatelessWidget {
   TextOverflow? txtOverflow;
   int? mxLine;
   TextAlign? textAlign;
+  String? fontFamily;
 
   CustomText({super.key,
     this.title,
@@ -20,6 +21,7 @@ class CustomText extends StatelessWidget {
     this.txtOverflow,
     this.mxLine,
     this.textAlign,
+    this.fontFamily,
   });
 
   @override
@@ -34,6 +36,7 @@ class CustomText extends StatelessWidget {
         fontWeight: fontWeight,
         color: fontColor,
         letterSpacing: letterSpacing,
+        fontFamily: fontFamily,
       ),
     );
   }

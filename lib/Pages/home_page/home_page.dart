@@ -31,15 +31,12 @@ class HomePage extends StatelessWidget {
           FooterBottomSocialButtons(),
         ],
       ),
-      body: ListView(children: [
+      body: ListView(children: const [
         HeaderSection(),
-        SizedBox(height: 20.h,),
 
         AboutUsPage(),
-        SizedBox(height: 10.h,),
 
         WhyChooseUsSection(),
-        SizedBox(height: 10.h,),
       ]),
     );
   }

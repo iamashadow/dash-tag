@@ -18,7 +18,7 @@ class WhyChooseUsSection extends StatelessWidget {
           Container(
             width: double.maxFinite,
             padding: EdgeInsets.only(left: 55.w, top: 50.h, bottom: 50.h),
-            color: const Color(0xFFF1F1F1),
+            color: const Color(0xFFF4F0EC).withOpacity(0.5),
             child: CustomText(
               title: HomePageText.whyChooseUs,
               fontWeight: FontWeight.bold,
@@ -29,7 +29,7 @@ class WhyChooseUsSection extends StatelessWidget {
 
           Container(
             padding: EdgeInsets.only(left: 50.w, right: 50.w, bottom: 50.h),
-            color: const Color(0xFFF1F1F1),
+            color: const Color(0xFFF4F0EC).withOpacity(0.5),
             // decoration: const BoxDecoration(
             //   gradient: LinearGradient(
             //     colors: [

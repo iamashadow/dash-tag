@@ -16,6 +16,7 @@ class HomePageText{
   " resource to maximize the potential of your business and protect its interests as if they were our own, while offering you the "
   " freedom to focus on your core business objectives.";
 
+  static const String aboutUsArtAndFashion = "Art & Science of Fashion";
 
 
   /*
@@ -38,7 +39,7 @@ class HomePageText{
   static const String whyChooseUsExceptionalSamplingAndDesign = "Exceptional Sampling and Design";
   static const String whyChooseUsExceptionalSamplingAndDesignDescription = "We have an excellent sampling and pattern designing team to translate into reality the handwriting of global designers.";
 
-  static const String whyChooseUsQualityAndPriceControl = "QualityAndPriceControl";
+  static const String whyChooseUsQualityAndPriceControl = "Quality And Price Control";
   static const String whyChooseUsQualityAndPriceControlDescription = "We maintain strict control on prices, quality, and delivery schedule.";
 
   static const String whyChooseUsHighFashionAndIntricateValueAdditions = "High Fashion and Intricate Value Additions";
@@ -50,7 +51,7 @@ class HomePageText{
   static const String whyChooseUsExpertiseHandworkAndBeadwork = "Expertise in Handwork and Beadwork";
   static const String whyChooseUsExpertiseHandworkAndBeadworkDescription = "We have an unparalleled strength in hand work and beadwork.";
 
-  static const String whyChooseUsComprehensiveInfrastructure = "Comprehensive Infrastructure:";
+  static const String whyChooseUsComprehensiveInfrastructure = "Comprehensive Infrastructure";
   static const String whyChooseUsComprehensiveInfrastructureDescription = "Our elaborate infrastructure helps us offer garments and home textile products with different kinds of washes and dyeing, vintage look range, and updates with the latest global trends.";
 
 
