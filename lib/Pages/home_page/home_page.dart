@@ -8,7 +8,6 @@ import 'our_complience_section.dart';
 import 'our_product_section.dart';
 import 'why_choose_us.dart';
 import 'widgets/footer_bottom_social_buttons.dart';
-import 'package:dropdown_button2/dropdown_button2.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({super.key});
@@ -20,10 +19,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Dash&Tag'),
         actions: [
-          ...List.generate(controller.appbarActions.length, (index) {
-            final action = controller.appbarActions[index];
-            return DropdownButtonHideUnderline(child: DropdownButton2());
-          }),
+          // ...List.generate(controller.appbarActions.length, (index) {
+          //   final action = controller.appbarActions[index];
+          //   return DropdownButtonHideUnderline(child: DropdownButton2());
+          // }),
           const FooterBottomSocialButtons(),
         ],
       ),

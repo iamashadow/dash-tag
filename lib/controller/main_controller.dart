@@ -3,69 +3,6 @@ import 'package:dash_and_tag_web_site/model/appbar_action_model.dart';
 import 'package:get/get.dart';
 
 class MainController extends GetxController {
-  // final List appbarActions = [
-  //   {"title": 'Home'},
-  //   {
-  //     "title": 'About',
-  //     "cat": [
-  //       {"title": 'About CRV Resources'},
-  //       {"title": 'Mission & Vision'},
-  //     ]
-  //   },
-  //   {"title": 'Profile'},
-  //   {
-  //     "title": 'Products',
-  //     "cat": [
-  //       {
-  //         "title": 'Mens',
-  //         "subCat": [
-  //           {"title": 'T-Shirts'},
-  //           {"title": 'Shirts'},
-  //           {"title": 'Pants'},
-  //           {"title": 'Jackets'},
-  //         ]
-  //       },
-  //       {
-  //         "title": 'Womens',
-  //         "subCat": [
-  //           {"title": 'T-Shirts'},
-  //           {"title": 'Shirts'},
-  //           {"title": 'Pants'},
-  //           {"title": 'Jackets'},
-  //         ]
-  //       },
-  //       {
-  //         "title": 'Boys',
-  //         "subCat": [
-  //           {"title": 'T-Shirts'},
-  //           {"title": 'Shirts'},
-  //           {"title": 'Pants'},
-  //           {"title": 'Jackets'},
-  //         ]
-  //       },
-  //       {
-  //         "title": 'Girls',
-  //         "subCat": [
-  //           {"title": 'T-Shirts'},
-  //           {"title": 'Shirts'},
-  //           {"title": 'Pants'},
-  //           {"title": 'Jackets'},
-  //         ]
-  //       },
-  //     ]
-  //   },
-  //   {
-  //     "title": 'Services',
-  //     "cat": [
-  //       {"title": 'Global Sourcing'},
-  //       {"title": 'Development'},
-  //       {"title": 'Quality'},
-  //     ],
-  //   },
-  //   {"title": 'Our Client'},
-  //   {"title": 'Contact'},
-  // ];
-
   final List<AppBarAction> appbarActions = [
     AppBarAction(title: 'Home'),
     AppBarAction(
