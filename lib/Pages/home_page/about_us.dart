@@ -33,6 +33,15 @@ class AboutUsPage extends StatelessWidget {
           ),
           SizedBox(height: 10.h,),
 
+          CustomText(
+            title: "Test",
+            letterSpacing: 7,
+            fontColor: Colors.blue,
+            fontSize: 3.sp,
+            fontFamily: "Rajdhani",
+
+          ),
+
           Row(
             children: [
               //CRV Resources Page
