@@ -1,7 +1,4 @@
-import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:flutter/material.dart';
-
-import 'widgets/header_left.dart';
 import 'widgets/header_right.dart';
 
 class HeaderSection extends StatelessWidget {
@@ -9,16 +6,10 @@ class HeaderSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return const SizedBox(
       height: 700,
-      color: ColorManager.whiteColor,
-      child: const Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          HeaderLeft(),
-          HeaderRight(),
-        ],
-      ),
+      width: double.infinity,
+      child: HeaderRight(),
     );
   }
 }

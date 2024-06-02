@@ -7,8 +7,8 @@ import '../../universal_widgets/custom_text.dart';
 
 class HowItWorksCardItem extends StatefulWidget {
   const HowItWorksCardItem({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<HowItWorksCardItem> createState() => _HowItWorksCardItemState();
