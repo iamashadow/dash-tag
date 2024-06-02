@@ -25,4 +25,8 @@ class AllImages{
     "assets/images/means_jeans/Picture12.png",
 
   ];
+
+  static String aboutDashAndTag = "assets/images/about_d_t/about D&T1.png";
+  static String dashAndTagLogo = "assets/images/about_d_t/D&T_logo.png";
+  static String missionVissionImage = "assets/images/about_d_t/mission_vission.png";
 }

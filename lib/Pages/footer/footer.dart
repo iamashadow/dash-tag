@@ -17,7 +17,7 @@ class Footer extends StatelessWidget {
     return Container(
       width: Get.width,
       padding: EdgeInsets.symmetric(horizontal: Get.width * 0.1),
-      color: Colors.blueGrey,
+      color: Colors.black,
       child: const Stack(
         clipBehavior: Clip.none,
         children: [

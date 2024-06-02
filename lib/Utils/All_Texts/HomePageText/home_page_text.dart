@@ -54,7 +54,7 @@ class HomePageText{
   static const String whyChooseUsComprehensiveInfrastructure = "Comprehensive Infrastructure";
   static const String whyChooseUsComprehensiveInfrastructureDescription = "Our elaborate infrastructure helps us offer garments and home textile products with different kinds of washes and dyeing, vintage look range, and updates with the latest global trends.";
 
-
+  static const String fontFamilyNameRajdhani = "Rajdhani";
 
 
 
