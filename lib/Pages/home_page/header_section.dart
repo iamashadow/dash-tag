@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:flutter/material.dart';
 
 import 'widgets/header_left.dart';
@@ -10,7 +11,7 @@ class HeaderSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 700,
-      color: Colors.yellow,
+      color: ColorManager.whiteColor,
       child: const Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [

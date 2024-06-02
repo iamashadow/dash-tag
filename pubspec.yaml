@@ -60,6 +60,9 @@ flutter:
     - assets/icons/
     - assets/images/Complaients/
     - assets/images/means_jeans/
+    - assets/images/womens_cloth/
+    - assets/images/kids_cloth/
+    - assets/images/about_d_t/
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
