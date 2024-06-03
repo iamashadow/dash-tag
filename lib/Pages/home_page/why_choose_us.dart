@@ -2,7 +2,6 @@ import 'package:dash_and_tag_web_site/Pages/home_page/why_choose_us_card.dart';
 import 'package:dash_and_tag_web_site/universal_widgets/custom_text.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_text.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class WhyChooseUsSection extends StatelessWidget {
   const WhyChooseUsSection({super.key});
@@ -15,17 +14,17 @@ class WhyChooseUsSection extends StatelessWidget {
         children: [
           Container(
             width: double.maxFinite,
-            padding: EdgeInsets.only(left: 55.w, top: 50.h, bottom: 50.h),
+            padding: EdgeInsets.only(left: 55, top: 50, bottom: 50),
             color: const Color(0xFFF4F0EC).withOpacity(0.5),
             child: CustomText(
               title: HomePageText.whyChooseUs,
               fontWeight: FontWeight.bold,
-              fontSize: 5.sp,
+              fontSize: 5,
               textAlign: TextAlign.start,
             ),
           ),
           Container(
-            padding: EdgeInsets.only(left: 50.w, right: 50.w, bottom: 50.h),
+            padding: EdgeInsets.only(left: 50, right: 50, bottom: 50),
             color: const Color(0xFFF4F0EC).withOpacity(0.5),
             // decoration: const BoxDecoration(
             //   gradient: LinearGradient(

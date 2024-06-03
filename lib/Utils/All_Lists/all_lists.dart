@@ -1,45 +1,48 @@
 import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_text.dart';
 
-class AllListsManager{
-
+class AllListsManager {
   static List whyChooseUsList = [
     {
-      "title" : HomePageText.whyChooseUsComplianceAndCertification,
-      "description" : HomePageText.whyChooseUsComplianceAndCertificationDescription,
+      "title": HomePageText.whyChooseUsComplianceAndCertification,
+      "description":
+          HomePageText.whyChooseUsComplianceAndCertificationDescription,
     },
     {
-      "title" : HomePageText.whyChooseUsAdvancedCADSystems,
-      "description" : HomePageText.whyChooseUsAdvancedCADSystemsDescription,
+      "title": HomePageText.whyChooseUsAdvancedCADSystems,
+      "description": HomePageText.whyChooseUsAdvancedCADSystemsDescription,
     },
     {
-      "title" : HomePageText.whyChooseUsExperiencedTeam,
-      "description" : HomePageText.whyChooseUsExperiencedTeamDescription,
+      "title": HomePageText.whyChooseUsExperiencedTeam,
+      "description": HomePageText.whyChooseUsExperiencedTeamDescription,
     },
     {
-      "title" : HomePageText.whyChooseUsExceptionalSamplingAndDesign,
-      "description" : HomePageText.whyChooseUsExceptionalSamplingAndDesignDescription,
+      "title": HomePageText.whyChooseUsExceptionalSamplingAndDesign,
+      "description":
+          HomePageText.whyChooseUsExceptionalSamplingAndDesignDescription,
     },
     {
-      "title" : HomePageText.whyChooseUsQualityAndPriceControl,
-      "description" : HomePageText.whyChooseUsQualityAndPriceControlDescription,
+      "title": HomePageText.whyChooseUsQualityAndPriceControl,
+      "description": HomePageText.whyChooseUsQualityAndPriceControlDescription,
     },
     {
-      "title" : HomePageText.whyChooseUsHighFashionAndIntricateValueAdditions,
-      "description" : HomePageText.whyChooseUsHighFashionAndIntricateValueAdditionsDescription,
+      "title": HomePageText.whyChooseUsHighFashionAndIntricateValueAdditions,
+      "description": HomePageText
+          .whyChooseUsHighFashionAndIntricateValueAdditionsDescription,
     },
     {
-      "title" : HomePageText.whyChooseUsWideProductRange,
-      "description" : HomePageText.whyChooseUsWideProductRangeDescription,
+      "title": HomePageText.whyChooseUsWideProductRange,
+      "description": HomePageText.whyChooseUsWideProductRangeDescription,
     },
     {
-      "title" : HomePageText.whyChooseUsExpertiseHandworkAndBeadwork,
-      "description" : HomePageText.whyChooseUsExpertiseHandworkAndBeadworkDescription,
+      "title": HomePageText.whyChooseUsExpertiseHandworkAndBeadwork,
+      "description":
+          HomePageText.whyChooseUsExpertiseHandworkAndBeadworkDescription,
     },
     {
-      "title" : HomePageText.whyChooseUsComprehensiveInfrastructure,
-      "description" : HomePageText.whyChooseUsComprehensiveInfrastructureDescription,
+      "title": HomePageText.whyChooseUsComprehensiveInfrastructure,
+      "description":
+          HomePageText.whyChooseUsComprehensiveInfrastructureDescription,
     },
-
   ];
 
   static List mensJeansList = [
@@ -55,7 +58,6 @@ class AllListsManager{
     "assets/images/means_jeans/Picture10.png",
     "assets/images/means_jeans/Picture11.png",
     "assets/images/means_jeans/Picture12.png",
-
   ];
   static List womensClothList = [
     "assets/images/womens_cloth/1.png",
@@ -81,9 +83,8 @@ class AllListsManager{
     "assets/images/womens_cloth/21.png",
     "assets/images/womens_cloth/22.png",
     "assets/images/womens_cloth/23.png",
-
   ];
-  static List KidsClothList = [
+  static List kidsClothList = [
     "assets/images/kids_cloth/1.jpg",
     "assets/images/kids_cloth/2.jpg",
     "assets/images/kids_cloth/3.jpg",
@@ -141,5 +142,4 @@ class AllListsManager{
     "assets/images/kids_cloth/55.jpg",
     "assets/images/kids_cloth/56.jpg",
   ];
-
 }
