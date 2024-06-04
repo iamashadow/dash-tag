@@ -1,5 +1,4 @@
-class AllImages{
-
+class AllImages {
   // static List complientsList = [
   //   "assets/images/complaients/1.jpeg",
   //   "assets/images/complaients/2.png",
@@ -29,7 +28,9 @@ class AllImages{
 
   static String aboutDashAndTag = "assets/images/about_d_t/about D&T1.png";
   static String dashAndTagLogo = "assets/images/about_d_t/D&T_logo.png";
-  static String missionVissionImage = "assets/images/about_d_t/mission_vission.png";
-  static String webSiteLogo = "assets/images/about_d_t/web_site_logo.png";
-  static String webSiteLogoTransparent = "assets/images/about_d_t/web_site_logo_transparent.png";
+  static String missionVissionImage =
+      "assets/images/about_d_t/mission_vission.png";
+  static String webSiteLogo = "assets/images/website_logo/web_site_logo.png";
+  static String webSiteLogoTransparent =
+      "assets/images/website_logo/web_site_logo_transparent.png";
 }

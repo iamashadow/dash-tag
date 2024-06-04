@@ -1,5 +1,6 @@
 import 'package:dash_and_tag_web_site/Pages/footer/footer.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
+import 'package:dash_and_tag_web_site/utils/All_Images/all_images.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,60 +20,59 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
+        leading: Image.asset(
+          AllImages.webSiteLogoTransparent,
+          width: 50,
+          height: 50,
+        ),
         title: const Text('Dash&Tag'),
         actions: [
           ...List.generate(controller.appbarActions.length, (index) {
             final action = controller.appbarActions[index];
             return MouseRegion(
-              cursor: SystemMouseCursors.click,
-              onHover: (event) {
-                //show subcategories
-                if (action.categories != null) {
-                  PopupMenuButton(
-                    itemBuilder: (context) {
-                      return action.categories!
-                          .map((e) => PopupMenuItem(
-                                child: Text(e.title),
-                              ))
-                          .toList();
-                    },
-                  );
-                }
-              },
-              child: DropdownButtonHideUnderline(
-                  child: action.categories != null
-                      ? DropdownButton2(
-                          items: action.categories!
-                              .map((e) => DropdownMenuItem(
-                                    value: e.title,
-                                    child: Row(
-                                      children: [
-                                        Text(e.title),
-                                        if (e.subCategories != null)
-                                          Icon(Icons.arrow_forward_ios)
-                                      ],
-                                    ),
-                                  ))
-                              .toList(),
-                          onChanged: (value) {
-                            // controller.onActionTap(action.title, value.toString());
-                            printInfo(info: value.toString());
-                          },
-                          hint: Text(action.title),
-                        )
-                      : Container()),
+              onHover: (event) => DropdownButtonHideUnderline(
+                child: DropdownButton2(
+                  items: action.categories!
+                      .map((e) => DropdownMenuItem(
+                            value: e,
+                            child: Text(e.title),
+                          ))
+                      .toList(),
+                  onChanged: (value) {
+                    printInfo(info: value.toString());
+                  },
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                child: Row(
+                  children: [
+                    Text(
+                      action.title,
+                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
+                    const SizedBox(width: 10),
+                    if (action.categories != null)
+                      const Icon(Icons.arrow_drop_down),
+                  ],
+                ),
+              ),
             );
           }),
           const FooterBottomSocialButtons(),
         ],
       ),
-      body: ListView(children: const [
+      body: ListView(children: [
+        // WebViewWidget(
+        //                     controller: controller.webViewController),
         HeaderSection(),
-        AboutUsPage(),
-        WhyChooseUsSection(),
-        OurProductsSection(),
-        OurCompliencesSection(),
-        Footer(),
+        const AboutUsPage(),
+        const WhyChooseUsSection(),
+        const OurProductsSection(),
+        const OurCompliencesSection(),
+        const Footer(),
       ]),
     );
   }
