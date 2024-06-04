@@ -62,8 +62,8 @@ flutter:
     - assets/images/womens_cloth/
     - assets/images/kids_cloth/
     - assets/images/about_d_t/
-#    - assets/images/main_slider_images/
-#    - assets/images/website_logo/
+    - assets/images/main_slider_images/
+    - assets/images/website_logo/
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

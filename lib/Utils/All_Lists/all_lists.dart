@@ -1,6 +1,18 @@
 import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_text.dart';
 
 class AllListsManager {
+
+
+  static List complientsList = [
+    "assets/images/complaients/1.jpeg",
+    "assets/images/complaients/2.png",
+    "assets/images/complaients/3.png",
+    "assets/images/complaients/4.png",
+    "assets/images/complaients/5.png",
+    "assets/images/complaients/6.png",
+    "assets/images/complaients/7.webp",
+    "assets/images/complaients/8.jpg",
+  ];
   static List whyChooseUsList = [
     {
       "title": HomePageText.whyChooseUsComplianceAndCertification,
@@ -44,7 +56,6 @@ class AllListsManager {
           HomePageText.whyChooseUsComprehensiveInfrastructureDescription,
     },
   ];
-
   static List mensJeansList = [
     "assets/images/means_jeans/Picture1.png",
     "assets/images/means_jeans/Picture2.jpg",
@@ -141,5 +152,20 @@ class AllListsManager {
     "assets/images/kids_cloth/54.jpg",
     "assets/images/kids_cloth/55.jpg",
     "assets/images/kids_cloth/56.jpg",
+  ];
+  static List mainSliderImageList = [
+    "assets/images/main_slider_images/1.png",
+    "assets/images/main_slider_images/2.png",
+    "assets/images/main_slider_images/3.png",
+    "assets/images/main_slider_images/4.png",
+    "assets/images/main_slider_images/5.png",
+    "assets/images/main_slider_images/6.png",
+    "assets/images/main_slider_images/7.png",
+    "assets/images/main_slider_images/8.png",
+    "assets/images/main_slider_images/9.png",
+    "assets/images/main_slider_images/10.png",
+    "assets/images/main_slider_images/11.png",
+    "assets/images/main_slider_images/12.png",
+    "assets/images/main_slider_images/13.png",
   ];
 }
