@@ -7,8 +7,8 @@ import '../../universal_widgets/custom_text.dart';
 
 class HowItWorksCardItem extends StatefulWidget {
   const HowItWorksCardItem({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   State<HowItWorksCardItem> createState() => _HowItWorksCardItemState();
@@ -29,13 +29,14 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
+      padding: const EdgeInsets.symmetric(horizontal: 150),
       shrinkWrap: true,
       itemCount: AllListsManager.whyChooseUsList.length,
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 3,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
-        childAspectRatio: 1.7,
+        childAspectRatio: 2.5,
       ),
       itemBuilder: (context, index) {
         return MouseRegion(

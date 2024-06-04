@@ -5,6 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
 
 import 'pages/home_page/home_page.dart';
+import 'utils/all_colors/all_colors.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         scaffoldBackgroundColor: Colors.white,
         appBarTheme: const AppBarTheme(
-          backgroundColor: Colors.white,
+          backgroundColor: ColorManager.webBackgroundColor,
         ),
         fontFamily: GoogleFonts.poppins().fontFamily,
       ),

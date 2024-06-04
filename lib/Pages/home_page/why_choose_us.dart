@@ -8,39 +8,17 @@ class WhyChooseUsSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            width: double.maxFinite,
-            padding: EdgeInsets.only(left: 55, top: 50, bottom: 50),
-            color: const Color(0xFFF4F0EC).withOpacity(0.5),
-            child: CustomText(
-              title: HomePageText.whyChooseUs,
-              fontWeight: FontWeight.bold,
-              fontSize: 5,
-              textAlign: TextAlign.start,
-            ),
-          ),
-          Container(
-            padding: EdgeInsets.only(left: 50, right: 50, bottom: 50),
-            color: const Color(0xFFF4F0EC).withOpacity(0.5),
-            // decoration: const BoxDecoration(
-            //   gradient: LinearGradient(
-            //     colors: [
-            //       Color(0xfffef4ec),
-            //       Color(0xffffffff),
-            //       Color(0xfffef4ec),
-            //     ],
-            //     begin: Alignment.topCenter,
-            //     end: Alignment.bottomCenter,
-            //   ),
-            // ),
-            child: HowItWorksCardItem(),
-          )
-        ],
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        CustomText(
+          title: HomePageText.whyChooseUs,
+          fontWeight: FontWeight.bold,
+          fontSize: 2,
+          textAlign: TextAlign.start,
+        ),
+        const HowItWorksCardItem()
+      ],
     );
   }
 }
