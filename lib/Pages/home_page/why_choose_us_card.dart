@@ -36,7 +36,7 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
         crossAxisCount: 3,
         crossAxisSpacing: 10,
         mainAxisSpacing: 10,
-        childAspectRatio: 2.5,
+        childAspectRatio: 2,
       ),
       itemBuilder: (context, index) {
         return MouseRegion(
