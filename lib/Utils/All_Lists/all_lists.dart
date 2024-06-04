@@ -83,7 +83,7 @@ class AllListsManager{
     "assets/images/womens_cloth/23.png",
 
   ];
-  static List KidsClothList = [
+  static List kidsClothList = [
     "assets/images/kids_cloth/1.jpg",
     "assets/images/kids_cloth/2.jpg",
     "assets/images/kids_cloth/3.jpg",
