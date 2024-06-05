@@ -39,6 +39,7 @@ dependencies:
   responsive_framework: ^1.4.0
   simple_gradient_text: ^1.2.3
   dropdown_button2: ^2.3.9
+  webview_flutter: ^4.7.0
 
 dev_dependencies:
   flutter_lints: ^4.0.0
@@ -64,6 +65,7 @@ flutter:
     - assets/images/about_d_t/
     - assets/images/main_slider_images/
     - assets/images/website_logo/
+    - assets/images/www/
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

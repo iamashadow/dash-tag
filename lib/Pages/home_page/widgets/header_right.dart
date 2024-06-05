@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dash_and_tag_web_site/utils/all_lists/all_lists.dart';
 import 'package:flutter/material.dart';
 
 class HeaderRight extends StatefulWidget {
@@ -15,45 +16,37 @@ class _HeaderRightState extends State<HeaderRight> {
 
   @override
   Widget build(BuildContext context) {
-    final List links = [
-      'https://images.unsplash.com/photo-1613252036716-e1efc9788e5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-      'https://images.unsplash.com/photo-1613252036716-e1efc9788e5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-      'https://images.unsplash.com/photo-1613252036716-e1efc9788e5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
-    ];
-
     return Expanded(
       child: Stack(
         children: [
-          CarouselSlider(
-            items: links
-                .map((e) => ClipRRect(
-                      borderRadius: const BorderRadius.only(
-                          topLeft: Radius.circular(64),
-                          bottomRight: Radius.circular(64)),
-                      child: Image.network(
+          Container(
+            width: double.infinity,
+            child: CarouselSlider(
+              items: AllListsManager.mainSliderImageList
+                  .map((e) => Image.network(
                         e,
-                        fit: BoxFit.cover,
+                        fit: BoxFit.fitWidth,
                         width: double.infinity,
-                      ),
-                    ))
-                .toList(),
-            options: CarouselOptions(
-              // height: Metrics.isDesktop(context)
-              //     ? Metrics.height(context) * 0.5
-              //     : Metrics.height(context),
-              viewportFraction: 1,
-              autoPlay: true,
-              autoPlayInterval: const Duration(seconds: 3),
-              autoPlayAnimationDuration: const Duration(milliseconds: 800),
-              autoPlayCurve: Curves.fastOutSlowIn,
-              // enlargeCenterPage: true,
-              scrollDirection: Axis.horizontal,
+                      ))
+                  .toList(),
+              options: CarouselOptions(
+                // height: Metrics.isDesktop(context)
+                //     ? Metrics.height(context) * 0.5
+                //     : Metrics.height(context),
+                viewportFraction: 1,
+                autoPlay: true,
+                autoPlayInterval: const Duration(seconds: 3),
+                autoPlayAnimationDuration: const Duration(milliseconds: 800),
+                autoPlayCurve: Curves.fastEaseInToSlowEaseOut,
+                // enlargeCenterPage: true,
+                scrollDirection: Axis.horizontal,
+              ),
+              carouselController: _controller,
             ),
-            carouselController: _controller,
           ),
           Positioned(
             right: 0,
-            top: 170,
+            top: 375,
             child: Material(
               color: Colors.transparent,
               shape: const RoundedRectangleBorder(
@@ -77,7 +70,7 @@ class _HeaderRightState extends State<HeaderRight> {
           ),
           Positioned(
             left: 0,
-            top: 170,
+            top: 375,
             child: Material(
               color: Colors.transparent,
               shape: const RoundedRectangleBorder(

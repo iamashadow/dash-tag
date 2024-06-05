@@ -1,8 +1,15 @@
 import 'package:carousel_slider/carousel_controller.dart';
 import 'package:dash_and_tag_web_site/model/appbar_action_model.dart';
 import 'package:get/get.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class MainController extends GetxController {
+  final CarouselController controller = CarouselController();
+  final RxInt hoverIndex = 0.obs;
+  void setHoverIndex(int? index) {
+    hoverIndex.value = index!;
+  }
+
   final List<AppBarAction> appbarActions = [
     AppBarAction(title: 'Home'),
     AppBarAction(
@@ -67,4 +74,8 @@ class MainController extends GetxController {
   ];
 
   final CarouselController carouselController = CarouselController();
+
+//   WebViewController webViewController = WebViewController()
+//     ..setJavaScriptMode(JavaScriptMode.unrestricted)
+//     ..loadFlutterAsset("assets/images/www/navbar.html");
 }
