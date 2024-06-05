@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-
 import '../../Universal_Widgets/custom_text.dart';
 import '../../Utils/All_Colors/all_colors.dart';
 import '../../Utils/All_Texts/HomePageText/home_page_text.dart';
-import '../../Utils/All_Texts/Mission_Vission_Text/mission_vission_text.dart';
 
-class MissionVissionHeaderImage extends StatelessWidget {
-  const MissionVissionHeaderImage({super.key});
+class ProductsPageHeaderImage extends StatelessWidget {
+
+  String? title;
+
+  ProductsPageHeaderImage({super.key, this.title});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class MissionVissionHeaderImage extends StatelessWidget {
       color: ColorManager.nutMegColor,
       child: Center(
         child: CustomText(
-          title: MissionVissionText.missionVissionTitle,
+          title: title,
           fontWeight: FontWeight.bold,
           fontSize: 40,
           fontColor: ColorManager.whiteColor,
@@ -29,3 +30,5 @@ class MissionVissionHeaderImage extends StatelessWidget {
     );
   }
 }
+
+

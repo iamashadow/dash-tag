@@ -1,4 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dash_and_tag_web_site/Utils/All_Lists/all_lists.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:dash_and_tag_web_site/utils/All_Images/all_images.dart';
 import 'package:flutter/material.dart';
@@ -53,11 +54,11 @@ class OurCompliencesSection extends StatelessWidget {
                   ),
                   Expanded(
                     child: CarouselSlider.builder(
-                      itemCount: AllImages.complientsList.length,
+                      itemCount: AllListsManager.complientsList.length,
                       itemBuilder: (BuildContext context, int itemIndex,
                               int pageViewIndex) =>
                           Image.asset(
-                        AllImages.complientsList[itemIndex],
+                            AllListsManager.complientsList[itemIndex],
                         width: 200,
                         height: 200,
                       ),
@@ -79,7 +80,7 @@ class OurCompliencesSection extends StatelessWidget {
                     child: InkWell(
                       onTap: () {
                         controller.carouselController.nextPage(
-                          duration: Duration(milliseconds: 300),
+                          duration: const Duration(milliseconds: 300),
                           curve: Curves.linear,
                         );
                       },

@@ -40,7 +40,7 @@ class OurProductsSection extends StatelessWidget {
                       border: Border.all(color: Colors.black),
                     ),
                     child: CarouselSlider(
-                        items: AllImages.mensJeansList
+                        items: AllListsManager.mensJeansList
                             .map((e) => Image.asset(e, fit: BoxFit.cover))
                             .toList(),
                         options: CarouselOptions(

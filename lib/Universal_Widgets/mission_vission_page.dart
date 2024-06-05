@@ -1,10 +1,13 @@
-import 'mission_vission_header_image.dart';
-import 'mission_vission_image_and_description.dart';
+import '../../Utils/All_Texts/Mission_Vission_Text/mission_vission_text.dart';
 import '../../Utils/All_Colors/all_colors.dart';
 import 'package:flutter/material.dart';
-import '../footer/footer.dart';
-import '../home_page/our_complience_section.dart';
-import '../home_page/widgets/footer_bottom_social_buttons.dart';
+import 'package:get/get.dart';
+import '../Pages/footer/footer.dart';
+import '../Pages/home_page/home_page.dart';
+import '../Pages/home_page/our_complience_section.dart';
+import '../Pages/home_page/widgets/footer_bottom_social_buttons.dart';
+import '../Pages/mission_vission_page/product_page_header_image.dart';
+import '../Pages/mission_vission_page/mission_vission_image_and_description.dart';
 
 class MissionVissionPage extends StatelessWidget {
   const MissionVissionPage({super.key});
@@ -16,37 +19,42 @@ class MissionVissionPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: ColorManager.webBackgroundColor,
       appBar: AppBar(
-        title: const Text('Dash&Tag'),
+        title: InkWell(
+          onTap: (){
+            Get.to(HomePage());
+          },
+          child: const Text('Dash&Tag'),
+        ),
         actions: [
           // ...List.generate(controller.appbarActions.length, (index) {
           //   final action = controller.appbarActions[index];
           //   return DropdownButtonHideUnderline(child: DropdownButton2());
           // }),
-          const FooterBottomSocialButtons(),
+           FooterBottomSocialButtons(),
         ],
       ),
       body: ListView(
         children: [
           //Mission Vission Header Image
-          MissionVissionHeaderImage(),
-          SizedBox(
+          ProductsPageHeaderImage(title: MissionVissionText.missionVissionTitle,),
+          const SizedBox(
             width: 40,
           ),
 
           //Mission Vission Image & Mission Vission Description
-          MissionVissionImageAndDescription(),
-          SizedBox(
+          const MissionVissionImageAndDescription(),
+          const SizedBox(
             width: 40,
           ),
 
           //Our Complients
-          OurCompliencesSection(),
-          SizedBox(
+          const OurCompliencesSection(),
+          const SizedBox(
             width: 40,
           ),
 
           //Footer Area
-          Footer(),
+          const Footer(),
         ],
       ),
     );

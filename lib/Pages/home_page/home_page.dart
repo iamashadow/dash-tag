@@ -19,7 +19,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: const Text('Dash&Tag'),
+        title: InkWell(
+          onTap: (){
+            Get.to(HomePage());
+          },
+            child: const Text('Dash&Tag'),
+        ),
         actions: [
           ...List.generate(controller.appbarActions.length, (index) {
             final action = controller.appbarActions[index];
