@@ -27,7 +27,7 @@ class HeaderSection extends StatelessWidget {
                 // height: Metrics.isDesktop(context)
                 //     ? Metrics.height(context) * 0.5
                 //     : Metrics.height(context),
-                viewportFraction: 1.01,
+                viewportFraction: 0.999,
                 autoPlay: true,
                 autoPlayInterval: const Duration(seconds: 3),
                 autoPlayAnimationDuration: const Duration(milliseconds: 400),
