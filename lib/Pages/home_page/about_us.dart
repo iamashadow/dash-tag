@@ -5,7 +5,11 @@ import '../../Universal_Widgets/custom_text.dart';
 import '../../Universal_Widgets/mission_vission_page.dart';
 import '../../Utils/All_Texts/HomePageText/home_page_text.dart';
 import '../dash_and_tag_resources/dash_and_tag_resources.dart';
+import '../mens_sector/hoodies_page/hoodies_page.dart';
+import '../mens_sector/jackets_page/jackets_page.dart';
 import '../mens_sector/men_jeans/mens_jeans.dart';
+import '../mens_sector/shorts_and_cargo_page/shorts_and_cargo_page.dart';
+import '../mens_sector/sweaters_page/sweaters_page.dart';
 import '../mens_sector/tshirt_page/tshirt_page.dart';
 
 class AboutUsPage extends StatelessWidget {
@@ -29,148 +33,7 @@ class AboutUsPage extends StatelessWidget {
             fontFamily: "Rajdhani",
           ),
 
-          Row(
-            children: [
-              //CRV Resources Page
-              InkWell(
-                onTap: () {
-                  Get.to(() => const DashAndTagResources());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Dash & Tag Resources",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
 
-              //Mission Vission Page
-              InkWell(
-                onTap: () {
-                  Get.to(() => const MissionVissionPage());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Mission & Vission",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //Means Jeans Page
-              InkWell(
-                onTap: () {
-                  Get.to(() =>  MeansJeans());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Men's Jeans",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //T-shirt Page
-              InkWell(
-                onTap: () {
-                  Get.to(() =>  TshirtPage());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "T-Shirt",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //Polo Shirt Page
-              InkWell(
-                onTap: () {
-                  Get.to(() =>  PoloShirts());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Polo Shirt",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //Shirt's & Pants Page
-              InkWell(
-                onTap: () {
-                  Get.to(() =>  PoloShirts());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Shirt's & Pants Page",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-            ],
-          ),
 
 
           CustomText(
