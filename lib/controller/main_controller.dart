@@ -1,5 +1,6 @@
 import 'package:carousel_slider/carousel_controller.dart';
 import 'package:dash_and_tag_web_site/model/appbar_action_model.dart';
+import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:get/get.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
@@ -75,7 +76,9 @@ class MainController extends GetxController {
 
   final CarouselController carouselController = CarouselController();
 
-//   WebViewController webViewController = WebViewController()
-//     ..setJavaScriptMode(JavaScriptMode.unrestricted)
-//     ..loadFlutterAsset("assets/images/www/navbar.html");
+  late InAppWebViewController webViewController;
+
+  // WebViewController webViewController = WebViewController()
+  //   ..setJavaScriptMode(JavaScriptMode.unrestricted)
+  //   ..loadFlutterAsset("assets/images/www/navbar.html");
 }
