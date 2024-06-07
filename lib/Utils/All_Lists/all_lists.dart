@@ -1,5 +1,7 @@
 import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_text.dart';
 
+import '../All_Texts/Quality_Assurance_PageText/quality_assurance_page_text.dart';
+
 class AllListsManager {
 
 
@@ -167,5 +169,17 @@ class AllListsManager {
     "assets/images/main_slider_images/11.png",
     "assets/images/main_slider_images/12.png",
     "assets/images/main_slider_images/13.png",
+  ];
+
+  //Quality Page List
+  static List qualityPointsList = [
+    QualityAssurancePageText.QualityPoint1,
+    QualityAssurancePageText.QualityPoint2,
+    QualityAssurancePageText.QualityPoint3,
+    QualityAssurancePageText.QualityPoint4,
+    QualityAssurancePageText.QualityPoint5,
+    QualityAssurancePageText.QualityPoint6,
+    QualityAssurancePageText.QualityPoint7,
+    QualityAssurancePageText.QualityPoint8,
   ];
 }

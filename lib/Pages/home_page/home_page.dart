@@ -1,4 +1,5 @@
 import 'package:dash_and_tag_web_site/Pages/footer/footer.dart';
+import 'package:dash_and_tag_web_site/Pages/home_page/pages.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:dash_and_tag_web_site/utils/All_Images/all_images.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
@@ -85,6 +86,7 @@ class HomePage extends StatelessWidget {
         //   ],
         // ),
         HeaderSection(),
+        Pages(),
         const AboutUsPage(),
         const WhyChooseUsSection(),
         const OurProductsSection(),
