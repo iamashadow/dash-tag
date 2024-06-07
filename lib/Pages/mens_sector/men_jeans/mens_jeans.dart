@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../Universal_Widgets/product_image_showing_list_view_builder.dart';
 import '../../../controller/main_controller.dart';
+import '../../footer/footer.dart';
 import '../../home_page/home_page.dart';
 import '../../home_page/widgets/footer_bottom_social_buttons.dart';
 import '../../mission_vission_page/product_page_header_image.dart';
@@ -82,7 +83,8 @@ class MeansJeans extends StatelessWidget {
             items: List<int>.generate(AllListsManager.complientsList.length, (index) => index),
             itemsList: List<String>.from(AllListsManager.complientsList),
           ),
-          const SizedBox(height: 50),
+          const SizedBox(height: 250),
+          const Footer(),
         ],
       ),
     );

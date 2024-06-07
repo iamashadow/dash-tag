@@ -10,8 +10,8 @@ import '../../home_page/home_page.dart';
 import '../../home_page/widgets/footer_bottom_social_buttons.dart';
 import '../../mission_vission_page/product_page_header_image.dart';
 
-class WomenTshirtPage extends StatelessWidget {
-  const WomenTshirtPage({super.key});
+class BoysTshirtsPage extends StatelessWidget {
+  const BoysTshirtsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +78,7 @@ class WomenTshirtPage extends StatelessWidget {
       body: ListView(
         children: [
           ProductsPageHeaderImage(
-            title: "Women Jean's",
+            title: "Boys T-shirts",
           ),
           const SizedBox(height: 50),
           ProductImageShowingListViewBuilder(
@@ -90,5 +90,7 @@ class WomenTshirtPage extends StatelessWidget {
         ],
       ),
     );
+
+
   }
 }

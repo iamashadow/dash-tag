@@ -1,5 +1,11 @@
 import 'dart:developer';
 
+import 'package:dash_and_tag_web_site/Pages/boys_sector/boys_hoodies_page/boys_hoodies_page.dart';
+import 'package:dash_and_tag_web_site/Pages/boys_sector/boys_polo_shirts/boys_polo_shirts.dart';
+import 'package:dash_and_tag_web_site/Pages/boys_sector/boys_shirts_and_pants_page/boys_shirts_and_pants_page.dart';
+import 'package:dash_and_tag_web_site/Pages/boys_sector/boys_shorts_and_cargo/boys_shorts_and_cargo.dart';
+import 'package:dash_and_tag_web_site/Pages/boys_sector/boys_sweaters_page/boys_sweaters_page.dart';
+import 'package:dash_and_tag_web_site/Pages/boys_sector/boys_tshirts_page/boys_tshirts_page.dart';
 import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_us_page.dart';
 import 'package:dash_and_tag_web_site/Pages/our_clients_page/our_clients_page.dart';
 import 'package:dash_and_tag_web_site/Pages/services_sector/brand_management/brand_management_page.dart';
@@ -13,7 +19,7 @@ import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../Universal_Widgets/mission_vission_page.dart';
+import '../mission_vission_page/mission_vission_page.dart';
 import '../boys_sector/boys_jeans_page/boys_jeans.dart';
 import '../dash_and_tag_resources/dash_and_tag_resources.dart';
 import '../mens_sector/hoodies_page/hoodies_page.dart';
@@ -501,6 +507,144 @@ class Pages extends StatelessWidget {
                     padding: const EdgeInsets.all(10.0),
                     child: CustomText(
                       title: "Boy's Jeans",
+                      letterSpacing: 2,
+                      fontColor: Colors.white,
+                      fontSize: 20,
+                      fontFamily: "Rajdhani",
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+
+              //Boys T-shirts Page
+              InkWell(
+                onTap: () {
+                  Get.to(() =>  BoysTshirtsPage());
+                },
+                child: Card(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: CustomText(
+                      title: "Boy's T-shirts",
+                      letterSpacing: 2,
+                      fontColor: Colors.white,
+                      fontSize: 20,
+                      fontFamily: "Rajdhani",
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+
+              //Boys Polo Shirt Page
+              InkWell(
+                onTap: () {
+                  Get.to(() =>  BoysPoloShirts());
+                },
+                child: Card(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: CustomText(
+                      title: "Boy's Polo Shirt",
+                      letterSpacing: 2,
+                      fontColor: Colors.white,
+                      fontSize: 20,
+                      fontFamily: "Rajdhani",
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+
+              //Boys Shirts & Pants Page
+              InkWell(
+                onTap: () {
+                  Get.to(() =>  BoysShirtsAndPantsPage());
+                },
+                child: Card(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: CustomText(
+                      title: "Boy's Shirts & Pants",
+                      letterSpacing: 2,
+                      fontColor: Colors.white,
+                      fontSize: 20,
+                      fontFamily: "Rajdhani",
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+
+              //Boys Hoodies Page
+              InkWell(
+                onTap: () {
+                  Get.to(() =>  BoysHoodiesPage());
+                },
+                child: Card(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: CustomText(
+                      title: "Boy's Hoodies",
+                      letterSpacing: 2,
+                      fontColor: Colors.white,
+                      fontSize: 20,
+                      fontFamily: "Rajdhani",
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+
+              //Boys Shorts & Cargo Page
+              InkWell(
+                onTap: () {
+                  Get.to(() =>  BoysShortsAndCargo());
+                },
+                child: Card(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: CustomText(
+                      title: "Boy's Shorts & Cargo",
+                      letterSpacing: 2,
+                      fontColor: Colors.white,
+                      fontSize: 20,
+                      fontFamily: "Rajdhani",
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+
+              //Boys Sweaters Page
+              InkWell(
+                onTap: () {
+                  Get.to(() =>  BoysSweatersPage());
+                },
+                child: Card(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: CustomText(
+                      title: "Boy's Sweaters",
                       letterSpacing: 2,
                       fontColor: Colors.white,
                       fontSize: 20,

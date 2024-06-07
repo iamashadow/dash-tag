@@ -122,29 +122,3 @@ class OurClientsPage extends StatelessWidget {
   }
 }
 
-
-// \MasonryGridView.builder(
-// shrinkWrap: true,
-// itemCount: AllListsManager.ourClientsPageList.length,
-//
-// gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
-// crossAxisCount: 3,
-// ),
-// itemBuilder: (context, index){
-// return Padding(
-// padding: const EdgeInsets.all(10.0),
-// child: Container(
-// height: 200,
-// decoration: BoxDecoration(
-// border: Border.all(
-// color: ColorManager.blueColor
-// ),
-// image: DecorationImage(
-// fit: BoxFit.contain,
-// image: AssetImage(AllListsManager.ourClientsPageList[index]),
-// )
-// ),
-// ),
-// );
-// }
-// )

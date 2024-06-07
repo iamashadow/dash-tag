@@ -2,7 +2,7 @@ import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../Universal_Widgets/custom_text.dart';
-import '../../Universal_Widgets/mission_vission_page.dart';
+import '../mission_vission_page/mission_vission_page.dart';
 import '../../Utils/All_Texts/HomePageText/home_page_text.dart';
 import '../dash_and_tag_resources/dash_and_tag_resources.dart';
 import '../mens_sector/hoodies_page/hoodies_page.dart';
