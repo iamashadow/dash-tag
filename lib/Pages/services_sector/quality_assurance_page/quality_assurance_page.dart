@@ -21,70 +21,71 @@ class QualityAssurancePage extends StatelessWidget {
     final MainController controller = Get.put(MainController());
 
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: InkWell(
-          onTap: (){
-            Get.to(HomePage());
-          },
-          child: const Text('Dash&Tag'),
-        ),
-        actions: [
-          ...List.generate(controller.appbarActions.length, (index) {
-            final action = controller.appbarActions[index];
-            return MouseRegion(
-              cursor: SystemMouseCursors.click,
-              onHover: (event) {
-                //show subcategories
-                if (action.categories != null) {
-                  PopupMenuButton(
-                    itemBuilder: (context) {
-                      return action.categories!
-                          .map((e) => PopupMenuItem(
-                        child: Text(e.title),
-                      ))
-                          .toList();
-                    },
-                  );
-                }
-              },
-              child: DropdownButtonHideUnderline(
-                child: action.categories != null
-                    ? DropdownButton2(
-                  items: action.categories!
-                      .map((e) => DropdownMenuItem(
-                    value: e.title,
-                    child: Row(
-                      children: [
-                        Text(e.title),
-                        if (e.subCategories != null)
-                          const Icon(Icons.arrow_forward_ios)
-                      ],
-                    ),
-                  ))
-                      .toList(),
-                  onChanged: (value) {
-                    // controller.onActionTap(action.title, value.toString());
-                    printInfo(info: value.toString());
-                  },
-                  hint: Text(action.title),
-                )
-                    : Container(),
-              ),
-            );
-          }),
-          const FooterBottomSocialButtons(),
-        ],
-      ),
+      // appBar: AppBar(
+      //   automaticallyImplyLeading: false,
+      //   title: InkWell(
+      //     onTap: (){
+      //       Get.to(HomePage());
+      //     },
+      //     child: const Text('Dash&Tag'),
+      //   ),
+      //   actions: [
+      //     ...List.generate(controller.appbarActions.length, (index) {
+      //       final action = controller.appbarActions[index];
+      //       return MouseRegion(
+      //         cursor: SystemMouseCursors.click,
+      //         onHover: (event) {
+      //           //show subcategories
+      //           if (action.categories != null) {
+      //             PopupMenuButton(
+      //               itemBuilder: (context) {
+      //                 return action.categories!
+      //                     .map((e) => PopupMenuItem(
+      //                   child: Text(e.title),
+      //                 ))
+      //                     .toList();
+      //               },
+      //             );
+      //           }
+      //         },
+      //         child: DropdownButtonHideUnderline(
+      //           child: action.categories != null
+      //               ? DropdownButton2(
+      //             items: action.categories!
+      //                 .map((e) => DropdownMenuItem(
+      //               value: e.title,
+      //               child: Row(
+      //                 children: [
+      //                   Text(e.title),
+      //                   if (e.subCategories != null)
+      //                     const Icon(Icons.arrow_forward_ios)
+      //                 ],
+      //               ),
+      //             ))
+      //                 .toList(),
+      //             onChanged: (value) {
+      //               // controller.onActionTap(action.title, value.toString());
+      //               printInfo(info: value.toString());
+      //             },
+      //             hint: Text(action.title),
+      //           )
+      //               : Container(),
+      //         ),
+      //       );
+      //     }),
+      //     const FooterBottomSocialButtons(),
+      //   ],
+      // ),
 
-      body: ListView(
+      body: Column(
         children: [
+          // Quality Assurance Contents
           ProductsPageHeaderImage(
             title: "Quality Assurance",
           ),
           const SizedBox(height: 50),
 
-          // Merchandise Contents
+          // Quality Assurance Contents
           Padding(
             padding: const EdgeInsets.all(100.0),
             child: Row(
@@ -154,7 +155,7 @@ class QualityAssurancePage extends StatelessWidget {
           ),
           const SizedBox(height: 250),
 
-          const Footer(),
+          // const Footer(),
         ],
       ),
     );

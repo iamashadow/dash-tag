@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_text.dart';
 
 import '../All_Texts/Quality_Assurance_PageText/quality_assurance_page_text.dart';
@@ -181,5 +182,15 @@ class AllListsManager {
     QualityAssurancePageText.QualityPoint6,
     QualityAssurancePageText.QualityPoint7,
     QualityAssurancePageText.QualityPoint8,
+  ];
+
+
+  //Our Clients Page List
+  static List ourClientsPageList = [
+    AllImages.clientsLogo1,
+    AllImages.clientsLogo2,
+    AllImages.clientsLogo3,
+    AllImages.clientsLogo4,
+    AllImages.clientsLogo5,
   ];
 }

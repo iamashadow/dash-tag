@@ -1,24 +1,27 @@
-import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
-import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
+import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_information.dart';
+import 'package:dash_and_tag_web_site/Pages/contact_us_page/message_submit_form.dart';
+import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../Utils/All_Texts/Merchandise_SourchingPageText/merchandise_sourching_page_text.dart';
-import '../../../controller/main_controller.dart';
-import '../../footer/footer.dart';
-import '../../home_page/home_page.dart';
-import '../../home_page/widgets/footer_bottom_social_buttons.dart';
-import '../../mission_vission_page/product_page_header_image.dart';
+import '../../controller/main_controller.dart';
+import '../footer/footer.dart';
+import '../home_page/home_page.dart';
+import '../home_page/widgets/footer_bottom_social_buttons.dart';
+import '../mission_vission_page/product_page_header_image.dart';
 
-class MerchandiseSourcing extends StatelessWidget {
-  const MerchandiseSourcing({super.key});
+class ContactUsPage extends StatelessWidget {
+  const ContactUsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+
     final MainController controller = Get.put(MainController());
 
     return Scaffold(
+      backgroundColor: ColorManager.contactUsPageWebBackgroundColor,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         title: InkWell(
@@ -78,36 +81,27 @@ class MerchandiseSourcing extends StatelessWidget {
       body: ListView(
         children: [
           ProductsPageHeaderImage(
-            title: "Global Sourcing",
+            title: "Contact Us",
           ),
           const SizedBox(height: 50),
 
-          //Merchandise Contents
-          Row(
-            children: [
-              Expanded(
-                child: CustomText(
-                  title: MerchandiseSourchingPageText.merchandiseBio,
-                ),
-              ),
-              Container(
-                height: 400,
-                width: 400,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    fit: BoxFit.cover,
-                    image: AssetImage(AllImages.missionVissionImage)
-                  )
-                ),
-              )
-            ],
+          Padding(
+            padding:  const EdgeInsets.all(100.0),
+            child: Row(
+              children: [
+                 const Expanded(child: ContactInformation()),
+                 const SizedBox(width: 50,),
+                Expanded(child: MessageSubmitForm(),),
+              ],
+            ),
           ),
+
           const SizedBox(height: 250),
 
           const Footer(),
-
         ],
       ),
     );
+
   }
 }

@@ -12,5 +12,6 @@ class ColorManager {
   static const Color  nutMegColor = Color(0xFF813E27);
   static const Color  blackColor = Color(0xFF000000);
   static const Color  blueColor = Color(0xFF4169e1);
+  static const Color  contactUsPageWebBackgroundColor = Color(0xFF1B1F29);
 
 }
