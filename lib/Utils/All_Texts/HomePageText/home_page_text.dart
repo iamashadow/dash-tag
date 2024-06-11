@@ -4,7 +4,7 @@ class HomePageText{
    @ About Us
    */
 
-  static const String aboutUsResources = "Welcome to Dash & Tag Resources";
+  static const String aboutUsResources = "Welcome to Dash & Tag";
   static const String aboutUs = "About Us";
   static const String aboutUsDescription = "We are  buying exporter of knit & woven garments, home textile and leather products for global buyers. We source, "
   "organize production, negotiate prices, organize quality inspection & technical evaluation including pattern designing and arrange shipping at most"

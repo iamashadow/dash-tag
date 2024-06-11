@@ -8,6 +8,7 @@ import 'package:dash_and_tag_web_site/Pages/boys_sector/boys_sweaters_page/boys_
 import 'package:dash_and_tag_web_site/Pages/boys_sector/boys_tshirts_page/boys_tshirts_page.dart';
 import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_us_page.dart';
 import 'package:dash_and_tag_web_site/Pages/our_clients_page/our_clients_page.dart';
+import 'package:dash_and_tag_web_site/Pages/profile_page/profile_page.dart';
 import 'package:dash_and_tag_web_site/Pages/services_sector/brand_management/brand_management_page.dart';
 import 'package:dash_and_tag_web_site/Pages/services_sector/designing_page/desigining_page.dart';
 import 'package:dash_and_tag_web_site/Pages/services_sector/logistics_page/logistics_page.dart';
@@ -108,6 +109,44 @@ class Pages extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 20,),
+
+
+          //Profile Sector Sector
+          CustomText(
+            title: "Profile Sector",
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+          const SizedBox(height: 10,),
+          Row(
+            children: [
+              //CRV Resources Page
+              InkWell(
+                onTap: () {
+                  Get.to(() => const ProfilePage());
+                },
+                child: Card(
+                  color: Colors.blue,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: CustomText(
+                      title: "Profile",
+                      letterSpacing: 2,
+                      fontColor: Colors.white,
+                      fontSize: 20,
+                      fontFamily: "Rajdhani",
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                width: 10,
+              ),
+
+            ],
+          ),
+          const SizedBox(height: 20,),
+
 
           //Mens Sector
           CustomText(

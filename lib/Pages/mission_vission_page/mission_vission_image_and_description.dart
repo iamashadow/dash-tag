@@ -41,32 +41,38 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: HomePageText.fontFamilyNameRajdhani,
                 fontColor: ColorManager.blueColor,
-                fontSize: 5,
+                fontSize: 20,
               ),
               const SizedBox(
                 height: 10,
               ),
 
               //Mission Description
-              Container(
-                color: ColorManager.whiteColor,
-                padding: const EdgeInsets.all(20),
-                width: size.width * 0.4,
-                child: Center(
-                  child: Expanded(
-                    child: CustomText(
-                      title: MissionVissionText.missionTitleDescription,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: HomePageText.fontFamilyNameRajdhani,
-                      fontColor: ColorManager.blackColor,
-                      fontSize: 3,
-                      letterSpacing: 1,
+              Card(
+                elevation: 10,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ColorManager.whiteColor,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  padding: const EdgeInsets.all(20),
+                  width: size.width * 0.4,
+                  child: Center(
+                    child: Expanded(
+                      child: CustomText(
+                        title: MissionVissionText.missionTitleDescription,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: HomePageText.fontFamilyNameRajdhani,
+                        fontColor: ColorManager.blackColor,
+                        fontSize: 15,
+                        letterSpacing: 1,
+                      ),
                     ),
                   ),
                 ),
               ),
               const SizedBox(
-                height: 10,
+                height: 30,
               ),
 
               //Vission Title
@@ -75,32 +81,38 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: HomePageText.fontFamilyNameRajdhani,
                 fontColor: ColorManager.blueColor,
-                fontSize: 5,
+                fontSize: 20,
               ),
               const SizedBox(
                 height: 10,
               ),
 
               //Vission Description
-              Container(
-                color: ColorManager.whiteColor,
-                padding: const EdgeInsets.all(20),
-                width: size.width * 0.4,
-                child: Center(
-                  child: Expanded(
-                    child: CustomText(
-                      title: MissionVissionText.vissionTitleDescription,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: HomePageText.fontFamilyNameRajdhani,
-                      fontColor: ColorManager.blackColor,
-                      fontSize: 3,
-                      letterSpacing: 1,
+              Card(
+                elevation: 10,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ColorManager.whiteColor,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  padding: const EdgeInsets.all(20),
+                  width: size.width * 0.4,
+                  child: Center(
+                    child: Expanded(
+                      child: CustomText(
+                        title: MissionVissionText.vissionTitleDescription,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: HomePageText.fontFamilyNameRajdhani,
+                        fontColor: ColorManager.blackColor,
+                        fontSize: 15,
+                        letterSpacing: 1,
+                      ),
                     ),
                   ),
                 ),
               ),
               const SizedBox(
-                height: 10,
+                height: 30,
               ),
 
               //Value Title
@@ -109,32 +121,38 @@ class MissionVissionImageAndDescription extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 fontFamily: HomePageText.fontFamilyNameRajdhani,
                 fontColor: ColorManager.blueColor,
-                fontSize: 5,
+                fontSize: 20,
               ),
               const SizedBox(
                 height: 10,
               ),
 
               //Value Description
-              Container(
-                color: ColorManager.whiteColor,
-                padding: const EdgeInsets.all(20),
-                width: size.width * 0.4,
-                child: Center(
-                  child: Expanded(
-                    child: CustomText(
-                      title: MissionVissionText.valueTitleDescription,
-                      fontWeight: FontWeight.bold,
-                      fontFamily: HomePageText.fontFamilyNameRajdhani,
-                      fontColor: ColorManager.blackColor,
-                      fontSize: 3,
-                      letterSpacing: 1,
+              Card(
+                elevation: 10,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: ColorManager.whiteColor,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  padding: const EdgeInsets.all(20),
+                  width: size.width * 0.4,
+                  child: Center(
+                    child: Expanded(
+                      child: CustomText(
+                        title: MissionVissionText.valueTitleDescription,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: HomePageText.fontFamilyNameRajdhani,
+                        fontColor: ColorManager.blackColor,
+                        fontSize: 15,
+                        letterSpacing: 1,
+                      ),
                     ),
                   ),
                 ),
               ),
               const SizedBox(
-                height: 10,
+                height: 30,
               ),
             ],
           )
