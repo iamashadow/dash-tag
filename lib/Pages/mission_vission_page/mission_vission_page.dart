@@ -20,7 +20,7 @@ class MissionVissionPage extends StatelessWidget {
       backgroundColor: ColorManager.webBackgroundColor,
       appBar: AppBar(
         title: InkWell(
-          onTap: (){
+          onTap: () {
             Get.to(HomePage());
           },
           child: const Text('Dash&Tag'),
@@ -30,19 +30,21 @@ class MissionVissionPage extends StatelessWidget {
           //   final action = controller.appbarActions[index];
           //   return DropdownButtonHideUnderline(child: DropdownButton2());
           // }),
-           FooterBottomSocialButtons(),
+          FooterBottomSocialButtons(),
         ],
       ),
       body: ListView(
         children: [
           //Mission Vission Header Image
-          ProductsPageHeaderImage(title: MissionVissionText.missionVissionTitle,),
+          ProductsPageHeaderImage(
+            title: MissionVissionText.missionVissionTitle,
+          ),
           const SizedBox(
             width: 40,
           ),
 
           //Mission Vission Image & Mission Vission Description
-          const MissionVissionImageAndDescription(),
+          MissionVissionImageAndDescription(),
           const SizedBox(
             width: 40,
           ),

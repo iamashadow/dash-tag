@@ -6,7 +6,9 @@ import 'package:get/get.dart';
 
 class HeaderSection extends StatelessWidget {
   HeaderSection({super.key});
+
   final MainController controller = Get.find();
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -27,7 +29,7 @@ class HeaderSection extends StatelessWidget {
                 // height: Metrics.isDesktop(context)
                 //     ? Metrics.height(context) * 0.5
                 //     : Metrics.height(context),
-                viewportFraction: 1.01,
+                viewportFraction: 0.999,
                 autoPlay: true,
                 autoPlayInterval: const Duration(seconds: 3),
                 autoPlayAnimationDuration: const Duration(milliseconds: 400),
