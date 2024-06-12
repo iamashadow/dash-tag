@@ -39,20 +39,21 @@ class Pages extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-
           //About Us Sector
           CustomText(
             title: "About Us Sector",
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
-          const SizedBox(height: 10,),
+          const SizedBox(
+            height: 10,
+          ),
           Row(
             children: [
               //CRV Resources Page
               InkWell(
                 onTap: () {
-                  Get.to(() => const DashAndTagResources());
+                  Get.to(() => DashAndTagResources());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -96,7 +97,9 @@ class Pages extends StatelessWidget {
               ),
             ],
           ),
-          const SizedBox(height: 20,),
+          const SizedBox(
+            height: 20,
+          ),
 
           //Mens Sector
           CustomText(
@@ -104,14 +107,15 @@ class Pages extends StatelessWidget {
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
-          const SizedBox(height: 10,),
+          const SizedBox(
+            height: 10,
+          ),
           Row(
             children: [
-
               //Means Jeans Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  MeansJeans());
+                  Get.to(() => MeansJeans());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -134,7 +138,7 @@ class Pages extends StatelessWidget {
               //T-shirt Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  TshirtPage());
+                  Get.to(() => TshirtPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -157,7 +161,7 @@ class Pages extends StatelessWidget {
               //Polo Shirt Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  PoloShirts());
+                  Get.to(() => PoloShirts());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -180,7 +184,7 @@ class Pages extends StatelessWidget {
               //Shirt's & Pants Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  PoloShirts());
+                  Get.to(() => PoloShirts());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -203,7 +207,7 @@ class Pages extends StatelessWidget {
               //Hoodies Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  HoodiesPage());
+                  Get.to(() => HoodiesPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -226,7 +230,7 @@ class Pages extends StatelessWidget {
               //Shorts and Cargo Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  ShortsAndCargoPage());
+                  Get.to(() => ShortsAndCargoPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -246,11 +250,10 @@ class Pages extends StatelessWidget {
                 width: 10,
               ),
 
-
               //Jackets Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  JacketsPage());
+                  Get.to(() => JacketsPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -273,7 +276,7 @@ class Pages extends StatelessWidget {
               //Sweaters Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  SweatersPage());
+                  Get.to(() => SweatersPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -292,10 +295,11 @@ class Pages extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-
             ],
           ),
-          const SizedBox(height: 20,),
+          const SizedBox(
+            height: 20,
+          ),
 
           //Women's Sector
           CustomText(
@@ -303,14 +307,15 @@ class Pages extends StatelessWidget {
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
-          const SizedBox(height: 10,),
+          const SizedBox(
+            height: 10,
+          ),
           Row(
             children: [
-
               //Womens Jeans Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  WomenJeans());
+                  Get.to(() => WomenJeans());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -333,7 +338,7 @@ class Pages extends StatelessWidget {
               //Womens T-shirt Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  WomenTshirtPage());
+                  Get.to(() => WomenTshirtPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -356,7 +361,7 @@ class Pages extends StatelessWidget {
               //WomenPolo Shirt Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  WomenPoloShirtPag());
+                  Get.to(() => WomenPoloShirtPag());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -379,7 +384,7 @@ class Pages extends StatelessWidget {
               //Women Shirt's & Pants Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  WomensShirtsAndPants());
+                  Get.to(() => WomensShirtsAndPants());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -402,7 +407,7 @@ class Pages extends StatelessWidget {
               //Women Hoodies Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  WomensHoodiesPage());
+                  Get.to(() => WomensHoodiesPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -425,7 +430,7 @@ class Pages extends StatelessWidget {
               //Shorts and Cargo Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  WomensShortAndCargo());
+                  Get.to(() => WomensShortAndCargo());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -448,7 +453,7 @@ class Pages extends StatelessWidget {
               //Sweaters Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  WomensSweatersPage());
+                  Get.to(() => WomensSweatersPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -467,13 +472,11 @@ class Pages extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-
-
-
             ],
           ),
-          const SizedBox(height: 20,),
-
+          const SizedBox(
+            height: 20,
+          ),
 
           //Boy's Sector
           CustomText(
@@ -481,14 +484,15 @@ class Pages extends StatelessWidget {
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
-          const SizedBox(height: 10,),
+          const SizedBox(
+            height: 10,
+          ),
           Row(
             children: [
-
               //Boys Jeans Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  BoysJeans());
+                  Get.to(() => BoysJeans());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -507,13 +511,11 @@ class Pages extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-
-
-
             ],
           ),
-          const SizedBox(height: 20,),
-
+          const SizedBox(
+            height: 20,
+          ),
 
           //Service's Sector
           CustomText(
@@ -521,14 +523,15 @@ class Pages extends StatelessWidget {
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
-          const SizedBox(height: 10,),
+          const SizedBox(
+            height: 10,
+          ),
           Row(
             children: [
-
               //Merchandise Sourcing Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  MerchandiseSourcing());
+                  Get.to(() => MerchandiseSourcing());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -551,7 +554,7 @@ class Pages extends StatelessWidget {
               //Quality Assurance Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  QualityAssurancePage());
+                  Get.to(() => QualityAssurancePage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -574,7 +577,7 @@ class Pages extends StatelessWidget {
               //Brand Management Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  BrandManagementPage());
+                  Get.to(() => BrandManagementPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -597,7 +600,7 @@ class Pages extends StatelessWidget {
               //Testing And Analysis Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  TestingAndAnalysisPage());
+                  Get.to(() => TestingAndAnalysisPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -620,7 +623,7 @@ class Pages extends StatelessWidget {
               //Third Party Inspection Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  ThirdPartyInspactionPage());
+                  Get.to(() => ThirdPartyInspactionPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -643,7 +646,7 @@ class Pages extends StatelessWidget {
               //Social Compliance Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  SocialCompliencePage());
+                  Get.to(() => SocialCompliencePage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -666,7 +669,7 @@ class Pages extends StatelessWidget {
               //Logistics Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  LogisticsPage());
+                  Get.to(() => LogisticsPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -689,7 +692,7 @@ class Pages extends StatelessWidget {
               //Designing Page
               InkWell(
                 onTap: () {
-                  Get.to(() =>  DesiginingPage());
+                  Get.to(() => DesiginingPage());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -708,13 +711,11 @@ class Pages extends StatelessWidget {
               const SizedBox(
                 width: 10,
               ),
-
-
-
             ],
           ),
-          const SizedBox(height: 20,),
-
+          const SizedBox(
+            height: 20,
+          ),
         ],
       ),
     );

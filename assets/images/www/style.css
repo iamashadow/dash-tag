@@ -85,7 +85,7 @@ nav .navbar .links li .sub-menu{
   top: 70px;
   left: 0;
   line-height: 40px;
-  background: #3E8DA8;
+  background: #ffffff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 4px 4px;
   display: none;
@@ -100,7 +100,7 @@ nav .navbar .links li:hover .js-sub-menu{
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 .navbar .links li .sub-menu a{
-  color: #fff;
+  color: #000000;
   font-size: 15px;
   font-weight: 500;
 }
@@ -117,6 +117,13 @@ nav .navbar .links li:hover .js-sub-menu{
   border-radius: 0 4px 4px 4px;
   z-index: 1;
   display: none;
+  width: 200px;
+}
+.more{
+  width: 150px;
+}
+.more-sub-menu{
+  height: auto;
 }
 .links li .sub-menu .more:hover .more-sub-menu{
   display: block;

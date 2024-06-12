@@ -1,10 +1,10 @@
 import 'dart:ui';
+import 'package:dash_and_tag_web_site/utils/routes.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_framework/responsive_framework.dart';
-import 'pages/home_page/home_page.dart';
+import 'controller/main_controller.dart';
 import 'utils/all_colors/all_colors.dart';
 
 void main() {
@@ -44,10 +44,11 @@ class MyApp extends StatelessWidget {
           PointerDeviceKind.trackpad,
         },
       ),
-      // initialBinding: BindingsBuilder(() {
-      //   Get.lazyPut(() => MainController());
-      // }),
-      home: HomePage(),
+      initialBinding: BindingsBuilder(() {
+        Get.lazyPut(() => MainController());
+      }),
+      getPages: AppRoutes.pages,
+      initialRoute: AppRoutes.home,
     );
   }
 }

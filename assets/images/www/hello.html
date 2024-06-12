@@ -25,14 +25,13 @@
                     <i class='bx bx-x'></i>
                 </div>
                 <ul class="links">
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" >HOME</a></li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#" >About</a>
                         <i class='bx bxs-chevron-down htmlcss-arrow arrow'></i>
                         <ul class="htmlCss-sub-menu sub-menu">
-                            <li><a href="#">Dash&Tag Resources</a></li>
-                            <li><a href="#">Mission & Vission</a></li>
-                            <li><a href="#">Card Design</a></li>
+                            <li><a href="#" onclick="navigateToFlutterPage('dr')">Dash&Tag Resources</a></li>
+                            <li><a href="#" onclick="navigateToFlutterPage('mv')">Mission & Vission</a></li>
                             <!-- <li class="more">
                 <span><a href="#">More</a>
                 <i class='bx bxs-chevron-right arrow more-arrow'></i>
@@ -50,42 +49,42 @@
                         <a href="#">Products</a>
                         <i class='bx bxs-chevron-down js-arrow arrow'></i>
                         <ul class="js-sub-menu sub-menu">
-                            <li class="mens">
+                            <li class="more">
                                 <span><a href="#">Mens</a>
                                     <i class='bx bxs-chevron-right arrow more-arrow'></i>
                                 </span>
-                                <ul class="mens-sub-menu sub-menu">
+                                <ul class="more-sub-menu sub-menu">
                                     <li><a href="#">Jeans</a></li>
                                     <li><a href="#">T-Shirts</a></li>
                                     <li><a href="#">Polo-Shirts</a></li>
                                     <li><a href="#">Shirts & Pants</a></li>
-                                    <li><a>Hoodies</a></li>
+                                    <li><a href="#">Hoodies</a></li>
                                     <li><a href="#">Shorts & Cargo</a></li>
                                     <li><a href="#">Jackets</a></li>
                                     <li><a href="#">Sweaters</a></li>
 
                                 </ul>
                             </li>
-                            <li class="mens">
+                            <li class="more">
                                 <span><a href="#">Womens</a>
                                     <i class='bx bxs-chevron-right arrow more-arrow'></i>
                                 </span>
-                                <ul class="mens-sub-menu sub-menu">
+                                <ul class="more-sub-menu sub-menu">
                                     <li><a href="#">Jeans</a></li>
                                     <li><a href="#">T-Shirts</a></li>
                                     <li><a href="#">Polo-Shirts</a></li>
                                     <li><a href="#">Shirts & Pants</a></li>
-                                    <li><a>Hoodies</a></li>
+                                    <li><a href="#">Hoodies</a></li>
                                     <li><a href="#">Shorts & Cargo</a></li>
                                     <li><a href="#">Sweaters</a></li>
 
                                 </ul>
                             </li>
-                            <li class="mens">
+                            <li class="more">
                                 <span><a href="#">Boys</a>
                                     <i class='bx bxs-chevron-right arrow more-arrow'></i>
                                 </span>
-                                <ul class="mens-sub-menu sub-menu">
+                                <ul class="more-sub-menu sub-menu">
                                     <li><a href="#">Jeans</a></li>
                                     <li><a href="#">T-Shirts</a></li>
                                     <li><a href="#">Polo-Shirts</a></li>
@@ -96,11 +95,11 @@
 
                                 </ul>
                             </li>
-                            <li class="mens">
+                            <li class="more">
                                 <span><a href="#">Mens</a>
                                     <i class='bx bxs-chevron-right arrow more-arrow'></i>
                                 </span>
-                                <ul class="mens-sub-menu sub-menu">
+                                <ul class="more-sub-menu sub-menu">
                                     <li><a href="#">Jeans</a></li>
                                     <li><a href="#">T-Shirts</a></li>
                                     <li><a href="#">Polo-Shirts</a></li>
@@ -120,15 +119,19 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="search-box">
+            <!-- <div class="search-box">
                 <i class='bx bx-search'></i>
                 <div class="input-box">
                     <input type="text" placeholder="Search...">
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
-    <script src="script.js"></script>
+    <script>
+        function navigateToFlutterPage(page) {
+            window.flutter_inappwebview.callHandler('navigate', page);
+        }
+    </script>
 </body>
 
 </html>

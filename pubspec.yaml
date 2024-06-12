@@ -39,8 +39,7 @@ dependencies:
   responsive_framework: ^1.4.0
   simple_gradient_text: ^1.2.3
   dropdown_button2: ^2.3.9
-  webview_flutter: ^4.7.0
-  flutter_inappwebview: ^6.0.0
+  pluto_menu_bar: ^3.0.1
 
 dev_dependencies:
   flutter_lints: ^4.0.0
