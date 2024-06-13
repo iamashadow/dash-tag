@@ -1,8 +1,9 @@
 import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 import '../../Universal_Widgets/custom_text.dart';
-import '../../Universal_Widgets/mission_vission_page.dart';
+import '../mission_vission_page/mission_vission_page.dart';
 import '../../Utils/All_Texts/HomePageText/home_page_text.dart';
 import '../dash_and_tag_resources/dash_and_tag_resources.dart';
 import '../mens_sector/hoodies_page/hoodies_page.dart';
@@ -23,8 +24,15 @@ class AboutUsPage extends StatelessWidget {
       padding: const EdgeInsets.only(left: 30, right: 50),
       color: const Color(0xFFF4F0EC).withOpacity(0.5),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
 
+
+          //SizedBOx
+          const SizedBox(height: 50,),
+
+          //Dash And Tag Resources
           CustomText(
             title: HomePageText.aboutUsResources,
             letterSpacing: 7,
@@ -33,9 +41,7 @@ class AboutUsPage extends StatelessWidget {
             fontFamily: "Rajdhani",
           ),
 
-
-
-
+          //About Us Text
           CustomText(
             title: HomePageText.aboutUs,
             letterSpacing: 2,
@@ -45,51 +51,65 @@ class AboutUsPage extends StatelessWidget {
           ),
 
 
-          Expanded(
-            child: Row(
-              children: [
-                Expanded(
-                  flex: 1,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: [
-                      CustomText(
-                        title: HomePageText.aboutUsArtAndFashion,
-                        fontSize: 50,
-                        textAlign: TextAlign.center,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "Rajdhani",
-                      ),
-                      Image.asset(
-                        "assets/images/means_jeans/Picture1.png",
-                        width: 300,
-                        height: 300,
-                        fit: BoxFit.fill,
-                      ),
-                    ],
-                  ),
-                ),
-                // SizedBox(height: 40.w,),
+          //Art FAshion Text, Image & Description
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                flex: 1,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
 
-                Expanded(
-                  flex: 2,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Expanded(
-                        child: CustomText(
-                          title: HomePageText.aboutUsDescription,
-                          fontColor: Colors.black,
-                          textAlign: TextAlign.start,
-                          fontSize: 20,
-                          fontFamily: "Rajdhani",
+                    //Art & Fashion Text
+                    CustomText(
+                      title: HomePageText.aboutUsArtAndFashion,
+                      fontSize: 50,
+                      textAlign: TextAlign.center,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Rajdhani",
+                    ),
+
+                    //Image
+                    ResponsiveRowColumnItem(
+                      child: Card(
+                        elevation: 5,
+                        child: Container(
+                          width: 500,
+                          height: 350,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            image: const DecorationImage(
+                              fit: BoxFit.fill,
+                              image: AssetImage("assets/images/means_jeans/Picture1.png",)
+                            )
+                          ),
                         ),
                       ),
-                    ],
+                    ),
+                  ],
+                ),
+              ),
+
+
+              const SizedBox(width: 10,),
+
+
+              Expanded(
+                child: Align(
+                  alignment: Alignment.center,
+                  child: CustomText(
+                    title: HomePageText.aboutUsDescription,
+                    fontColor: Colors.black,
+                    textAlign: TextAlign.start,
+                    fontSize: 20,
+                    fontFamily: "Rajdhani",
                   ),
-                )
-              ],
-            ),
+                ),
+              )
+            ],
           ),
         ],
       ),
