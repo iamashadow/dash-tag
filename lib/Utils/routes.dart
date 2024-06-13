@@ -1,8 +1,11 @@
+import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_us_root.dart';
 import 'package:dash_and_tag_web_site/Pages/dash_and_tag_resources/dash_and_tag_resources.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/men_jeans/mens_jeans.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/tshirt_page/tshirt_page.dart';
 import 'package:dash_and_tag_web_site/Pages/mission_vission_page/mission_vission_image_and_description.dart';
+import 'package:dash_and_tag_web_site/Pages/our_clients_page/our_clients_page.dart';
+import 'package:dash_and_tag_web_site/Pages/services_sector/services/services.dart';
 import 'package:get/get.dart';
 
 import '../Pages/home_page/home_page.dart';
@@ -65,8 +68,10 @@ class AppRoutes {
     GetPage(
         name: missionVision, page: () => MissionVissionImageAndDescription()),
     GetPage(name: mensjeans, page: () => MeansJeans()),
-    GetPage(name: menstshirts, page: () => const TshirtPage()),
+    GetPage(name: menstshirts, page: () => TshirtPage()),
     GetPage(name: menspoloshirts, page: () => PoloShirts()),
-    GetPage(name: mensjeans, page: () => MeansJeans()),
+    GetPage(name: contact, page: () => ContactUsRoot()),
+    GetPage(name: clients, page: () => OurClientsPage()),
+    GetPage(name: services, page: () => ServicesPages()),
   ];
 }

@@ -19,10 +19,10 @@ class FooterBottomSocialButtons extends StatelessWidget {
             ),
             child: InkWell(
               onTap: () {},
-              child: SizedBox(
+              child: const SizedBox(
                 height: 40,
                 width: 40,
-                child: const Center(
+                child: Center(
                   child: Icon(
                     FontAwesomeIcons.facebookF,
                     size: 20,
@@ -40,7 +40,7 @@ class FooterBottomSocialButtons extends StatelessWidget {
             ),
             child: InkWell(
               onTap: () {},
-              child: SizedBox(
+              child: const SizedBox(
                 height: 40,
                 width: 40,
                 child: Center(
@@ -61,7 +61,7 @@ class FooterBottomSocialButtons extends StatelessWidget {
             ),
             child: InkWell(
               onTap: () {},
-              child: SizedBox(
+              child: const SizedBox(
                 height: 40,
                 width: 40,
                 child: Center(

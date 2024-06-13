@@ -1,4 +1,4 @@
-
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
@@ -27,67 +27,12 @@ class ServicesPages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final MainController controller = Get.put(MainController());
+    final MainController controller = Get.find();
 
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: InkWell(
-          onTap: (){
-            Get.to(HomePage());
-          },
-          child: const Text('Dash&Tag'),
-        ),
-        actions: [
-          ...List.generate(controller.appbarActions.length, (index) {
-            final action = controller.appbarActions[index];
-            return MouseRegion(
-              cursor: SystemMouseCursors.click,
-              onHover: (event) {
-                //show subcategories
-                if (action.categories != null) {
-                  PopupMenuButton(
-                    itemBuilder: (context) {
-                      return action.categories!
-                          .map((e) => PopupMenuItem(
-                        child: Text(e.title),
-                      ))
-                          .toList();
-                    },
-                  );
-                }
-              },
-              child: DropdownButtonHideUnderline(
-                child: action.categories != null
-                    ? DropdownButton2(
-                  items: action.categories!
-                      .map((e) => DropdownMenuItem(
-                    value: e.title,
-                    child: Row(
-                      children: [
-                        Text(e.title),
-                        if (e.subCategories != null)
-                          const Icon(Icons.arrow_forward_ios)
-                      ],
-                    ),
-                  ))
-                      .toList(),
-                  onChanged: (value) {
-                    // controller.onActionTap(action.title, value.toString());
-                    printInfo(info: value.toString());
-                  },
-                  hint: Text(action.title),
-                )
-                    : Container(),
-              ),
-            );
-          }),
-          const FooterBottomSocialButtons(),
-        ],
-      ),
-
       body: ListView(
         children: [
+          CustomAppbar(controller: controller),
           //Merchandise Contents
           ProductsPageHeaderImage(
             title: "About Our Services",
@@ -100,7 +45,6 @@ class ServicesPages extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-
                 //Merchandise Contents
                 Row(
                   children: [
@@ -115,8 +59,13 @@ class ServicesPages extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
-                              const SizedBox(width: 10,),
-                              const Icon(FontAwesomeIcons.certificate, color: ColorManager.blueColor,),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Icon(
+                                FontAwesomeIcons.certificate,
+                                color: ColorManager.blueColor,
+                              ),
                             ],
                           ),
                           const SizedBox(height: 20),
@@ -133,12 +82,10 @@ class ServicesPages extends StatelessWidget {
                         height: 400,
                         width: 400,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(10),
                             image: DecorationImage(
                                 fit: BoxFit.cover,
-                                image: AssetImage(AllImages.merchandiseImage)
-                            )
-                        ),
+                                image: AssetImage(AllImages.merchandiseImage))),
                       ),
                     ),
                   ],
@@ -174,40 +121,51 @@ class ServicesPages extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
-                              const SizedBox(width: 10,),
-                              const Icon(FontAwesomeIcons.certificate, color: ColorManager.blueColor,),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Icon(
+                                FontAwesomeIcons.certificate,
+                                color: ColorManager.blueColor,
+                              ),
                             ],
                           ),
 
                           const SizedBox(height: 20),
 
                           CustomText(
-                            title: QualityAssurancePageText.QualityAssuranceBio1,
+                            title:
+                                QualityAssurancePageText.QualityAssuranceBio1,
                           ),
-                          const SizedBox(height: 10), // Add spacing between texts
+                          const SizedBox(
+                              height: 10), // Add spacing between texts
 
                           CustomText(
-                            title: QualityAssurancePageText.QualityAssuranceBio2,
+                            title:
+                                QualityAssurancePageText.QualityAssuranceBio2,
                           ),
                           const SizedBox(height: 20), //
 
                           GridView.builder(
-                              itemCount: AllListsManager.qualityPointsList.length,
+                              itemCount:
+                                  AllListsManager.qualityPointsList.length,
                               shrinkWrap: true,
-                              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                              gridDelegate:
+                                  const SliverGridDelegateWithFixedCrossAxisCount(
                                 crossAxisCount: 4,
                                 crossAxisSpacing: 10,
                                 mainAxisSpacing: 10,
-                                childAspectRatio:4,
+                                childAspectRatio: 4,
                               ),
-                              itemBuilder: (context, index){
+                              itemBuilder: (context, index) {
                                 return Card(
                                   color: ColorManager.blueColor,
                                   child: Padding(
                                     padding: const EdgeInsets.all(20.0),
                                     child: Center(
                                       child: CustomText(
-                                        title: AllListsManager.qualityPointsList[index],
+                                        title: AllListsManager
+                                            .qualityPointsList[index],
                                         fontColor: ColorManager.whiteColor,
                                         textAlign: TextAlign.center,
                                         fontWeight: FontWeight.bold,
@@ -215,15 +173,14 @@ class ServicesPages extends StatelessWidget {
                                     ),
                                   ),
                                 );
-                              }
-                          ),
+                              }),
                           const SizedBox(height: 20),
 
                           CustomText(
-                            title: QualityAssurancePageText.QualityAssuranceBio3,
+                            title:
+                                QualityAssurancePageText.QualityAssuranceBio3,
                           ),
                           const SizedBox(height: 20),
-
                         ],
                       ),
                     ),
@@ -245,11 +202,15 @@ class ServicesPages extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
-                              const SizedBox(width: 10,),
-                              const Icon(FontAwesomeIcons.certificate, color: ColorManager.blueColor,),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Icon(
+                                FontAwesomeIcons.certificate,
+                                color: ColorManager.blueColor,
+                              ),
                             ],
                           ),
-
                           const SizedBox(height: 20),
                           CustomText(
                             title: BrandManagementPageText.brandManagementBio,
@@ -288,7 +249,8 @@ class ServicesPages extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage(AllImages.testingAndAnalysisImage),
+                            image:
+                                AssetImage(AllImages.testingAndAnalysisImage),
                           ),
                         ),
                       ),
@@ -305,19 +267,24 @@ class ServicesPages extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
-                              const SizedBox(width: 10,),
-                              const Icon(FontAwesomeIcons.certificate, color: ColorManager.blueColor,),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Icon(
+                                FontAwesomeIcons.certificate,
+                                color: ColorManager.blueColor,
+                              ),
                             ],
                           ),
                           const SizedBox(height: 20),
-
                           CustomText(
-                            title: TestingAndAnalysisPageText.testingAndAnalysisBio1,
+                            title: TestingAndAnalysisPageText
+                                .testingAndAnalysisBio1,
                           ),
                           const SizedBox(height: 20),
-
                           CustomText(
-                            title: TestingAndAnalysisPageText.testingAndAnalysisBio2,
+                            title: TestingAndAnalysisPageText
+                                .testingAndAnalysisBio2,
                           ),
                           const SizedBox(height: 20),
                         ],
@@ -341,13 +308,19 @@ class ServicesPages extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
-                              const SizedBox(width: 10,),
-                              const Icon(FontAwesomeIcons.certificate, color: ColorManager.blueColor,),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Icon(
+                                FontAwesomeIcons.certificate,
+                                color: ColorManager.blueColor,
+                              ),
                             ],
                           ),
                           const SizedBox(height: 20),
                           CustomText(
-                            title: ThirdPartyInispectionPageText.thirdPartyInispactionBio,
+                            title: ThirdPartyInispectionPageText
+                                .thirdPartyInispactionBio,
                           ),
                         ],
                       ),
@@ -362,7 +335,8 @@ class ServicesPages extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            image: AssetImage(AllImages.thirdPartyInspectionImage),
+                            image:
+                                AssetImage(AllImages.thirdPartyInspectionImage),
                           ),
                         ),
                       ),
@@ -400,8 +374,13 @@ class ServicesPages extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
-                              const SizedBox(width: 10,),
-                              const Icon(FontAwesomeIcons.certificate, color: ColorManager.blueColor,),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Icon(
+                                FontAwesomeIcons.certificate,
+                                color: ColorManager.blueColor,
+                              ),
                             ],
                           ),
                           const SizedBox(height: 20),
@@ -429,11 +408,15 @@ class ServicesPages extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
-                              const SizedBox(width: 10,),
-                              const Icon(FontAwesomeIcons.certificate, color: ColorManager.blueColor,),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Icon(
+                                FontAwesomeIcons.certificate,
+                                color: ColorManager.blueColor,
+                              ),
                             ],
                           ),
-
                           const SizedBox(height: 20),
                           CustomText(
                             title: LogisticsPageText.logistisPageBio,
@@ -489,11 +472,15 @@ class ServicesPages extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
-                              const SizedBox(width: 10,),
-                              const Icon(FontAwesomeIcons.certificate, color: ColorManager.blueColor,),
+                              const SizedBox(
+                                width: 10,
+                              ),
+                              const Icon(
+                                FontAwesomeIcons.certificate,
+                                color: ColorManager.blueColor,
+                              ),
                             ],
                           ),
-
                           const SizedBox(height: 20),
                           CustomText(
                             title: DesigningPageText.desiginingPageBio,
@@ -508,10 +495,7 @@ class ServicesPages extends StatelessWidget {
             ),
           ),
 
-
-
           const Footer(),
-
         ],
       ),
     );

@@ -1,10 +1,15 @@
 import 'package:carousel_slider/carousel_controller.dart';
 import 'package:dash_and_tag_web_site/model/appbar_action_model.dart';
 import 'package:dash_and_tag_web_site/utils/routes.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
 
 class MainController extends GetxController {
+  final nameController = TextEditingController();
+  final emailController = TextEditingController();
+  final subjectController = TextEditingController();
+  final messageController = TextEditingController();
   final CarouselController controller = CarouselController();
   final RxInt hoverIndex = 0.obs;
 
@@ -67,12 +72,7 @@ class MainController extends GetxController {
     ),
     AppBarAction(
       title: 'Services',
-      path: "",
-      categories: [
-        Category(title: 'Global Sourcing', path: AppRoutes.globalsources),
-        Category(title: 'Development', path: AppRoutes.development),
-        Category(title: 'Quality', path: AppRoutes.quality),
-      ],
+      path: AppRoutes.services,
     ),
     AppBarAction(title: 'Our Client', path: AppRoutes.clients),
     AppBarAction(title: 'Contact', path: AppRoutes.contact),

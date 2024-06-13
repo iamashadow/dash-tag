@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:dash_and_tag_web_site/utils/All_Images/all_images.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
@@ -9,7 +10,6 @@ import 'package:flutter/material.dart';
 import '../footer/footer.dart';
 import 'package:get/get.dart';
 import '../home_page/our_complience_section.dart';
-import '../home_page/widgets/footer_bottom_social_buttons.dart';
 
 class DashAndTagResources extends StatelessWidget {
   DashAndTagResources({super.key});
@@ -17,37 +17,14 @@ class DashAndTagResources extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var size = MediaQuery.of(context).size;
-
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-        leading: Image.asset(
-          AllImages.webSiteLogoTransparent,
-          width: 50,
-          height: 50,
-        ),
-        title: const Text('Dash&Tag'),
-        actions: [
-          SizedBox(
-            width: Get.width * 0.5,
-            child: PlutoMenuBar(
-              mode: PlutoMenuBarMode.hover,
-              menus: controller.convertAppBarActionsToPlutoMenuItems(
-                  controller.appbarActions),
-            ),
-          ),
-          const FooterBottomSocialButtons(),
-        ],
-      ),
       body: ListView(
-        children: const [
-          AboutUsPageBanner(),
-          AboutUsPageLogoAndDescription(),
-          OurCompliencesSection(),
-          Footer(),
+        children: [
+          CustomAppbar(controller: controller),
+          const AboutUsPageBanner(),
+          const AboutUsPageLogoAndDescription(),
+          const OurCompliencesSection(),
+          const Footer(),
         ],
       ),
     );

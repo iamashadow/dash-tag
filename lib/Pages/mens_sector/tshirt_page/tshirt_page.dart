@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/utils/All_Images/all_images.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
@@ -12,37 +13,14 @@ import '../../home_page/widgets/footer_bottom_social_buttons.dart';
 import '../../mission_vission_page/product_page_header_image.dart';
 
 class TshirtPage extends StatelessWidget {
-  const TshirtPage({super.key});
-
+  TshirtPage({super.key});
+  final MainController controller = Get.find<MainController>();
   @override
   Widget build(BuildContext context) {
-    final MainController controller = Get.put(MainController());
-
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-        leading: Image.asset(
-          AllImages.webSiteLogoTransparent,
-          width: 50,
-          height: 50,
-        ),
-        title: const Text('Dash&Tag'),
-        actions: [
-          SizedBox(
-            width: Get.width * 0.5,
-            child: PlutoMenuBar(
-              mode: PlutoMenuBarMode.hover,
-              menus: controller.convertAppBarActionsToPlutoMenuItems(
-                  controller.appbarActions),
-            ),
-          ),
-          const FooterBottomSocialButtons(),
-        ],
-      ),
       body: ListView(
         children: [
+          CustomAppbar(controller: controller),
           ProductsPageHeaderImage(
             title: "T-shirt",
           ),
