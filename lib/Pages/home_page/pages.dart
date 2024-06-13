@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_us_root.dart';
 import 'package:dash_and_tag_web_site/Pages/services_sector/brand_management/brand_management_page.dart';
 import 'package:dash_and_tag_web_site/Pages/services_sector/designing_page/desigining_page.dart';
 import 'package:dash_and_tag_web_site/Pages/services_sector/logistics_page/logistics_page.dart';
@@ -8,8 +9,6 @@ import 'package:dash_and_tag_web_site/Pages/services_sector/third_party_inspacti
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
-import '../../Universal_Widgets/mission_vission_page.dart';
 import '../boys_sector/boys_jeans_page/boys_jeans.dart';
 import '../dash_and_tag_resources/dash_and_tag_resources.dart';
 import '../mens_sector/hoodies_page/hoodies_page.dart';
@@ -19,7 +18,8 @@ import '../mens_sector/polo_shirts/polo_shirts.dart';
 import '../mens_sector/shorts_and_cargo_page/shorts_and_cargo_page.dart';
 import '../mens_sector/sweaters_page/sweaters_page.dart';
 import '../mens_sector/tshirt_page/tshirt_page.dart';
-import '../services_sector/merchandise_sourcing/merchandise_sourcing.dart';
+import '../mission_vission_page/mission_vission_page.dart';
+import '../services_sector/services/services.dart';
 import '../womens_sector/women_jeans/women_jeans.dart';
 import '../womens_sector/women_polo_shirt_page/women_polo_shirt_page.dart';
 import '../womens_sector/women_t-shirt_page/womens_t-shirt_page.dart';
@@ -34,7 +34,7 @@ class Pages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 600,
+      height: 1000,
       width: double.maxFinite,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -528,10 +528,10 @@ class Pages extends StatelessWidget {
           ),
           Row(
             children: [
-              //Merchandise Sourcing Page
+              //Services Page
               InkWell(
                 onTap: () {
-                  Get.to(() => MerchandiseSourcing());
+                  Get.to(() => ServicesPages());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -551,17 +551,195 @@ class Pages extends StatelessWidget {
                 width: 10,
               ),
 
-              //Quality Assurance Page
+              // //Quality Assurance Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => QualityAssurancePage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Quality Assurance",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Brand Management Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => BrandManagementPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Brand Management",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Testing And Analysis Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => TestingAndAnalysisPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Testing And Analysis",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Third Party Inspection Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => ThirdPartyInspactionPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Third Party Inspection",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Social Compliance Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => SocialCompliencePage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Social Compliance",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Logistics Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => LogisticsPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Logistics",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Designing Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => DesiginingPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Designing",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+            ],
+          ),
+          const SizedBox(
+            height: 20,
+          ),
+
+
+          //ContactUs Sector
+          CustomText(
+            title: "Contact Us",
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              //Services Page
               InkWell(
                 onTap: () {
-                  Get.to(() => QualityAssurancePage());
+                  Get.to(() => ContactUsRoot());
                 },
                 child: Card(
                   color: Colors.blue,
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: CustomText(
-                      title: "Quality Assurance",
+                      title: "Contact Us",
                       letterSpacing: 2,
                       fontColor: Colors.white,
                       fontSize: 20,
@@ -574,143 +752,166 @@ class Pages extends StatelessWidget {
                 width: 10,
               ),
 
-              //Brand Management Page
-              InkWell(
-                onTap: () {
-                  Get.to(() => BrandManagementPage());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Brand Management",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //Testing And Analysis Page
-              InkWell(
-                onTap: () {
-                  Get.to(() => TestingAndAnalysisPage());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Testing And Analysis",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //Third Party Inspection Page
-              InkWell(
-                onTap: () {
-                  Get.to(() => ThirdPartyInspactionPage());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Third Party Inspection",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //Social Compliance Page
-              InkWell(
-                onTap: () {
-                  Get.to(() => SocialCompliencePage());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Social Compliance",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //Logistics Page
-              InkWell(
-                onTap: () {
-                  Get.to(() => LogisticsPage());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Logistics",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-
-              //Designing Page
-              InkWell(
-                onTap: () {
-                  Get.to(() => DesiginingPage());
-                },
-                child: Card(
-                  color: Colors.blue,
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: CustomText(
-                      title: "Designing",
-                      letterSpacing: 2,
-                      fontColor: Colors.white,
-                      fontSize: 20,
-                      fontFamily: "Rajdhani",
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
+              // //Quality Assurance Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => QualityAssurancePage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Quality Assurance",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Brand Management Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => BrandManagementPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Brand Management",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Testing And Analysis Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => TestingAndAnalysisPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Testing And Analysis",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Third Party Inspection Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => ThirdPartyInspactionPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Third Party Inspection",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Social Compliance Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => SocialCompliencePage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Social Compliance",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Logistics Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => LogisticsPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Logistics",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
+              //
+              // //Designing Page
+              // InkWell(
+              //   onTap: () {
+              //     Get.to(() => DesiginingPage());
+              //   },
+              //   child: Card(
+              //     color: Colors.blue,
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(10.0),
+              //       child: CustomText(
+              //         title: "Designing",
+              //         letterSpacing: 2,
+              //         fontColor: Colors.white,
+              //         fontSize: 20,
+              //         fontFamily: "Rajdhani",
+              //       ),
+              //     ),
+              //   ),
+              // ),
+              // const SizedBox(
+              //   width: 10,
+              // ),
             ],
           ),
           const SizedBox(

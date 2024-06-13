@@ -1,12 +1,15 @@
-import 'package:dash_and_tag_web_site/Pages/contact_us_page/text_form_fild.dart';
-import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
-import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../Universal_Widgets/custom_text.dart';
+import '../../../../Utils/All_Colors/all_colors.dart';
+import '../../controller_class.dart';
 import 'package:get/get.dart';
 
-import 'controller_class.dart';
+import '../desktop/text_form_fild.dart';
 
-class MessageSubmitForm extends StatelessWidget {
+class MessageSubmitFormTablet extends StatelessWidget {
+  MessageSubmitFormTablet({super.key});
+
   final FormController controller = Get.put(FormController());
 
   @override

@@ -8,6 +8,10 @@ class ContactInformationShowingWidget extends StatelessWidget {
   IconData? icon;
   String? title;
   String? subTitle;
+  double? litTileHeight;
+  double? listTileWidth;
+  double? titleFontSize;
+  double? subTitleFontSize;
 
 
 
@@ -16,6 +20,10 @@ class ContactInformationShowingWidget extends StatelessWidget {
     this.icon,
     this.title,
     this.subTitle,
+    this.listTileWidth,
+    this.litTileHeight,
+    this.titleFontSize,
+    this.subTitleFontSize,
 
   });
 
@@ -29,8 +37,8 @@ class ContactInformationShowingWidget extends StatelessWidget {
           width: double.maxFinite,
           child: ListTile(
             leading: Container(
-              width: 50,
-              height: 50,
+              width: listTileWidth,
+              height: litTileHeight,
               decoration: const BoxDecoration(
                 color: ColorManager.blueColor,
                 shape: BoxShape.circle,
@@ -40,9 +48,11 @@ class ContactInformationShowingWidget extends StatelessWidget {
             title: CustomText(
               title: title,
               fontColor: ColorManager.whiteColor,
+              fontSize: titleFontSize,
             ),
             subtitle: CustomText(
               title: subTitle,
+              fontSize: subTitleFontSize,
               fontColor: ColorManager.whiteColor,
             ),
           ),

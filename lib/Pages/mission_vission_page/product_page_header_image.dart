@@ -6,8 +6,9 @@ import '../../Utils/All_Texts/HomePageText/home_page_text.dart';
 class ProductsPageHeaderImage extends StatelessWidget {
 
   String? title;
+  double? fontSize;
 
-  ProductsPageHeaderImage({super.key, this.title});
+  ProductsPageHeaderImage({super.key, this.title, this.fontSize});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +23,7 @@ class ProductsPageHeaderImage extends StatelessWidget {
         child: CustomText(
           title: title,
           fontWeight: FontWeight.bold,
-          fontSize: 40,
+          fontSize: fontSize,
           fontColor: ColorManager.whiteColor,
           fontFamily: HomePageText.fontFamilyNameRajdhani,
         ),

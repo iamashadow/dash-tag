@@ -1,12 +1,13 @@
-import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_information_showing_widget.dart';
-import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
-import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
-import 'package:dash_and_tag_web_site/Utils/All_Texts/Contact_Us_Page_Text/contact_us_page_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class ContactInformation extends StatelessWidget {
-  const ContactInformation({super.key});
+import '../../../../Universal_Widgets/custom_text.dart';
+import '../../../../Utils/All_Colors/all_colors.dart';
+import '../../../../Utils/All_Texts/Contact_Us_Page_Text/contact_us_page_text.dart';
+import '../desktop/contact_information_showing_widget.dart';
+
+class ContactInformationTablet extends StatelessWidget {
+  const ContactInformationTablet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class ContactInformation extends StatelessWidget {
       children: [
         CustomText(
           title: ContactUsPageText.contactUsText,
-          fontSize: 30,
+          fontSize: 40,
           fontWeight: FontWeight.bold,
           fontColor: ColorManager.whiteColor,
         ),
@@ -25,6 +26,8 @@ class ContactInformation extends StatelessWidget {
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.bdBranchText,
           subTitle: ContactUsPageText.bdBranchTextAddress,
+          listTileWidth: 50,
+          litTileHeight: 50,
         ),
         const SizedBox(height: 20,),
 
@@ -32,6 +35,8 @@ class ContactInformation extends StatelessWidget {
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.indiaBranchText,
           subTitle: ContactUsPageText.indiaBranchTAddress,
+          listTileWidth: 50,
+          litTileHeight: 50,
         ),
         const SizedBox(height: 20,),
 
@@ -39,6 +44,8 @@ class ContactInformation extends StatelessWidget {
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.englandBranchText,
           subTitle: ContactUsPageText.englandBranchAddress,
+          listTileWidth: 50,
+          litTileHeight: 50,
         ),
         const SizedBox(height: 20,),
 
@@ -46,6 +53,8 @@ class ContactInformation extends StatelessWidget {
           icon: FontAwesomeIcons.phone,
           title: ContactUsPageText.phoneText,
           subTitle: ContactUsPageText.phoneNumber,
+          listTileWidth: 50,
+          litTileHeight: 50,
         ),
         const SizedBox(height: 20,),
 
@@ -53,6 +62,8 @@ class ContactInformation extends StatelessWidget {
           icon: FontAwesomeIcons.mailchimp,
           title: ContactUsPageText.emailText,
           subTitle: ContactUsPageText.emailAddress,
+          listTileWidth: 50,
+          litTileHeight: 50,
         ),
         const SizedBox(height: 70,),
 

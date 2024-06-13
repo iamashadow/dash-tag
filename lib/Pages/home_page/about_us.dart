@@ -26,10 +26,13 @@ class AboutUsPage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
-        // layout: ResponsiveBreakpoints.of(context).largerThan(TABLET) ? ResponsiveRowColumnType.COLUMN : ResponsiveRowColumnType.COLUMN,
         children: [
 
-           const SizedBox(height: 50,),
+
+          //SizedBOx
+          const SizedBox(height: 50,),
+
+          //Dash And Tag Resources
           CustomText(
             title: HomePageText.aboutUsResources,
             letterSpacing: 7,
@@ -37,6 +40,8 @@ class AboutUsPage extends StatelessWidget {
             fontSize: 20,
             fontFamily: "Rajdhani",
           ),
+
+          //About Us Text
           CustomText(
             title: HomePageText.aboutUs,
             letterSpacing: 2,
@@ -46,30 +51,34 @@ class AboutUsPage extends StatelessWidget {
           ),
 
 
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              // layout: ResponsiveBreakpoints.of(context).largerThan(TABLET) ? ResponsiveRowColumnType.ROW : ResponsiveRowColumnType.COLUMN,
-              children: [
-                Expanded(
-                  flex: 1,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      CustomText(
-                        title: HomePageText.aboutUsArtAndFashion,
-                        fontSize: 50,
-                        textAlign: TextAlign.center,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: "Rajdhani",
-                      ),
-                      Card(
+          //Art FAshion Text, Image & Description
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                flex: 1,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+
+                    //Art & Fashion Text
+                    CustomText(
+                      title: HomePageText.aboutUsArtAndFashion,
+                      fontSize: 50,
+                      textAlign: TextAlign.center,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: "Rajdhani",
+                    ),
+
+                    //Image
+                    ResponsiveRowColumnItem(
+                      child: Card(
                         elevation: 5,
                         child: Container(
                           width: 500,
-                          height: 400,
+                          height: 350,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             image: const DecorationImage(
@@ -79,35 +88,28 @@ class AboutUsPage extends StatelessWidget {
                           ),
                         ),
                       ),
-                    ],
+                    ),
+                  ],
+                ),
+              ),
+
+
+              const SizedBox(width: 10,),
+
+
+              Expanded(
+                child: Align(
+                  alignment: Alignment.center,
+                  child: CustomText(
+                    title: HomePageText.aboutUsDescription,
+                    fontColor: Colors.black,
+                    textAlign: TextAlign.start,
+                    fontSize: 20,
+                    fontFamily: "Rajdhani",
                   ),
                 ),
-
-                const SizedBox(width: 20,),
-
-                Expanded(
-                  flex: 2,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: CustomText(
-                            title: HomePageText.aboutUsDescription,
-                            fontColor: Colors.black,
-                            textAlign: TextAlign.start,
-                            fontSize: 20,
-                            fontFamily: "Rajdhani",
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-              ],
-            ),
+              )
+            ],
           ),
         ],
       ),
