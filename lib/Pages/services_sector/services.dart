@@ -6,21 +6,21 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
-import '../../../Utils/All_Colors/all_colors.dart';
-import '../../../Utils/All_Lists/all_lists.dart';
-import '../../../Utils/All_Texts/Brand_Management_Page_Text/brand_management_page_text.dart';
-import '../../../Utils/All_Texts/Designing_Page_Text/designing_page_text.dart';
-import '../../../Utils/All_Texts/Logistics_Page_Text/logistics_page_text.dart';
-import '../../../Utils/All_Texts/Merchandise_SourchingPageText/merchandise_sourching_page_text.dart';
-import '../../../Utils/All_Texts/Quality_Assurance_PageText/quality_assurance_page_text.dart';
-import '../../../Utils/All_Texts/Social_Complience_Page_Text/social_complience_page_text.dart';
-import '../../../Utils/All_Texts/TestingAndAnalysisPageText/testing_and_analysis_page_text.dart';
-import '../../../Utils/All_Texts/Third_Party_Inispaction_Page_Text/third_party_inispection_page_text.dart';
-import '../../../controller/main_controller.dart';
-import '../../footer/footer.dart';
-import '../../home_page/home_page.dart';
-import '../../home_page/widgets/footer_bottom_social_buttons.dart';
-import '../../mission_vission_page/product_page_header_image.dart';
+import '../../Utils/All_Colors/all_colors.dart';
+import '../../Utils/All_Lists/all_lists.dart';
+import '../../Utils/All_Texts/Brand_Management_Page_Text/brand_management_page_text.dart';
+import '../../Utils/All_Texts/Designing_Page_Text/designing_page_text.dart';
+import '../../Utils/All_Texts/Logistics_Page_Text/logistics_page_text.dart';
+import '../../Utils/All_Texts/Merchandise_SourchingPageText/merchandise_sourching_page_text.dart';
+import '../../Utils/All_Texts/Quality_Assurance_PageText/quality_assurance_page_text.dart';
+import '../../Utils/All_Texts/Social_Complience_Page_Text/social_complience_page_text.dart';
+import '../../Utils/All_Texts/TestingAndAnalysisPageText/testing_and_analysis_page_text.dart';
+import '../../Utils/All_Texts/Third_Party_Inispaction_Page_Text/third_party_inispection_page_text.dart';
+import '../../controller/main_controller.dart';
+import '../footer/footer.dart';
+import '../home_page/home_page.dart';
+import '../home_page/widgets/footer_bottom_social_buttons.dart';
+import '../mission_vission_page/product_page_header_image.dart';
 
 class ServicesPages extends StatelessWidget {
   const ServicesPages({super.key});
