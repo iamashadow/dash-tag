@@ -1,4 +1,5 @@
 import 'package:dash_and_tag_web_site/Pages/home_page/widgets/footer_bottom_social_buttons.dart';
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,156 +19,139 @@ class MissionVissionImageAndDescription extends StatelessWidget {
     var size = MediaQuery.of(context).size;
 
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-        leading: Image.asset(
-          AllImages.webSiteLogoTransparent,
-          width: 50,
-          height: 50,
-        ),
-        title: const Text('Dash&Tag'),
-        actions: [
-          SizedBox(
-            width: Get.width * 0.5,
-            child: PlutoMenuBar(
-              mode: PlutoMenuBarMode.hover,
-              menus: controller.convertAppBarActionsToPlutoMenuItems(
-                  controller.appbarActions),
+      body: Column(
+        children: [
+          CustomAppbar(controller: controller),
+          Padding(
+            padding: EdgeInsets.all(size.width * 0.02),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                //Mission Vission Image
+                Container(
+                  width: size.width * 0.4,
+                  height: size.height * 0.4,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage(AllImages.missionVissionImage),
+                  )),
+                ),
+                const SizedBox(
+                  width: 30,
+                ),
+
+                //Mission Vission Text
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    //Mission Title
+                    CustomText(
+                      title: MissionVissionText.missionTitle,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: HomePageText.fontFamilyNameRajdhani,
+                      fontColor: ColorManager.blueColor,
+                      fontSize: 5,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+
+                    //Mission Description
+                    Container(
+                      color: ColorManager.whiteColor,
+                      padding: const EdgeInsets.all(20),
+                      width: size.width * 0.4,
+                      child: Center(
+                        child: Expanded(
+                          child: CustomText(
+                            title: MissionVissionText.missionTitleDescription,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: HomePageText.fontFamilyNameRajdhani,
+                            fontColor: ColorManager.blackColor,
+                            fontSize: 3,
+                            letterSpacing: 1,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+
+                    //Vission Title
+                    CustomText(
+                      title: MissionVissionText.vissionTitle,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: HomePageText.fontFamilyNameRajdhani,
+                      fontColor: ColorManager.blueColor,
+                      fontSize: 5,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+
+                    //Vission Description
+                    Container(
+                      color: ColorManager.whiteColor,
+                      padding: const EdgeInsets.all(20),
+                      width: size.width * 0.4,
+                      child: Center(
+                        child: Expanded(
+                          child: CustomText(
+                            title: MissionVissionText.vissionTitleDescription,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: HomePageText.fontFamilyNameRajdhani,
+                            fontColor: ColorManager.blackColor,
+                            fontSize: 3,
+                            letterSpacing: 1,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+
+                    //Value Title
+                    CustomText(
+                      title: MissionVissionText.valueTitle,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: HomePageText.fontFamilyNameRajdhani,
+                      fontColor: ColorManager.blueColor,
+                      fontSize: 5,
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+
+                    //Value Description
+                    Container(
+                      color: ColorManager.whiteColor,
+                      padding: const EdgeInsets.all(20),
+                      width: size.width * 0.4,
+                      child: Center(
+                        child: Expanded(
+                          child: CustomText(
+                            title: MissionVissionText.valueTitleDescription,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: HomePageText.fontFamilyNameRajdhani,
+                            fontColor: ColorManager.blackColor,
+                            fontSize: 3,
+                            letterSpacing: 1,
+                          ),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 10,
+                    ),
+                  ],
+                )
+              ],
             ),
           ),
-          const FooterBottomSocialButtons(),
         ],
-      ),
-      body: Padding(
-        padding: EdgeInsets.all(size.width * 0.02),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            //Mission Vission Image
-            Container(
-              width: size.width * 0.4,
-              height: size.height * 0.4,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                fit: BoxFit.cover,
-                image: AssetImage(AllImages.missionVissionImage),
-              )),
-            ),
-            const SizedBox(
-              width: 30,
-            ),
-
-            //Mission Vission Text
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                //Mission Title
-                CustomText(
-                  title: MissionVissionText.missionTitle,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: HomePageText.fontFamilyNameRajdhani,
-                  fontColor: ColorManager.blueColor,
-                  fontSize: 5,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-
-                //Mission Description
-                Container(
-                  color: ColorManager.whiteColor,
-                  padding: const EdgeInsets.all(20),
-                  width: size.width * 0.4,
-                  child: Center(
-                    child: Expanded(
-                      child: CustomText(
-                        title: MissionVissionText.missionTitleDescription,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: HomePageText.fontFamilyNameRajdhani,
-                        fontColor: ColorManager.blackColor,
-                        fontSize: 3,
-                        letterSpacing: 1,
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-
-                //Vission Title
-                CustomText(
-                  title: MissionVissionText.vissionTitle,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: HomePageText.fontFamilyNameRajdhani,
-                  fontColor: ColorManager.blueColor,
-                  fontSize: 5,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-
-                //Vission Description
-                Container(
-                  color: ColorManager.whiteColor,
-                  padding: const EdgeInsets.all(20),
-                  width: size.width * 0.4,
-                  child: Center(
-                    child: Expanded(
-                      child: CustomText(
-                        title: MissionVissionText.vissionTitleDescription,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: HomePageText.fontFamilyNameRajdhani,
-                        fontColor: ColorManager.blackColor,
-                        fontSize: 3,
-                        letterSpacing: 1,
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-
-                //Value Title
-                CustomText(
-                  title: MissionVissionText.valueTitle,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: HomePageText.fontFamilyNameRajdhani,
-                  fontColor: ColorManager.blueColor,
-                  fontSize: 5,
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-
-                //Value Description
-                Container(
-                  color: ColorManager.whiteColor,
-                  padding: const EdgeInsets.all(20),
-                  width: size.width * 0.4,
-                  child: Center(
-                    child: Expanded(
-                      child: CustomText(
-                        title: MissionVissionText.valueTitleDescription,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: HomePageText.fontFamilyNameRajdhani,
-                        fontColor: ColorManager.blackColor,
-                        fontSize: 3,
-                        letterSpacing: 1,
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(
-                  height: 10,
-                ),
-              ],
-            )
-          ],
-        ),
       ),
     );
   }

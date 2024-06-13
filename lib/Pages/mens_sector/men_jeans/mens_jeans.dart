@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Lists/all_lists.dart';
 import 'package:dash_and_tag_web_site/utils/All_Images/all_images.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
@@ -18,30 +19,9 @@ class MeansJeans extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        backgroundColor: Colors.white,
-        surfaceTintColor: Colors.white,
-        leading: Image.asset(
-          AllImages.webSiteLogoTransparent,
-          width: 50,
-          height: 50,
-        ),
-        title: const Text('Dash&Tag'),
-        actions: [
-          SizedBox(
-            width: Get.width * 0.5,
-            child: PlutoMenuBar(
-              mode: PlutoMenuBarMode.hover,
-              menus: controller.convertAppBarActionsToPlutoMenuItems(
-                  controller.appbarActions),
-            ),
-          ),
-          const FooterBottomSocialButtons(),
-        ],
-      ),
       body: ListView(
         children: [
+          CustomAppbar(controller: controller),
           ProductsPageHeaderImage(
             title: "Mean's Jeans",
           ),
