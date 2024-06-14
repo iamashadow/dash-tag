@@ -10,7 +10,7 @@ import '../mens_sector/jackets_page/jackets_page.dart';
 import '../mens_sector/men_jeans/mens_jeans.dart';
 import '../mens_sector/shorts_and_cargo_page/shorts_and_cargo_page.dart';
 import '../mens_sector/sweaters_page/sweaters_page.dart';
-import '../mens_sector/tshirt_page/tshirt_page.dart';
+import '../mens_sector/tshirt_page/view/desktop/tshirt_page_desktop.dart';
 
 class AboutUsPage extends StatelessWidget {
   const AboutUsPage({super.key});
@@ -21,7 +21,7 @@ class AboutUsPage extends StatelessWidget {
       height: 700,
       width: double.maxFinite,
       padding: const EdgeInsets.only(left: 30, right: 50),
-      color: const Color(0xFFF4F0EC).withOpacity(0.5),
+      color: const Color(0xFFF4F0EC).withOpacity(0.3),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,

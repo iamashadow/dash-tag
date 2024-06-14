@@ -5,15 +5,16 @@ import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
-import '../../controller/main_controller.dart';
-import '../footer/footer.dart';
-import '../home_page/home_page.dart';
-import '../home_page/widgets/footer_bottom_social_buttons.dart';
-import '../mission_vission_page/component/desktop/product_page_header_image.dart';
+import '../../../../controller/main_controller.dart';
+import '../../../footer/footer.dart';
+import '../../../home_page/home_page.dart';
+import '../../../home_page/widgets/footer_bottom_social_buttons.dart';
+import '../../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
-class OurClientsPage extends StatelessWidget {
-  const OurClientsPage({super.key});
+class OurClientsPageDesktop extends StatelessWidget {
+  const OurClientsPageDesktop({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,8 +25,9 @@ class OurClientsPage extends StatelessWidget {
           CustomAppbar(controller: controller),
           ProductsPageHeaderImage(
             title: "Our Clients",
+            fontSize: 10.sw,
           ),
-          const SizedBox(height: 50),
+          SizedBox(height: 5.sh),
           Padding(
             padding: const EdgeInsets.all(50.0),
             child: Expanded(

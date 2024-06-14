@@ -1,4 +1,5 @@
 import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_us_root.dart';
+import 'package:dash_and_tag_web_site/Pages/mission_vission_page/mission_vission_root.dart';
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -10,7 +11,7 @@ import '../mens_sector/men_jeans/mens_jeans.dart';
 import '../mens_sector/polo_shirts/polo_shirts.dart';
 import '../mens_sector/shorts_and_cargo_page/shorts_and_cargo_page.dart';
 import '../mens_sector/sweaters_page/sweaters_page.dart';
-import '../mens_sector/tshirt_page/tshirt_page.dart';
+import '../mens_sector/tshirt_page/view/desktop/tshirt_page_desktop.dart';
 import '../mission_vission_page/view/desktop/mission_vission_desktop_page.dart';
 import '../services_sector/view/desktop/services_page_desktop.dart';
 import '../womens_sector/women_jeans/women_jeans.dart';
@@ -69,7 +70,7 @@ class Pages extends StatelessWidget {
               //Mission Vission Page
               InkWell(
                 onTap: () {
-                  Get.to(() => const MissionVissionPageDesktop());
+                  Get.to(() => MissionVissionRoot());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -131,7 +132,7 @@ class Pages extends StatelessWidget {
               //T-shirt Page
               InkWell(
                 onTap: () {
-                  Get.to(() => TshirtPage());
+                  Get.to(() => TshirtPageDesktop());
                 },
                 child: Card(
                   color: Colors.blue,

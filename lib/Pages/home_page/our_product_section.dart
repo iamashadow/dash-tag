@@ -3,6 +3,7 @@ import 'package:dash_and_tag_web_site/utils/All_Images/all_images.dart';
 import 'package:dash_and_tag_web_site/utils/all_lists/all_lists.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class OurProductsSection extends StatelessWidget {
   const OurProductsSection({super.key});
@@ -10,7 +11,7 @@ class OurProductsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 700,
+      height: 40.sh,
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
@@ -19,7 +20,7 @@ class OurProductsSection extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     decoration: TextDecoration.underline,
                   )),
-          const SizedBox(height: 20),
+          SizedBox(height: 5.sh,),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -132,7 +133,7 @@ class OurProductsSection extends StatelessWidget {
                 ],
               )
             ],
-          )
+          ),
         ],
       ),
     );
