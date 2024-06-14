@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 class MessageSubmitForm extends StatelessWidget {
   MessageSubmitForm({super.key});
   final MainController controller = Get.find<MainController>();
-  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> formKey1 = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MessageSubmitForm extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Form(
-          key: formKey,
+          key: formKey1,
           child: Column(
             children: [
               TextFormFildWidget(
@@ -74,7 +74,7 @@ class MessageSubmitForm extends StatelessWidget {
               const SizedBox(height: 20),
               InkWell(
                 onTap: () {
-                  if (formKey.currentState!.validate()) {
+                  if (formKey1.currentState!.validate()) {
                     Get.snackbar(
                       "Message Sent",
                       "Your message has been sent successfully",

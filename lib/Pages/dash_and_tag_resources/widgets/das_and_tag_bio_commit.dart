@@ -4,9 +4,11 @@ import 'package:flutter/material.dart';
 class DasAndTagBioCommit extends StatelessWidget {
 
   String? commit;
+  double? fontSize;
 
   DasAndTagBioCommit({super.key,
     this.commit,
+    this.fontSize,
   });
 
   @override
@@ -26,7 +28,7 @@ class DasAndTagBioCommit extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 fontFamily: "Rajdhani",
                 letterSpacing: 1,
-                fontSize: 15,
+                fontSize: fontSize,
               ),
               const SizedBox(height: 10,),
             ],

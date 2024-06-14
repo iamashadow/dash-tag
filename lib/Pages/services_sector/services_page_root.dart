@@ -13,7 +13,7 @@ class ServicesPageRoot extends StatelessWidget {
     return ResponsiveLayoutBuilder(
       mobile: ServicesPageMobile(),
       tablet: ServicesPageTablet(),
-      desktop: ServicesPageDesktop(),
+      desktop: ServicesPagesDesktop(),
     );
   }
 }

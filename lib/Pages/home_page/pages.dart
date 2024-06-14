@@ -3,7 +3,7 @@ import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../boys_sector/boys_jeans_page/boys_jeans.dart';
-import '../dash_and_tag_resources/dash_and_tag_resources.dart';
+import '../dash_and_tag_resources/view/desktop/dash_and_tag_resources.dart';
 import '../mens_sector/hoodies_page/hoodies_page.dart';
 import '../mens_sector/jackets_page/jackets_page.dart';
 import '../mens_sector/men_jeans/mens_jeans.dart';
@@ -11,8 +11,8 @@ import '../mens_sector/polo_shirts/polo_shirts.dart';
 import '../mens_sector/shorts_and_cargo_page/shorts_and_cargo_page.dart';
 import '../mens_sector/sweaters_page/sweaters_page.dart';
 import '../mens_sector/tshirt_page/tshirt_page.dart';
-import '../mission_vission_page/mission_vission_page.dart';
-import '../services_sector/services.dart';
+import '../mission_vission_page/view/desktop/mission_vission_desktop_page.dart';
+import '../services_sector/view/desktop/services_page_desktop.dart';
 import '../womens_sector/women_jeans/women_jeans.dart';
 import '../womens_sector/women_polo_shirt_page/women_polo_shirt_page.dart';
 import '../womens_sector/women_t-shirt_page/womens_t-shirt_page.dart';
@@ -46,7 +46,7 @@ class Pages extends StatelessWidget {
               //CRV Resources Page
               InkWell(
                 onTap: () {
-                  Get.to(() => DashAndTagResources());
+                  Get.to(() => DashAndTagResourcesDesktop());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -69,7 +69,7 @@ class Pages extends StatelessWidget {
               //Mission Vission Page
               InkWell(
                 onTap: () {
-                  Get.to(() => const MissionVissionPage());
+                  Get.to(() => const MissionVissionPageDesktop());
                 },
                 child: Card(
                   color: Colors.blue,
@@ -524,7 +524,7 @@ class Pages extends StatelessWidget {
               //Services Page
               InkWell(
                 onTap: () {
-                  Get.to(() => ServicesPages());
+                  Get.to(() => ServicesPagesDesktop());
                 },
                 child: Card(
                   color: Colors.blue,

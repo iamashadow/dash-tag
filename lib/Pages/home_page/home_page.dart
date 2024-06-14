@@ -59,7 +59,7 @@ class HomePage extends StatelessWidget {
         const AboutUsPage(),
         const WhyChooseUsSection(),
         const OurProductsSection(),
-        const OurCompliencesSection(),
+        OurCompliencesSection(),
         const Footer(),
       ]),
     );

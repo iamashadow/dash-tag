@@ -1,8 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:dash_and_tag_web_site/utils/all_lists/all_lists.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class OurCompliencesSection extends StatelessWidget {
   const OurCompliencesSection({super.key});
@@ -22,6 +24,8 @@ class OurCompliencesSection extends StatelessWidget {
               style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                     fontWeight: FontWeight.bold,
                     decoration: TextDecoration.underline,
+                color: ColorManager.blueColor,
+                fontSize: 5.sw,
                   ),
             ),
             const SizedBox(
@@ -38,7 +42,7 @@ class OurCompliencesSection extends StatelessWidget {
                     child: InkWell(
                       onTap: () {
                         controller.carouselController.previousPage(
-                          duration: Duration(milliseconds: 300),
+                          duration: const Duration(milliseconds: 300),
                           curve: Curves.linear,
                         );
                       },
@@ -79,7 +83,7 @@ class OurCompliencesSection extends StatelessWidget {
                     child: InkWell(
                       onTap: () {
                         controller.carouselController.nextPage(
-                          duration: Duration(milliseconds: 300),
+                          duration: const Duration(milliseconds: 300),
                           curve: Curves.linear,
                         );
                       },

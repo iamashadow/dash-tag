@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../../Universal_Widgets/custom_text.dart';
-import '../../Utils/All_Colors/all_colors.dart';
-import '../../Utils/All_Texts/HomePageText/home_page_text.dart';
+import '../../../../Universal_Widgets/custom_text.dart';
+import '../../../../Utils/All_Colors/all_colors.dart';
+import '../../../../Utils/All_Texts/HomePageText/home_page_text.dart';
 
 class ProductsPageHeaderImage extends StatelessWidget {
 

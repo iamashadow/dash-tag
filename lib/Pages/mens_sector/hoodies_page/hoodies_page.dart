@@ -8,7 +8,7 @@ import '../../../controller/main_controller.dart';
 import '../../footer/footer.dart';
 import '../../home_page/home_page.dart';
 import '../../home_page/widgets/footer_bottom_social_buttons.dart';
-import '../../mission_vission_page/product_page_header_image.dart';
+import '../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
 
 class HoodiesPage extends StatelessWidget {

@@ -10,7 +10,7 @@ class MessageSubmitFormMobile extends StatelessWidget {
   MessageSubmitFormMobile({super.key});
 
   final MainController controller = Get.find<MainController>();
-  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> formKey2 = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -20,7 +20,7 @@ class MessageSubmitFormMobile extends StatelessWidget {
         padding:
             const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
         child: Form(
-          key: formKey,
+          key: formKey2,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -75,7 +75,7 @@ class MessageSubmitFormMobile extends StatelessWidget {
               const SizedBox(height: 20),
               InkWell(
                 onTap: () {
-                  if (formKey.currentState!.validate()) {
+                  if (formKey2.currentState!.validate()) {
                     Get.snackbar(
                       "Message Sent",
                       "Your message has been sent successfully",

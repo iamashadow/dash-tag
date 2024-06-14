@@ -5,12 +5,13 @@ import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../../controller/main_controller.dart';
 import '../../../footer/footer.dart';
 import '../../../home_page/home_page.dart';
 import '../../../home_page/widgets/footer_bottom_social_buttons.dart';
-import '../../../mission_vission_page/product_page_header_image.dart';
+import '../../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
 class ContactUsPageDesktop extends StatelessWidget {
   ContactUsPageDesktop({super.key});
@@ -25,6 +26,7 @@ class ContactUsPageDesktop extends StatelessWidget {
           CustomAppbar(controller: controller),
           ProductsPageHeaderImage(
             title: "Contact Us",
+            fontSize: 10.sw,
           ),
           const SizedBox(height: 50),
           Padding(

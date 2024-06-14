@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../../Utils/All_Images/all_images.dart';
+import '../../../../Utils/All_Images/all_images.dart';
 
 class AboutUsPageBanner extends StatelessWidget {
-  const AboutUsPageBanner({super.key});
+
+  double? bannerHeight;
+
+  AboutUsPageBanner({super.key, this.bannerHeight,});
 
   @override
   Widget build(BuildContext context) {
 
-    var size = MediaQuery.of(context).size;
-
     return Container(
-      width: size.width,
-      height: 400,
+      width: double.maxFinite,
+      height: bannerHeight,
       decoration: BoxDecoration(
           image: DecorationImage(
             fit: BoxFit.cover,

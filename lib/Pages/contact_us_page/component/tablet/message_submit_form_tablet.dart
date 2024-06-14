@@ -11,7 +11,7 @@ class MessageSubmitFormTablet extends StatelessWidget {
   MessageSubmitFormTablet({super.key});
 
   final MainController controller = Get.find<MainController>();
-  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> formKey3 = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -20,7 +20,7 @@ class MessageSubmitFormTablet extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Form(
-          key: formKey,
+          key: formKey3,
           child: Column(
             children: [
               TextFormFildWidget(
@@ -77,7 +77,7 @@ class MessageSubmitFormTablet extends StatelessWidget {
               const SizedBox(height: 20),
               InkWell(
                 onTap: () {
-                  if (formKey.currentState!.validate()) {
+                  if (formKey3.currentState!.validate()) {
                     Get.snackbar(
                       "Message Sent",
                       "Thank you for your message",

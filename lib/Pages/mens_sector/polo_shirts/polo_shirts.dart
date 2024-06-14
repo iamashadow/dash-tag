@@ -7,7 +7,7 @@ import '../../../Universal_Widgets/product_image_showing_list_view_builder.dart'
 import '../../../Utils/All_Lists/all_lists.dart';
 import '../../../controller/main_controller.dart';
 import '../../home_page/widgets/footer_bottom_social_buttons.dart';
-import '../../mission_vission_page/product_page_header_image.dart';
+import '../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
 class PoloShirts extends StatelessWidget {
   PoloShirts({super.key});
