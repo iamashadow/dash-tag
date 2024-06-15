@@ -1,10 +1,6 @@
-import 'package:dash_and_tag_web_site/Pages/home_page/widgets/footer_bottom_social_buttons.dart';
-import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
-import 'package:dash_and_tag_web_site/controller/main_controller.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:responsive_builder/responsive_builder.dart';
 
+import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import '../../../../Universal_Widgets/custom_text.dart';
 import '../../../../Utils/All_Colors/all_colors.dart';
 import '../../../../Utils/All_Images/all_images.dart';

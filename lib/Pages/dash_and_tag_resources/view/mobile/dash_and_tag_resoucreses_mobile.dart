@@ -5,7 +5,7 @@ import 'package:responsive_builder/responsive_builder.dart';
 import '../../../../Universal_Widgets/custom_appbar.dart';
 import '../../../../controller/main_controller.dart';
 import '../../../footer/footer.dart';
-import '../../../home_page/our_complience_section.dart';
+import '../../../home_page/component/desktop/our_complience_section.dart';
 import '../../component/desktop/about_us_page_banner.dart';
 import '../../component/mobile/logo_description_mobile.dart';
 import '../../component/tablet/log_description_tablet.dart';

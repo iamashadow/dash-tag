@@ -1,21 +1,17 @@
 import 'package:dash_and_tag_web_site/Pages/footer/footer.dart';
-import 'package:dash_and_tag_web_site/Pages/home_page/pages.dart';
-import 'package:dash_and_tag_web_site/Pages/home_page/widgets/footer_bottom_social_buttons.dart';
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
-import 'package:dash_and_tag_web_site/utils/All_Images/all_images.dart';
-import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:pluto_menu_bar/pluto_menu_bar.dart';
-import 'about_us.dart';
-import 'header_section.dart';
-import 'our_complience_section.dart';
-import 'our_product_section.dart';
-import 'why_choose_us.dart';
+import 'package:responsive_builder/responsive_builder.dart';
+import '../../component/desktop/about_us.dart';
+import '../../component/desktop/header_section.dart';
+import '../../component/desktop/our_complience_section.dart';
+import '../../component/desktop/our_product_section.dart';
+import '../../component/desktop/why_choose_us.dart';
 
-class HomePage extends StatelessWidget {
-  HomePage({super.key});
+class HomePageDesktop extends StatelessWidget {
+  HomePageDesktop({super.key});
   final MainController controller = Get.find();
 
   @override
@@ -55,10 +51,20 @@ class HomePage extends StatelessWidget {
         //header appbar
         CustomAppbar(controller: controller),
         HeaderSection(),
-        const Pages(),
+        // const Pages(),
         const AboutUsPage(),
-        const WhyChooseUsSection(),
+
+        WhyChooseUsSection(
+          cardNumber: 4,
+          cardHeight: 60.sh,
+          cardWidth: 60.sh,
+          paddingonCard: 15.sw,
+          // titleSize: 4.sw,
+          // subtitleSize: 3.sw,
+        ),
+
         const OurProductsSection(),
+
         OurCompliencesSection(
           sectionHeight: 50.0,
           sectionPadding: 0.02,
@@ -71,6 +77,7 @@ class HomePage extends StatelessWidget {
           buttonIconSize: 20.0,
           viewPortFraction: 0.3,
         ),
+
         const Footer(),
       ]),
     );

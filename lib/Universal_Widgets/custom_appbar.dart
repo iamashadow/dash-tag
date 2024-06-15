@@ -1,9 +1,11 @@
-import 'package:dash_and_tag_web_site/Pages/home_page/widgets/footer_bottom_social_buttons.dart';
+
 import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
+
+import '../Pages/home_page/component/desktop/widgets/footer_bottom_social_buttons.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({

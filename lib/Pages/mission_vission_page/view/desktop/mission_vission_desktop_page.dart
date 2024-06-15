@@ -1,5 +1,4 @@
 import 'package:responsive_builder/responsive_builder.dart';
-
 import '../../../../../Utils/All_Texts/Mission_Vission_Text/mission_vission_text.dart';
 import '../../../../../Utils/All_Colors/all_colors.dart';
 import 'package:flutter/material.dart';
@@ -7,9 +6,7 @@ import 'package:get/get.dart';
 import '../../../../Universal_Widgets/custom_appbar.dart';
 import '../../../../controller/main_controller.dart';
 import '../../../footer/footer.dart';
-import '../../../home_page/home_page.dart';
-import '../../../home_page/our_complience_section.dart';
-import '../../../home_page/widgets/footer_bottom_social_buttons.dart';
+import '../../../home_page/component/desktop/our_complience_section.dart';
 import '../../component/desktop/mission_vission_image_and_description.dart';
 import '../../component/desktop/product_page_header_image.dart';
 

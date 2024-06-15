@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-import 'Pages/contact_us_page/contact_us_root.dart';
 import 'Utils/routes.dart';
 import 'controller/main_controller.dart';
 import 'utils/all_colors/all_colors.dart';

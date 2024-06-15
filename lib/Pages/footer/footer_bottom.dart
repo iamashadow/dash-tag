@@ -1,6 +1,5 @@
-import 'package:dash_and_tag_web_site/Pages/home_page/widgets/footer_bottom_social_buttons.dart';
 import 'package:flutter/material.dart';
-
+import '../home_page/component/desktop/widgets/footer_bottom_social_buttons.dart';
 import 'footer_bottom_licence.dart';
 
 class FooterBottom extends StatelessWidget {
@@ -19,13 +18,13 @@ class FooterBottom extends StatelessWidget {
           ),
         ),
       ),
-      child: Column(
+      child: const Column(
         children: [
           SizedBox(
               height: 100,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children:  [
                   FooterBottomLicence(),
                   FooterBottomSocialButtons(),
                 ],

@@ -1,16 +1,12 @@
 import 'package:dash_and_tag_web_site/Universal_Widgets/custom_appbar.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Lists/all_lists.dart';
-import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
 import '../../../../controller/main_controller.dart';
 import '../../../footer/footer.dart';
-import '../../../home_page/home_page.dart';
-import '../../../home_page/widgets/footer_bottom_social_buttons.dart';
 import '../../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
 class OurClientsPageDesktop extends StatelessWidget {
