@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
@@ -11,14 +12,12 @@ import '../../../footer/footer.dart';
 import '../../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
 class OurClientsMobile extends StatelessWidget {
-  const OurClientsMobile({super.key});
-
+  OurClientsMobile({super.key});
+  final MainController controller = Get.find();
   @override
   Widget build(BuildContext context) {
-
-
-    final MainController controller = Get.find();
     return Scaffold(
+      drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
           CustomAppbar(controller: controller),
@@ -57,7 +56,5 @@ class OurClientsMobile extends StatelessWidget {
         ],
       ),
     );
-
-
   }
 }

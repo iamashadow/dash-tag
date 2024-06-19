@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -9,72 +10,14 @@ import '../../home_page/component/desktop/widgets/footer_bottom_social_buttons.d
 import '../../home_page/view/desktop/home_page_desktop.dart';
 import '../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
-
 class HoodiesPage extends StatelessWidget {
-  const HoodiesPage({super.key});
+  HoodiesPage({super.key});
+  final MainController controller = Get.find();
 
   @override
   Widget build(BuildContext context) {
-
-    final MainController controller = Get.put(MainController());
-
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: InkWell(
-          onTap: (){
-            Get.to(HomePageDesktop());
-          },
-          child: const Text('Dash&Tag'),
-        ),
-        actions: [
-          ...List.generate(controller.appbarActions.length, (index) {
-            final action = controller.appbarActions[index];
-            return MouseRegion(
-              cursor: SystemMouseCursors.click,
-              onHover: (event) {
-                //show subcategories
-                if (action.categories != null) {
-                  PopupMenuButton(
-                    itemBuilder: (context) {
-                      return action.categories!
-                          .map((e) => PopupMenuItem(
-                        child: Text(e.title),
-                      ))
-                          .toList();
-                    },
-                  );
-                }
-              },
-              child: DropdownButtonHideUnderline(
-                child: action.categories != null
-                    ? DropdownButton2(
-                  items: action.categories!
-                      .map((e) => DropdownMenuItem(
-                    value: e.title,
-                    child: Row(
-                      children: [
-                        Text(e.title),
-                        if (e.subCategories != null)
-                          const Icon(Icons.arrow_forward_ios)
-                      ],
-                    ),
-                  ))
-                      .toList(),
-                  onChanged: (value) {
-                    // controller.onActionTap(action.title, value.toString());
-                    printInfo(info: value.toString());
-                  },
-                  hint: Text(action.title),
-                )
-                    : Container(),
-              ),
-            );
-          }),
-          const FooterBottomSocialButtons(),
-        ],
-      ),
-
+      drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
           ProductsPageHeaderImage(
@@ -82,7 +25,8 @@ class HoodiesPage extends StatelessWidget {
           ),
           const SizedBox(height: 50),
           ProductImageShowingListViewBuilder(
-            items: List<int>.generate(AllListsManager.complientsList.length, (index) => index),
+            items: List<int>.generate(
+                AllListsManager.complientsList.length, (index) => index),
             itemsList: List<String>.from(AllListsManager.complientsList),
           ),
           const SizedBox(height: 250),

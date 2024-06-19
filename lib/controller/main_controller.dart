@@ -12,6 +12,7 @@ class MainController extends GetxController {
   final messageController = TextEditingController();
   final CarouselController controller = CarouselController();
   final RxInt hoverIndex = 0.obs;
+  final isDrawerOpen = false.obs;
 
   final List<AppBarAction> appbarActions = [
     AppBarAction(title: 'Home', path: AppRoutes.home),
@@ -31,41 +32,41 @@ class MainController extends GetxController {
         Category(
           title: 'Mens',
           path: "",
-          subCategories: [
-            SubCategory(title: 'T-Shirts', path: AppRoutes.menstshirts),
-            SubCategory(title: 'Shirts', path: AppRoutes.mensshirtspants),
-            SubCategory(title: 'Pants', path: AppRoutes.mensjeans),
-            SubCategory(title: 'Jackets', path: AppRoutes.mensjackets),
+          categories: [
+            Category(title: 'T-Shirts', path: AppRoutes.menstshirts),
+            Category(title: 'Shirts', path: AppRoutes.mensshirtspants),
+            Category(title: 'Pants', path: AppRoutes.mensjeans),
+            Category(title: 'Jackets', path: AppRoutes.mensjackets),
           ],
         ),
         Category(
           title: 'Womens',
           path: "",
-          subCategories: [
-            SubCategory(title: 'T-Shirts', path: AppRoutes.womenstshirts),
-            SubCategory(title: 'Shirts', path: AppRoutes.womensshirtspants),
-            SubCategory(title: 'Pants', path: AppRoutes.womensjeans),
-            SubCategory(title: 'Jackets', path: AppRoutes.womensjackets),
+          categories: [
+            Category(title: 'T-Shirts', path: AppRoutes.womenstshirts),
+            Category(title: 'Shirts', path: AppRoutes.womensshirtspants),
+            Category(title: 'Pants', path: AppRoutes.womensjeans),
+            Category(title: 'Jackets', path: AppRoutes.womensjackets),
           ],
         ),
         Category(
           title: 'Boys',
           path: "",
-          subCategories: [
-            SubCategory(title: 'T-Shirts', path: AppRoutes.boystshirts),
-            SubCategory(title: 'Shirts', path: AppRoutes.boysshirtspants),
-            SubCategory(title: 'Pants', path: AppRoutes.boysjeans),
-            SubCategory(title: 'Jackets', path: AppRoutes.boysjackets),
+          categories: [
+            Category(title: 'T-Shirts', path: AppRoutes.boystshirts),
+            Category(title: 'Shirts', path: AppRoutes.boysshirtspants),
+            Category(title: 'Pants', path: AppRoutes.boysjeans),
+            Category(title: 'Jackets', path: AppRoutes.boysjackets),
           ],
         ),
         Category(
           title: 'Girls',
           path: "",
-          subCategories: [
-            SubCategory(title: 'T-Shirts', path: AppRoutes.girlstshirts),
-            SubCategory(title: 'Shirts', path: AppRoutes.girlsshirtspants),
-            SubCategory(title: 'Pants', path: AppRoutes.girlsjeans),
-            SubCategory(title: 'Jackets', path: AppRoutes.girlsjackets),
+          categories: [
+            Category(title: 'T-Shirts', path: AppRoutes.girlstshirts),
+            Category(title: 'Shirts', path: AppRoutes.girlsshirtspants),
+            Category(title: 'Pants', path: AppRoutes.girlsjeans),
+            Category(title: 'Jackets', path: AppRoutes.girlsjackets),
           ],
         ),
       ],
@@ -85,11 +86,11 @@ class MainController extends GetxController {
         return PlutoMenuItem(
           title: action.title,
           children: action.categories!.map((category) {
-            if (category.subCategories != null &&
-                category.subCategories!.isNotEmpty) {
+            if (category.categories != null &&
+                category.categories!.isNotEmpty) {
               return PlutoMenuItem(
                 title: category.title,
-                children: category.subCategories!.map((subCategory) {
+                children: category.categories!.map((subCategory) {
                   return PlutoMenuItem(
                     title: subCategory.title,
                     onTap: () {

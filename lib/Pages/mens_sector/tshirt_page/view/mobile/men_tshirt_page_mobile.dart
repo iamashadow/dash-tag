@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -11,25 +12,20 @@ import '../../../../mission_vission_page/component/desktop/product_page_header_i
 import '../../component/mobile/product_image_showing_listviewbuilder_mobile.dart';
 
 class MenTshirtPageMobile extends StatelessWidget {
-
-  const MenTshirtPageMobile({super.key});
-
+  MenTshirtPageMobile({super.key});
+  final MainController controller = Get.find<MainController>();
   @override
   Widget build(BuildContext context) {
-
-    final MainController controller = Get.find<MainController>();
-
     return Scaffold(
+      drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
           CustomAppbar(controller: controller),
-
           ProductsPageHeaderImage(
             title: "T-shirt",
             fontSize: 10.sw,
           ),
           const SizedBox(height: 50),
-
           Expanded(
             child: ProductImageShowingListviewbuilderMobile(
               items: List<int>.generate(
@@ -40,7 +36,6 @@ class MenTshirtPageMobile extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 250),
-
           const Footer(),
         ],
       ),

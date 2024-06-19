@@ -1,3 +1,5 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_expantion_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -15,16 +17,15 @@ import '../../component/mobile/header_section_mobile.dart';
 import '../../component/mobile/our_product_section_mobile.dart';
 import '../../component/tablet/about_us_tablet.dart';
 
-
 class HomePageMobile extends StatelessWidget {
-   HomePageMobile({super.key});
-
+  HomePageMobile({super.key});
 
   final MainController controller = Get.find();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(controller: controller),
       body: ListView(children: [
         //header appbar
         CustomAppbar(controller: controller),
@@ -43,7 +44,7 @@ class HomePageMobile extends StatelessWidget {
 
         const OurProductSectionMobile(),
 
-        OurCompliencesSection(
+        const OurCompliencesSection(
           sectionHeight: 50.0,
           sectionPadding: 0.02,
           titleFontSize: 5.0,

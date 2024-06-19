@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -12,20 +13,16 @@ import '../../component/desktop/mission_vission_image_and_description.dart';
 import '../../component/desktop/product_page_header_image.dart';
 import '../../component/mobile/mission_vission_image_description_mobile.dart';
 
-
 class MissionVissionMobile extends StatelessWidget {
-  const MissionVissionMobile({super.key});
-
+  MissionVissionMobile({super.key});
+  final MainController controller = Get.find();
   @override
   Widget build(BuildContext context) {
-
-    final MainController controller = Get.find();
-
     return Scaffold(
       backgroundColor: ColorManager.webBackgroundColor,
+      drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
-
           CustomAppbar(controller: controller),
 
           // Mission Vission Header Image

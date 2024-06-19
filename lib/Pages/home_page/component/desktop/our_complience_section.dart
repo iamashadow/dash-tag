@@ -121,19 +121,19 @@ import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 class OurCompliencesSection extends StatelessWidget {
-  double? sectionHeight;
-  double? sectionPadding;
-  double? titleFontSize;
-  double? titleSpacing;
-  double? carouselHeight;
-  double? imageWidth;
-  double? imageHeight;
-  double? buttonPadding;
-  double? buttonIconSize;
-  double? viewPortFraction;
+  final double? sectionHeight;
+  final double? sectionPadding;
+  final double? titleFontSize;
+  final double? titleSpacing;
+  final double? carouselHeight;
+  final double? imageWidth;
+  final double? imageHeight;
+  final double? buttonPadding;
+  final double? buttonIconSize;
+  final double? viewPortFraction;
 
-  OurCompliencesSection({
-    Key? key,
+  const OurCompliencesSection({
+    super.key,
     this.sectionHeight,
     this.sectionPadding,
     this.titleFontSize,
@@ -144,7 +144,7 @@ class OurCompliencesSection extends StatelessWidget {
     this.buttonPadding,
     this.buttonIconSize,
     this.viewPortFraction,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -163,11 +163,11 @@ class OurCompliencesSection extends StatelessWidget {
             Text(
               'Our Compliant',
               style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-                fontWeight: FontWeight.bold,
-                decoration: TextDecoration.underline,
-                color: ColorManager.blueColor,
-                fontSize: titleFontSize!.sw,
-              ),
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.underline,
+                    color: ColorManager.blueColor,
+                    fontSize: titleFontSize!.sw,
+                  ),
             ),
             const SizedBox(
               height: 40,
@@ -201,12 +201,12 @@ class OurCompliencesSection extends StatelessWidget {
                     child: CarouselSlider.builder(
                       itemCount: AllListsManager.complientsList.length,
                       itemBuilder: (BuildContext context, int itemIndex,
-                          int pageViewIndex) =>
+                              int pageViewIndex) =>
                           Image.asset(
-                            AllListsManager.complientsList[itemIndex],
-                            width: imageWidth,
-                            height: imageHeight,
-                          ),
+                        AllListsManager.complientsList[itemIndex],
+                        width: imageWidth,
+                        height: imageHeight,
+                      ),
                       options: CarouselOptions(
                         height: carouselHeight,
                         viewportFraction: viewPortFraction!,
@@ -249,5 +249,3 @@ class OurCompliencesSection extends StatelessWidget {
     );
   }
 }
-
-

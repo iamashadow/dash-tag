@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
@@ -20,15 +21,12 @@ import '../../../footer/footer.dart';
 import '../../../mission_vission_page/component/desktop/product_page_header_image.dart';
 
 class ServicesPageMobile extends StatelessWidget {
-  const ServicesPageMobile({super.key});
-
+  ServicesPageMobile({super.key});
+  final MainController controller = Get.find();
   @override
   Widget build(BuildContext context) {
-
-
-    final MainController controller = Get.find();
-
     return Scaffold(
+      drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
           CustomAppbar(controller: controller),
@@ -92,7 +90,6 @@ class ServicesPageMobile extends StatelessWidget {
                 //   ],
                 // ),
 
-
                 //Merchandise Contents
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -114,7 +111,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 2.sh),
-
                     Card(
                       elevation: 5,
                       child: Container(
@@ -128,7 +124,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 5.sh),
-
                     CustomText(
                       title: MerchandiseSourchingPageText.merchandiseBio,
                       fontSize: 3.5.sw,
@@ -188,11 +183,10 @@ class ServicesPageMobile extends StatelessWidget {
                     SizedBox(height: 2.sh), //
 
                     GridView.builder(
-                        itemCount:
-                        AllListsManager.qualityPointsList.length,
+                        itemCount: AllListsManager.qualityPointsList.length,
                         shrinkWrap: true,
                         gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
+                            const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 3,
                           crossAxisSpacing: 10,
                           mainAxisSpacing: 10,
@@ -206,7 +200,8 @@ class ServicesPageMobile extends StatelessWidget {
                               padding: const EdgeInsets.all(10.0),
                               child: Center(
                                 child: CustomText(
-                                  title: AllListsManager.qualityPointsList[index],
+                                  title:
+                                      AllListsManager.qualityPointsList[index],
                                   fontColor: ColorManager.whiteColor,
                                   textAlign: TextAlign.center,
                                   fontWeight: FontWeight.bold,
@@ -219,8 +214,7 @@ class ServicesPageMobile extends StatelessWidget {
                     SizedBox(height: 2.sh),
 
                     CustomText(
-                      title:
-                      QualityAssurancePageText.QualityAssuranceBio3,
+                      title: QualityAssurancePageText.QualityAssuranceBio3,
                       fontSize: 3.5.sw,
                     ),
                   ],
@@ -238,7 +232,9 @@ class ServicesPageMobile extends StatelessWidget {
                           fontWeight: FontWeight.bold,
                           fontSize: 5.sw,
                         ),
-                        SizedBox(width: 2.sw,),
+                        SizedBox(
+                          width: 2.sw,
+                        ),
                         const Icon(
                           FontAwesomeIcons.certificate,
                           color: ColorManager.blueColor,
@@ -246,7 +242,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 2.sh),
-
                     Card(
                       elevation: 5,
                       child: Container(
@@ -262,7 +257,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 5.sh),
-
                     CustomText(
                       title: BrandManagementPageText.brandManagementBio,
                       fontSize: 3.5.sw,
@@ -270,7 +264,6 @@ class ServicesPageMobile extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 5.sh),
-
 
                 //Testing Ande Analysis
                 Column(
@@ -293,7 +286,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 2.sh),
-
                     Card(
                       elevation: 5,
                       child: Container(
@@ -304,19 +296,17 @@ class ServicesPageMobile extends StatelessWidget {
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image:
-                            AssetImage(AllImages.testingAndAnalysisImage),
+                                AssetImage(AllImages.testingAndAnalysisImage),
                           ),
                         ),
                       ),
                     ),
                     SizedBox(height: 5.sh),
-
                     CustomText(
                       title: TestingAndAnalysisPageText.testingAndAnalysisBio1,
                       fontSize: 3.5.sw,
                     ),
                     SizedBox(height: 2.sh),
-
                     CustomText(
                       title: TestingAndAnalysisPageText.testingAndAnalysisBio2,
                       fontSize: 3.5.sw,
@@ -346,7 +336,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 2.sh),
-
                     Card(
                       elevation: 5,
                       child: Container(
@@ -357,15 +346,15 @@ class ServicesPageMobile extends StatelessWidget {
                           image: DecorationImage(
                             fit: BoxFit.cover,
                             image:
-                            AssetImage(AllImages.thirdPartyInspectionImage),
+                                AssetImage(AllImages.thirdPartyInspectionImage),
                           ),
                         ),
                       ),
                     ),
                     SizedBox(height: 5.sh),
-
                     CustomText(
-                      title: ThirdPartyInispectionPageText.thirdPartyInispactionBio,
+                      title: ThirdPartyInispectionPageText
+                          .thirdPartyInispactionBio,
                       fontSize: 3.5.sw,
                     ),
                   ],
@@ -393,7 +382,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 2.sh),
-
                     Card(
                       elevation: 5,
                       child: Container(
@@ -409,7 +397,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 5.sh),
-
                     CustomText(
                       title: SocialCompliencePageText.socialComplienceBio,
                       fontSize: 3.5.sw,
@@ -439,7 +426,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 2.sh),
-
                     Card(
                       elevation: 5,
                       child: Container(
@@ -455,7 +441,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 5.sh),
-
                     CustomText(
                       title: LogisticsPageText.logistisPageBio,
                       fontSize: 3.5.sw,
@@ -485,7 +470,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ],
                     ),
                     SizedBox(height: 2.sh),
-
                     Card(
                       elevation: 5,
                       child: Container(
@@ -501,7 +485,6 @@ class ServicesPageMobile extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 5.sh),
-
                     CustomText(
                       title: DesigningPageText.desiginingPageBio,
                       fontSize: 3.5.sw,
@@ -517,7 +500,5 @@ class ServicesPageMobile extends StatelessWidget {
         ],
       ),
     );
-
-
   }
 }

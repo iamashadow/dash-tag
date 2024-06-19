@@ -19,19 +19,22 @@ class AppBarAction {
 class Category {
   final String title;
   final String path;
-  final List<SubCategory>? subCategories;
+  final List<Category>? categories;
 
-  Category({required this.title, this.subCategories, required this.path});
+  Category({required this.title, this.categories, required this.path});
 
   factory Category.fromJson(Map<String, dynamic> json) {
     return Category(
       title: json['title'],
       path: json['path'],
-      subCategories: json['subCat'] != null
-          ? (json['subCat'] as List)
-              .map((i) => SubCategory.fromJson(i))
-              .toList()
+      categories: json['subCat'] != null
+          ? (json['subCat'] as List).map((i) => Category.fromJson(i)).toList()
           : null,
+      // json['subCat'] != null
+      //     ? (json['subCat'] as List)
+      //         .map((i) => SubCategory.fromJson(i))
+      //         .toList()
+      //     : null,
     );
   }
 }

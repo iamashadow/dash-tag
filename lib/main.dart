@@ -41,8 +41,6 @@ class MyApp extends StatelessWidget {
         }),
         getPages: AppRoutes.pages,
         initialRoute: AppRoutes.home,
-
-        // home: ContactUsRoot(),
       ),
     );
   }
