@@ -11,7 +11,7 @@ class OurProductsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40.sh,
+      height: 55.sh,
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
@@ -20,7 +20,9 @@ class OurProductsSection extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                     decoration: TextDecoration.underline,
                   )),
-          SizedBox(height: 5.sh,),
+          SizedBox(
+            height: 5.sh,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [

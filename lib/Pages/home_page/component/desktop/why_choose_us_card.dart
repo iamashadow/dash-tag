@@ -127,14 +127,16 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
   void initState() {
     super.initState();
     // Initialize hover state list with false values
-    isHovering = List.generate(AllListsManager.whyChooseUsList.length, (index) => false);
+    isHovering =
+        List.generate(AllListsManager.whyChooseUsList.length, (index) => false);
   }
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
       physics: const ScrollPhysics(),
-      padding: EdgeInsets.symmetric(horizontal: widget.paddingAroundCard ?? 0.0),
+      padding:
+          EdgeInsets.symmetric(horizontal: widget.paddingAroundCard ?? 0.0),
       shrinkWrap: true,
       itemCount: AllListsManager.whyChooseUsList.length,
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -147,51 +149,45 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
         return MouseRegion(
           onEnter: (val) => setState(() => isHovering[index] = true),
           onExit: (val) => setState(() => isHovering[index] = false),
-          child: Expanded(
-            child: AnimatedContainer(
-              width: widget.cardWidth ?? 200,
-              height: widget.cardHeight ?? 200,
-              duration: const Duration(milliseconds: 240),
-              padding: const EdgeInsets.all(32),
-              decoration: BoxDecoration(
-                color: isHovering[index]
-                    ? ColorManager.whiteColor
-                    : ColorManager.whiteColor.withOpacity(0),
-                boxShadow: [
-                  BoxShadow(
-                    color: isHovering[index]
-                        ? ColorManager.textPrimary.withOpacity(0.15)
-                        : ColorManager.textPrimary.withOpacity(0),
-                    offset: const Offset(0, 6),
-                    blurRadius: 10,
-                  ),
-                ],
-              ),
-              child: Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Icon(
-                      FontAwesomeIcons.gift,
-                      color: ColorManager.greenColor,
-                    ),
-                    const SizedBox(height: 32),
-
-                    CustomText(
-                      title: AllListsManager.whyChooseUsList[index]["title"],
-                      fontWeight: FontWeight.bold,
-                      fontSize: widget.titleFontSize,
-                    ),
-                    SizedBox(height: 2.sh),
-
-                    CustomText(
-                      title: AllListsManager.whyChooseUsList[index]["description"],
-                      fontWeight: FontWeight.w500,
-                      fontSize: widget.subTitleFontSize,
-                    ),
-                  ],
+          child: AnimatedContainer(
+            width: widget.cardWidth ?? 200,
+            height: widget.cardHeight ?? 200,
+            duration: const Duration(milliseconds: 240),
+            padding: const EdgeInsets.all(32),
+            decoration: BoxDecoration(
+              color: isHovering[index]
+                  ? ColorManager.whiteColor
+                  : ColorManager.whiteColor.withOpacity(0),
+              boxShadow: [
+                BoxShadow(
+                  color: isHovering[index]
+                      ? ColorManager.textPrimary.withOpacity(0.15)
+                      : ColorManager.textPrimary.withOpacity(0),
+                  offset: const Offset(0, 6),
+                  blurRadius: 10,
                 ),
-              ),
+              ],
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(
+                  FontAwesomeIcons.gift,
+                  color: ColorManager.greenColor,
+                ),
+                const SizedBox(height: 32),
+                CustomText(
+                  title: AllListsManager.whyChooseUsList[index]["title"],
+                  fontWeight: FontWeight.bold,
+                  fontSize: widget.titleFontSize,
+                ),
+                SizedBox(height: 2.sh),
+                CustomText(
+                  title: AllListsManager.whyChooseUsList[index]["description"],
+                  fontWeight: FontWeight.w500,
+                  fontSize: widget.subTitleFontSize,
+                ),
+              ],
             ),
           ),
         );

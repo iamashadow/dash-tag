@@ -2,9 +2,7 @@ import 'package:dash_and_tag_web_site/Universal_Widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
-
 import '../../../../../Universal_Widgets/custom_appbar.dart';
-import '../../../../../Universal_Widgets/product_image_showing_list_view_builder.dart';
 import '../../../../../Utils/All_Lists/all_lists.dart';
 import '../../../../../controller/main_controller.dart';
 import '../../../../footer/footer.dart';

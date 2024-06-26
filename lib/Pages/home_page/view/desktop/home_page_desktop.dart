@@ -56,9 +56,9 @@ class HomePageDesktop extends StatelessWidget {
 
         WhyChooseUsSection(
           cardNumber: 4,
-          cardHeight: 60.sh,
+          cardHeight: 70.sh,
           cardWidth: 60.sh,
-          paddingonCard: 15.sw,
+          paddingonCard: 12.sw,
           // titleSize: 4.sw,
           // subtitleSize: 3.sw,
         ),

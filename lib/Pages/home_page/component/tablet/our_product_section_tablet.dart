@@ -18,11 +18,12 @@ class OurProductSectionTablet extends StatelessWidget {
         children: [
           Text('Our Products',
               style: Theme.of(context).textTheme.headlineLarge!.copyWith(
-                fontWeight: FontWeight.bold,
-                decoration: TextDecoration.underline,
-              )),
-          SizedBox(height: 5.sh,),
-
+                    fontWeight: FontWeight.bold,
+                    decoration: TextDecoration.underline,
+                  )),
+          SizedBox(
+            height: 5.sh,
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -38,8 +39,8 @@ class OurProductSectionTablet extends StatelessWidget {
                   Card(
                     elevation: 5,
                     child: Container(
-                      width: 350,
-                      height: 500,
+                      width: 200,
+                      height: 250,
                       padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -57,7 +58,7 @@ class OurProductSectionTablet extends StatelessWidget {
                             autoPlay: true,
                             autoPlayInterval: const Duration(seconds: 3),
                             autoPlayAnimationDuration:
-                            const Duration(milliseconds: 800),
+                                const Duration(milliseconds: 800),
                             autoPlayCurve: Curves.fastOutSlowIn,
                             enlargeCenterPage: true,
                             scrollDirection: Axis.horizontal,
@@ -78,8 +79,8 @@ class OurProductSectionTablet extends StatelessWidget {
                   Card(
                     elevation: 5,
                     child: Container(
-                      width: 350,
-                      height: 500,
+                      width: 200,
+                      height: 250,
                       padding: const EdgeInsets.all(5),
                       decoration: BoxDecoration(
                         color: Colors.white,
@@ -97,7 +98,7 @@ class OurProductSectionTablet extends StatelessWidget {
                             autoPlay: true,
                             autoPlayInterval: const Duration(seconds: 3),
                             autoPlayAnimationDuration:
-                            const Duration(milliseconds: 800),
+                                const Duration(milliseconds: 800),
                             autoPlayCurve: Curves.fastOutSlowIn,
                             enlargeCenterPage: true,
                             scrollDirection: Axis.horizontal,
@@ -106,51 +107,48 @@ class OurProductSectionTablet extends StatelessWidget {
                   ),
                 ],
               ),
-
+              Column(
+                children: [
+                  Text('Kids',
+                      style: GoogleFonts.rajdhani().copyWith(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30,
+                        color: Colors.redAccent,
+                      )),
+                  const SizedBox(height: 20),
+                  Card(
+                    elevation: 5,
+                    child: Container(
+                      padding: const EdgeInsets.all(5),
+                      width: 200,
+                      height: 250,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(color: Colors.black),
+                      ),
+                      child: CarouselSlider(
+                          items: AllListsManager.kidsClothList
+                              .map((e) => Image.asset(e, fit: BoxFit.cover))
+                              .toList(),
+                          options: CarouselOptions(
+                            aspectRatio: 16 / 9,
+                            viewportFraction: 1,
+                            enableInfiniteScroll: true,
+                            reverse: false,
+                            autoPlay: true,
+                            autoPlayInterval: const Duration(seconds: 3),
+                            autoPlayAnimationDuration:
+                                const Duration(milliseconds: 800),
+                            autoPlayCurve: Curves.fastOutSlowIn,
+                            enlargeCenterPage: true,
+                            scrollDirection: Axis.horizontal,
+                          )),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
-          SizedBox(height: 5.sh,),
-
-          Column(
-            children: [
-              Text('Kids',
-                  style: GoogleFonts.rajdhani().copyWith(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 30,
-                    color: Colors.redAccent,
-                  )),
-              const SizedBox(height: 20),
-              Card(
-                elevation: 5,
-                child: Container(
-                  padding: const EdgeInsets.all(5),
-                  width: double.maxFinite,
-                  height: 500,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    border: Border.all(color: Colors.black),
-                  ),
-                  child: CarouselSlider(
-                      items: AllListsManager.kidsClothList
-                          .map((e) => Image.asset(e, fit: BoxFit.cover))
-                          .toList(),
-                      options: CarouselOptions(
-                        aspectRatio: 16 / 9,
-                        viewportFraction: 1,
-                        enableInfiniteScroll: true,
-                        reverse: false,
-                        autoPlay: true,
-                        autoPlayInterval: const Duration(seconds: 3),
-                        autoPlayAnimationDuration:
-                        const Duration(milliseconds: 800),
-                        autoPlayCurve: Curves.fastOutSlowIn,
-                        enlargeCenterPage: true,
-                        scrollDirection: Axis.horizontal,
-                      )),
-                ),
-              ),
-            ],
-          )
         ],
       ),
     );

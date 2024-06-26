@@ -11,115 +11,65 @@ class FooterSiteMap extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // 'Site Map'.poppins(
-          //   fontWeight: FontWeight.bold,
-          //   color: Colors.white,
-          //   fontSize: 18 + 6 * pad,
-          // ),
-          // SizedBox(height: 18 + 6 * pad),
-          // TextButton(
-          //   onPressed: () {},
-          //   child: 'Home'.poppins(
-          //     color: Colors.white,
-          //     fontWeight: FontWeight.w600,
-          //     fontSize: 14 + 2 * pad,
-          //     height: 1.5,
-          //     letterSpacing: 0.5,
-          //   ),
-          // ),
-          // SizedBox(height: 10 + 6 * pad),
-          // TextButton(
-          //   onPressed: () {},
-          //   child: 'Pages'.poppins(
-          //     color: Colors.white,
-          //     fontWeight: FontWeight.w600,
-          //     fontSize: 14 + 2 * pad,
-          //     height: 1.5,
-          //     letterSpacing: 0.5,
-          //   ),
-          // ),
-          // SizedBox(height: 10 + 6 * pad),
-          // TextButton(
-          //   onPressed: () {},
-          //   child: 'Projects'.poppins(
-          //     color: Colors.white,
-          //     fontWeight: FontWeight.w600,
-          //     fontSize: 14 + 2 * pad,
-          //     height: 1.5,
-          //     letterSpacing: 0.5,
-          //   ),
-          // ),
-          // SizedBox(height: 10 + 6 * pad),
-          // TextButton(
-          //   onPressed: () {},
-          //   child: 'Shop'.poppins(
-          //     color: Colors.white,
-          //     fontWeight: FontWeight.w600,
-          //     fontSize: 14 + 2 * pad,
-          //     height: 1.5,
-          //     letterSpacing: 0.5,
-          //   ),
-          // ),
-
-          Text(
+          const Text(
             'Site Map',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
-              fontSize: 18 + 6 * 0.5,
+              fontSize: 18,
             ),
           ),
-          SizedBox(height: 18 + 6 * 0.5),
+          const SizedBox(height: 18),
           TextButton(
             onPressed: () {},
-            child: Text(
+            child: const Text(
               'Home',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
-                fontSize: 14 + 2 * 0.5,
+                fontSize: 14,
                 height: 1.5,
                 letterSpacing: 0.5,
               ),
             ),
           ),
-          SizedBox(height: 10 + 6 * 0.5),
+          const SizedBox(height: 10),
           TextButton(
             onPressed: () {},
-            child: Text(
+            child: const Text(
               'Pages',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
-                fontSize: 14 + 2 * 0.5,
+                fontSize: 14,
                 height: 1.5,
                 letterSpacing: 0.5,
               ),
             ),
           ),
-          SizedBox(height: 10 + 6 * 0.5),
+          const SizedBox(height: 10),
           TextButton(
             onPressed: () {},
-            child: Text(
+            child: const Text(
               'Projects',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
-                fontSize: 14 + 2 * 0.5,
+                fontSize: 14,
                 height: 1.5,
                 letterSpacing: 0.5,
               ),
             ),
           ),
-          SizedBox(height: 10 + 6 * 0.5),
+          const SizedBox(height: 10),
           TextButton(
             onPressed: () {},
-            child: Text(
+            child: const Text(
               'Shop',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w600,
-                fontSize: 14 + 2 * 0.5,
+                fontSize: 14,
                 height: 1.5,
                 letterSpacing: 0.5,
               ),
