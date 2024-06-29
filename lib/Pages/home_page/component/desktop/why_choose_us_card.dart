@@ -89,14 +89,13 @@
 //   }
 // }
 
-import 'package:auto_size_text/auto_size_text.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:get/get.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Lists/all_lists.dart';
-import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:responsive_builder/responsive_builder.dart';
-
-import '../../../../universal_widgets/custom_text.dart';
 
 class HowItWorksCardItem extends StatefulWidget {
   final int? crossAxisCount;
@@ -121,42 +120,33 @@ class HowItWorksCardItem extends StatefulWidget {
 }
 
 class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
-  // Track hover state for each item
   List<bool> isHovering = [];
 
   @override
   void initState() {
     super.initState();
-    // Initialize hover state list with false values
     isHovering =
         List.generate(AllListsManager.whyChooseUsList.length, (index) => false);
   }
 
   @override
   Widget build(BuildContext context) {
-    return GridView.builder(
+    return MasonryGridView.count(
       physics: const ScrollPhysics(),
       padding:
           EdgeInsets.symmetric(horizontal: widget.paddingAroundCard ?? 0.0),
       shrinkWrap: true,
       itemCount: AllListsManager.whyChooseUsList.length,
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: widget.crossAxisCount ?? 1,
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        // childAspectRatio: (widget.cardWidth ?? 1) / (widget.cardHeight ?? 1),
-        childAspectRatio: 1.090,
-        // childAspectRatio: 1,
-      ),
+      crossAxisCount: widget.crossAxisCount ?? 2,
+      mainAxisSpacing: 10,
+      crossAxisSpacing: 10,
       itemBuilder: (context, index) {
         return MouseRegion(
           onEnter: (val) => setState(() => isHovering[index] = true),
           onExit: (val) => setState(() => isHovering[index] = false),
           child: AnimatedContainer(
-            width: widget.cardWidth ?? 200,
-            height: widget.cardHeight ?? 200,
             duration: const Duration(milliseconds: 240),
-            padding: const EdgeInsets.all(30),
+            padding: const EdgeInsets.all(15),
             decoration: BoxDecoration(
               color: isHovering[index]
                   ? ColorManager.whiteColor
@@ -174,36 +164,31 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Icon(
-                  FontAwesomeIcons.gift,
-                  color: ColorManager.greenColor,
-                ),
-                const SizedBox(height: 25),
-                AutoSizeText(
+                const Icon(FontAwesomeIcons.gift,
+                    color: ColorManager.greenColor),
+                SizedBox(
+                    height: getValueForScreenType<double>(
+                        context: context, mobile: 10, tablet: 15, desktop: 20)),
+                Text(
                   AllListsManager.whyChooseUsList[index]["title"],
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    fontSize: widget.titleFontSize,
+                    fontSize: getValueForScreenType<double>(
+                        context: context, mobile: 15, tablet: 25, desktop: 30),
                   ),
                   maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  maxFontSize: widget.titleFontSize!,
-                  minFontSize: widget.titleFontSize!-(widget.titleFontSize!-1),
-                  stepGranularity: 1,
                 ),
-                SizedBox(height: 25),
-                AutoSizeText(
+                SizedBox(
+                    height: getValueForScreenType<double>(
+                        context: context, mobile: 10, tablet: 15, desktop: 20)),
+                Text(
                   AllListsManager.whyChooseUsList[index]["description"],
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
-                    fontSize: widget.subTitleFontSize,
+                    fontSize: getValueForScreenType<double>(
+                        context: context, mobile: 10, tablet: 15, desktop: 20),
                   ),
                   maxLines: 3,
-
-                  overflow: TextOverflow.ellipsis,
-                  maxFontSize: widget.subTitleFontSize!,
-                  minFontSize: widget.subTitleFontSize!-(widget.subTitleFontSize!-1),
-                  stepGranularity: 1,
                 ),
               ],
             ),

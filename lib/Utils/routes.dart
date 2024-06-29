@@ -1,10 +1,10 @@
 import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_us_root.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/men_jeans/mens_jeans.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.dart';
+import 'package:dash_and_tag_web_site/Pages/profile_page/profile_page.dart';
 import 'package:get/get.dart';
 import '../Pages/dash_and_tag_resources/dash_and_tag_resouces_root.dart';
 import '../Pages/home_page/home_page_root.dart';
-import '../Pages/home_page/view/desktop/home_page_desktop.dart';
 import '../Pages/mens_sector/tshirt_page/mens_tshirt_root.dart';
 import '../Pages/mission_vission_page/mission_vission_root.dart';
 import '../Pages/our_clients_page/our_clients_root.dart';
@@ -75,5 +75,6 @@ class AppRoutes {
     GetPage(name: contact, page: () => ContactUsRoot()),
     GetPage(name: clients, page: () => OurClientsRoot()),
     GetPage(name: services, page: () => ServicesPageRoot()),
+    GetPage(name: profile, page: () => ProfilePage()),
   ];
 }
