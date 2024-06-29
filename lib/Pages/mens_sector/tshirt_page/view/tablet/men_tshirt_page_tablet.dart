@@ -29,8 +29,8 @@ class MenTshirtPageTablet extends StatelessWidget {
 
           ProductImageShowingListViewBuilder(
             items: List<int>.generate(
-                AllListsManager.kidsClothList.length, (index) => index),
-            itemsList: List<String>.from(AllListsManager.kidsClothList),
+                AllListsManager.mensJeansList.length, (index) => index),
+            itemsList: List<String>.from(AllListsManager.mensJeansList),
             productContainerHeight: 30.sh,
             productContainerWidth: 25.sw,
           ),

@@ -23,8 +23,8 @@ class ShortsAndCargoPage extends StatelessWidget {
           const SizedBox(height: 50),
           ProductImageShowingListViewBuilder(
             items: List<int>.generate(
-                AllListsManager.womensClothList.length, (index) => index),
-            itemsList: List<String>.from(AllListsManager.womensClothList),
+                AllListsManager.mensJeansList.length, (index) => index),
+            itemsList: List<String>.from(AllListsManager.mensJeansList),
           ),
           const SizedBox(height: 250),
           const Footer(),
