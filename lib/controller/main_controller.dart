@@ -24,7 +24,7 @@ class MainController extends GetxController {
         Category(title: 'Mission & Vision', path: AppRoutes.missionVision),
       ],
     ),
-    AppBarAction(title: 'Profile', path: ""),
+    AppBarAction(title: 'Profile', path: AppRoutes.profile),
     AppBarAction(
       title: 'Products',
       path: "",

@@ -28,21 +28,22 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  auto_size_text: ^3.0.0
   carousel_slider: ^4.2.1
   cupertino_icons: ^1.0.6
+  dropdown_button2: ^2.3.9
   flutter:
     sdk: flutter
   flutter_rating_bar: ^4.0.1
+  flutter_staggered_grid_view: ^0.7.0
   font_awesome_flutter: ^10.2.1
   get: ^4.6.6
   google_fonts: ^6.2.1
+  pluto_menu_bar: ^3.0.1
   responsive_builder: ^0.7.0
   simple_gradient_text: ^1.2.3
-  dropdown_button2: ^2.3.9
-  pluto_menu_bar: ^3.0.1
   syncfusion_flutter_pdfviewer: ^26.1.35
-  flutter_staggered_grid_view: ^0.7.0
-  auto_size_text: ^3.0.0
+  universal_html: ^2.2.4
 
 dev_dependencies:
   flutter_lints: ^4.0.0
@@ -70,6 +71,7 @@ flutter:
     - assets/images/www/
     - assets/images/services/
     - assets/images/clients_images/
+    - assets/images/profile_pdf/
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -82,13 +84,12 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-     - family: Caveat
-       fonts:
-         - asset: fonts/Caveat-VariableFont_wght.ttf
+    - family: Caveat
+      fonts:
+        - asset: fonts/Caveat-VariableFont_wght.ttf
 
-     - family: Rajdhani
-       fonts:
-         - asset: fonts/Rajdhani-Bold.ttf
-  #
+    - family: Rajdhani
+      fonts:
+        - asset: fonts/Rajdhani-Bold.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

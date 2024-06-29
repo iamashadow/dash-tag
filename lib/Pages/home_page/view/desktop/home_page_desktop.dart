@@ -26,7 +26,7 @@ class HomePageDesktop extends StatelessWidget {
 
         WhyChooseUsSection(
           cardNumber: 3,
-          cardHeight: 70.sh,
+          cardHeight: 55.sh,
           cardWidth: 60.sh,
           paddingonCard: 10.sw,
           titleSize: 45,
@@ -35,24 +35,7 @@ class HomePageDesktop extends StatelessWidget {
 
         const OurProductsSection(),
 
-        getValueForScreenType<bool>(
-            context: context,
-            mobile: true,
-          tablet: true,
-          desktop: true,
-        )
-        ? OurCompliencesSection(
-          sectionHeight: 50.0,
-          sectionPadding: 0.02,
-          titleFontSize: 5.0,
-          titleSpacing: 4.0,
-          carouselHeight: 300.0,
-          imageWidth: 300.0,
-          imageHeight: 300.0,
-          buttonPadding: 10.0,
-          buttonIconSize: 20.0,
-          viewPortFraction: 0.3,
-        ) : OurCompliencesSection(
+        const OurCompliencesSection(
           sectionHeight: 50.0,
           sectionPadding: 0.02,
           titleFontSize: 5.0,
