@@ -1,11 +1,35 @@
+import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class FooterSubscribe extends StatelessWidget {
-  const FooterSubscribe({
+  FooterSubscribe({
     super.key,
   });
+  final MainController controller = Get.find();
+
+  Future<void> launchEmail(
+      {required String receiver,
+      required String subject,
+      required String body}) async {
+    final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
+      path: receiver,
+      queryParameters: {
+        'subject': subject,
+        'body': body,
+      },
+    );
+
+    if (await canLaunchUrl(emailLaunchUri)) {
+      await launchUrl(emailLaunchUri);
+    } else {
+      print('Could not launch $emailLaunchUri');
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,6 +69,7 @@ class FooterSubscribe extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.only(left: 16.0),
                     child: TextField(
+                      controller: controller.emailController,
                       style: GoogleFonts.poppins(
                         fontSize: 16,
                         color: Colors.black,
@@ -53,7 +78,7 @@ class FooterSubscribe extends StatelessWidget {
                       ),
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: 'Type your email',
+                        hintText: 'Type your message',
                         hintStyle: GoogleFonts.poppins(
                           color: Colors.green,
                         ),
@@ -64,7 +89,11 @@ class FooterSubscribe extends StatelessWidget {
                 Material(
                   color: Colors.orange,
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () => launchEmail(
+                      receiver: 'kumar@dashandtags.com',
+                      subject: 'New client inquiry from Dash & Tag website',
+                      body: controller.emailController.text,
+                    ),
                     child: const Padding(
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       child: Center(

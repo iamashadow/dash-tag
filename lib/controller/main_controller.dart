@@ -69,6 +69,8 @@ class MainController extends GetxController {
             Category(title: 'Jackets', path: AppRoutes.girlsjackets),
           ],
         ),
+        Category(title: "Accessories", path: AppRoutes.accessoeies),
+        Category(title: "Leather", path: AppRoutes.leatherproduct),
       ],
     ),
     AppBarAction(

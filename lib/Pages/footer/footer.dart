@@ -32,16 +32,17 @@ class Footer extends StatelessWidget {
         desktop: false,
       )
           ? Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 // FooterContact(),
                 FooterInfo(),
-                SizedBox(height: getValueForScreenType<double>(
-                  context: context,
-                  mobile: 10,
-                  tablet: 0,
-                  desktop: 0,
-                ),
+                SizedBox(
+                  height: getValueForScreenType<double>(
+                    context: context,
+                    mobile: 10,
+                    tablet: 0,
+                    desktop: 0,
+                  ),
                 ),
 
                 Row(
@@ -53,95 +54,87 @@ class Footer extends StatelessWidget {
                 ),
                 SizedBox(
                   height: getValueForScreenType<double>(
-                  context: context,
-                  mobile: 40,
-                  tablet: 0,
-                  desktop: 0,
-                ),
+                    context: context,
+                    mobile: 40,
+                    tablet: 0,
+                    desktop: 0,
+                  ),
                 ),
 
                 FooterSubscribe(),
                 // FooterBottom(),
               ],
             )
-
           : getValueForScreenType<bool>(
-        context: context,
-        mobile: false,
-        tablet: true,
-        desktop: false,
-      )
-         ? Stack(
-              clipBehavior: Clip.none,
-              children: [
-                FooterContact(),
-                Column(
-                  mainAxisAlignment: MainAxisAlignment.end,
+              context: context,
+              mobile: false,
+              tablet: true,
+              desktop: false,
+            )
+              ? Stack(
+                  clipBehavior: Clip.none,
                   children: [
-                    SizedBox(height: 140),
-                    FooterInfo(),
-                    SizedBox(height: getValueForScreenType<double>(
-                      context: context,
-                      mobile: 10,
-                      tablet: 60,
-                      desktop: 60,
-                    )),
-
-                    Row(
+                    FooterContact(),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        FooterSiteMap(),
-                        FooterCompany(),
+                        SizedBox(height: 140),
+                        FooterInfo(),
+                        SizedBox(
+                            height: getValueForScreenType<double>(
+                          context: context,
+                          mobile: 10,
+                          tablet: 60,
+                          desktop: 60,
+                        )),
+                        Row(
+                          children: [
+                            FooterSiteMap(),
+                            FooterCompany(),
+                          ],
+                        ),
+                        SizedBox(height: 40),
+                        FooterSubscribe(),
+                        SizedBox(height: 40),
+                        FooterBottom(),
                       ],
                     ),
-                    SizedBox(height: 40),
+                  ],
+                )
+              : Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    FooterContact(),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        SizedBox(height: 140),
 
+                        // SizedBox(height: getValueForScreenType<double>(
+                        //   context: context,
+                        //   mobile: 10,
+                        //   tablet: 60,
+                        //   desktop: 60,
+                        // )),
 
-                    FooterSubscribe(),
-                    SizedBox(height: 40),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            FooterInfo(),
+                            FooterSiteMap(),
+                            FooterCompany()
+                          ],
+                        ),
+                        SizedBox(height: 40),
 
+                        FooterSubscribe(),
+                        SizedBox(height: 40),
 
-                    FooterBottom(),
+                        FooterBottom(),
+                      ],
+                    ),
                   ],
                 ),
-              ],
-            )
-          : const Stack(
-        clipBehavior: Clip.none,
-        children: [
-          FooterContact(),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              SizedBox(height: 140),
-
-              // SizedBox(height: getValueForScreenType<double>(
-              //   context: context,
-              //   mobile: 10,
-              //   tablet: 60,
-              //   desktop: 60,
-              // )),
-
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  FooterInfo(),
-                  FooterSiteMap(),
-                  FooterCompany()
-                ],
-              ),
-              SizedBox(height: 40),
-
-
-              FooterSubscribe(),
-              SizedBox(height: 40),
-
-
-              FooterBottom(),
-            ],
-          ),
-        ],
-      )
-      ,
     );
   }
 }

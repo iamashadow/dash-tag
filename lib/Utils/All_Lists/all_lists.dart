@@ -4,8 +4,6 @@ import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_tex
 import '../All_Texts/Quality_Assurance_PageText/quality_assurance_page_text.dart';
 
 class AllListsManager {
-
-
   static List complientsList = [
     "assets/images/complaients/1.jpeg",
     "assets/images/complaients/2.png",
@@ -60,7 +58,6 @@ class AllListsManager {
           HomePageText.whyChooseUsComprehensiveInfrastructureDescription,
     },
   ];
-
 
   //Products List
 
@@ -146,65 +143,65 @@ class AllListsManager {
   //Boys\Polo Shirts
   static List boysPoloShirtList = [];
 
-  //Boys\Shirts & Pants
+  //Boys\shirt_and_pant
   static List boysShirtsAndPantsList = [
-    "assets/images/products/Boys/Shirts & Pants/1.png",
-    "assets/images/products/Boys/Shirts & Pants/2.png",
-    "assets/images/products/Boys/Shirts & Pants/3.png",
-    "assets/images/products/Boys/Shirts & Pants/4.png",
-    "assets/images/products/Boys/Shirts & Pants/5.png",
-    "assets/images/products/Boys/Shirts & Pants/6.png",
-    "assets/images/products/Boys/Shirts & Pants/7.png",
-    "assets/images/products/Boys/Shirts & Pants/8.png",
-    "assets/images/products/Boys/Shirts & Pants/9.png",
-    "assets/images/products/Boys/Shirts & Pants/10.png",
-    "assets/images/products/Boys/Shirts & Pants/11.png",
-    "assets/images/products/Boys/Shirts & Pants/12.png",
-    "assets/images/products/Boys/Shirts & Pants/13.png",
-    "assets/images/products/Boys/Shirts & Pants/14.png",
-    "assets/images/products/Boys/Shirts & Pants/15.png",
-    "assets/images/products/Boys/Shirts & Pants/16.png",
-    "assets/images/products/Boys/Shirts & Pants/17.png",
-    "assets/images/products/Boys/Shirts & Pants/18.png",
-    "assets/images/products/Boys/Shirts & Pants/19.png",
-    "assets/images/products/Boys/Shirts & Pants/20.png",
-    "assets/images/products/Boys/Shirts & Pants/21.png",
-    "assets/images/products/Boys/Shirts & Pants/22.png",
-    "assets/images/products/Boys/Shirts & Pants/23.png",
-    "assets/images/products/Boys/Shirts & Pants/24.png",
-    "assets/images/products/Boys/Shirts & Pants/25.png",
-    "assets/images/products/Boys/Shirts & Pants/26.png",
-    "assets/images/products/Boys/Shirts & Pants/27.png",
-    "assets/images/products/Boys/Shirts & Pants/28.png",
-    "assets/images/products/Boys/Shirts & Pants/29.png",
-    "assets/images/products/Boys/Shirts & Pants/30.png",
-    "assets/images/products/Boys/Shirts & Pants/31.png",
-    "assets/images/products/Boys/Shirts & Pants/32.png",
-    "assets/images/products/Boys/Shirts & Pants/33.png",
-    "assets/images/products/Boys/Shirts & Pants/34.png",
-    "assets/images/products/Boys/Shirts & Pants/35.png",
-    "assets/images/products/Boys/Shirts & Pants/36.png",
-    "assets/images/products/Boys/Shirts & Pants/37.png",
-    "assets/images/products/Boys/Shirts & Pants/38.png",
-    "assets/images/products/Boys/Shirts & Pants/39.png",
+    "assets/images/products/Boys/shirt_and_pant/1.png",
+    "assets/images/products/Boys/shirt_and_pant/2.png",
+    "assets/images/products/Boys/shirt_and_pant/3.png",
+    "assets/images/products/Boys/shirt_and_pant/4.png",
+    "assets/images/products/Boys/shirt_and_pant/5.png",
+    "assets/images/products/Boys/shirt_and_pant/6.png",
+    "assets/images/products/Boys/shirt_and_pant/7.png",
+    "assets/images/products/Boys/shirt_and_pant/8.png",
+    "assets/images/products/Boys/shirt_and_pant/9.png",
+    "assets/images/products/Boys/shirt_and_pant/10.png",
+    "assets/images/products/Boys/shirt_and_pant/11.png",
+    "assets/images/products/Boys/shirt_and_pant/12.png",
+    "assets/images/products/Boys/shirt_and_pant/13.png",
+    "assets/images/products/Boys/shirt_and_pant/14.png",
+    "assets/images/products/Boys/shirt_and_pant/15.png",
+    "assets/images/products/Boys/shirt_and_pant/16.png",
+    "assets/images/products/Boys/shirt_and_pant/17.png",
+    "assets/images/products/Boys/shirt_and_pant/18.png",
+    "assets/images/products/Boys/shirt_and_pant/19.png",
+    "assets/images/products/Boys/shirt_and_pant/20.png",
+    "assets/images/products/Boys/shirt_and_pant/21.png",
+    "assets/images/products/Boys/shirt_and_pant/22.png",
+    "assets/images/products/Boys/shirt_and_pant/23.png",
+    "assets/images/products/Boys/shirt_and_pant/24.png",
+    "assets/images/products/Boys/shirt_and_pant/25.png",
+    "assets/images/products/Boys/shirt_and_pant/26.png",
+    "assets/images/products/Boys/shirt_and_pant/27.png",
+    "assets/images/products/Boys/shirt_and_pant/28.png",
+    "assets/images/products/Boys/shirt_and_pant/29.png",
+    "assets/images/products/Boys/shirt_and_pant/30.png",
+    "assets/images/products/Boys/shirt_and_pant/31.png",
+    "assets/images/products/Boys/shirt_and_pant/32.png",
+    "assets/images/products/Boys/shirt_and_pant/33.png",
+    "assets/images/products/Boys/shirt_and_pant/34.png",
+    "assets/images/products/Boys/shirt_and_pant/35.png",
+    "assets/images/products/Boys/shirt_and_pant/36.png",
+    "assets/images/products/Boys/shirt_and_pant/37.png",
+    "assets/images/products/Boys/shirt_and_pant/38.png",
+    "assets/images/products/Boys/shirt_and_pant/39.png",
   ];
 
-  //Boys\Shorts & Cargo
+  //Boys\short_and_cargo
   static List boysShortsAndCargoList = [
-    "assets/images/products/Boys/Shorts & Cargo/1.png",
-    "assets/images/products/Boys/Shorts & Cargo/2.png",
-    "assets/images/products/Boys/Shorts & Cargo/3.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/4.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/5.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/6.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/7.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/8.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/9.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/10.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/11.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/12.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/13.jpg",
-    "assets/images/products/Boys/Shorts & Cargo/14.jpg",
+    "assets/images/products/Boys/short_and_cargo/1.png",
+    "assets/images/products/Boys/short_and_cargo/2.png",
+    "assets/images/products/Boys/short_and_cargo/3.jpg",
+    "assets/images/products/Boys/short_and_cargo/4.jpg",
+    "assets/images/products/Boys/short_and_cargo/5.jpg",
+    "assets/images/products/Boys/short_and_cargo/6.jpg",
+    "assets/images/products/Boys/short_and_cargo/7.jpg",
+    "assets/images/products/Boys/short_and_cargo/8.jpg",
+    "assets/images/products/Boys/short_and_cargo/9.jpg",
+    "assets/images/products/Boys/short_and_cargo/10.jpg",
+    "assets/images/products/Boys/short_and_cargo/11.jpg",
+    "assets/images/products/Boys/short_and_cargo/12.jpg",
+    "assets/images/products/Boys/short_and_cargo/13.jpg",
+    "assets/images/products/Boys/short_and_cargo/14.jpg",
   ];
 
   //Boys\Sweaters
@@ -215,9 +212,6 @@ class AllListsManager {
 
   //Boys\T-Shirts
   static List boysTShirtsList = [];
-
-
-
 
   //Girls Section -> Clear
 
@@ -291,71 +285,68 @@ class AllListsManager {
     "assets/images/products/Girls/Jens/52.jpg",
     "assets/images/products/Girls/Jens/53.jpg",
     "assets/images/products/Girls/Jens/54.jpg",
-
   ];
 
   //Polo Shirts
   static List girlsPoloShirtsList = [];
 
-  //Girls\Shirts & Pants
+  //Girls\shirt_and_pant
   static List girlsShirtsAndPantsList = [
-    "assets/images/products/Girls/Shirts & Pants/1.jpg",
-    "assets/images/products/Girls/Shirts & Pants/2.png",
-    "assets/images/products/Girls/Shirts & Pants/3.png",
-    "assets/images/products/Girls/Shirts & Pants/4.png",
-    "assets/images/products/Girls/Shirts & Pants/5.png",
-    "assets/images/products/Girls/Shirts & Pants/6.png",
-    "assets/images/products/Girls/Shirts & Pants/7.png",
-    "assets/images/products/Girls/Shirts & Pants/8.png",
-    "assets/images/products/Girls/Shirts & Pants/9.png",
-    "assets/images/products/Girls/Shirts & Pants/10.png",
-    "assets/images/products/Girls/Shirts & Pants/11.png",
-    "assets/images/products/Girls/Shirts & Pants/12.png",
-    "assets/images/products/Girls/Shirts & Pants/13.jpg",
-    "assets/images/products/Girls/Shirts & Pants/14.jpg",
-    "assets/images/products/Girls/Shirts & Pants/15.jpg",
-    "assets/images/products/Girls/Shirts & Pants/16.jpg",
-    "assets/images/products/Girls/Shirts & Pants/17.jpg",
-    "assets/images/products/Girls/Shirts & Pants/18.jpg",
-    "assets/images/products/Girls/Shirts & Pants/19.png",
-    "assets/images/products/Girls/Shirts & Pants/20.png",
-    "assets/images/products/Girls/Shirts & Pants/21.png",
-    "assets/images/products/Girls/Shirts & Pants/22.png",
-    "assets/images/products/Girls/Shirts & Pants/23.png",
-    "assets/images/products/Girls/Shirts & Pants/24.jpg",
-    "assets/images/products/Girls/Shirts & Pants/25.jpg",
-    "assets/images/products/Girls/Shirts & Pants/26.jpg",
-    "assets/images/products/Girls/Shirts & Pants/27.png",
-    "assets/images/products/Girls/Shirts & Pants/28.jpg",
-    "assets/images/products/Girls/Shirts & Pants/29.jpg",
-    "assets/images/products/Girls/Shirts & Pants/30.jpg",
-    "assets/images/products/Girls/Shirts & Pants/31.jpg",
-    "assets/images/products/Girls/Shirts & Pants/32.jpg",
-    "assets/images/products/Girls/Shirts & Pants/33.jpg",
-    "assets/images/products/Girls/Shirts & Pants/34.jpg",
-    "assets/images/products/Girls/Shirts & Pants/35.jpg",
-    "assets/images/products/Girls/Shirts & Pants/36.jpg",
-    "assets/images/products/Girls/Shirts & Pants/37.jpg",
-    "assets/images/products/Girls/Shirts & Pants/38.jpg",
-    "assets/images/products/Girls/Shirts & Pants/39.jpg",
-    "assets/images/products/Girls/Shirts & Pants/40.jpg",
-    "assets/images/products/Girls/Shirts & Pants/41.jpg",
-    "assets/images/products/Girls/Shirts & Pants/42.jpg",
-    "assets/images/products/Girls/Shirts & Pants/43.jpg",
-
-
+    "assets/images/products/Girls/shirt_and_pant/1.jpg",
+    "assets/images/products/Girls/shirt_and_pant/2.png",
+    "assets/images/products/Girls/shirt_and_pant/3.png",
+    "assets/images/products/Girls/shirt_and_pant/4.png",
+    "assets/images/products/Girls/shirt_and_pant/5.png",
+    "assets/images/products/Girls/shirt_and_pant/6.png",
+    "assets/images/products/Girls/shirt_and_pant/7.png",
+    "assets/images/products/Girls/shirt_and_pant/8.png",
+    "assets/images/products/Girls/shirt_and_pant/9.png",
+    "assets/images/products/Girls/shirt_and_pant/10.png",
+    "assets/images/products/Girls/shirt_and_pant/11.png",
+    "assets/images/products/Girls/shirt_and_pant/12.png",
+    "assets/images/products/Girls/shirt_and_pant/13.jpg",
+    "assets/images/products/Girls/shirt_and_pant/14.jpg",
+    "assets/images/products/Girls/shirt_and_pant/15.jpg",
+    "assets/images/products/Girls/shirt_and_pant/16.jpg",
+    "assets/images/products/Girls/shirt_and_pant/17.jpg",
+    "assets/images/products/Girls/shirt_and_pant/18.jpg",
+    "assets/images/products/Girls/shirt_and_pant/19.png",
+    "assets/images/products/Girls/shirt_and_pant/20.png",
+    "assets/images/products/Girls/shirt_and_pant/21.png",
+    "assets/images/products/Girls/shirt_and_pant/22.png",
+    "assets/images/products/Girls/shirt_and_pant/23.png",
+    "assets/images/products/Girls/shirt_and_pant/24.jpg",
+    "assets/images/products/Girls/shirt_and_pant/25.jpg",
+    "assets/images/products/Girls/shirt_and_pant/26.jpg",
+    "assets/images/products/Girls/shirt_and_pant/27.png",
+    "assets/images/products/Girls/shirt_and_pant/28.jpg",
+    "assets/images/products/Girls/shirt_and_pant/29.jpg",
+    "assets/images/products/Girls/shirt_and_pant/30.jpg",
+    "assets/images/products/Girls/shirt_and_pant/31.jpg",
+    "assets/images/products/Girls/shirt_and_pant/32.jpg",
+    "assets/images/products/Girls/shirt_and_pant/33.jpg",
+    "assets/images/products/Girls/shirt_and_pant/34.jpg",
+    "assets/images/products/Girls/shirt_and_pant/35.jpg",
+    "assets/images/products/Girls/shirt_and_pant/36.jpg",
+    "assets/images/products/Girls/shirt_and_pant/37.jpg",
+    "assets/images/products/Girls/shirt_and_pant/38.jpg",
+    "assets/images/products/Girls/shirt_and_pant/39.jpg",
+    "assets/images/products/Girls/shirt_and_pant/40.jpg",
+    "assets/images/products/Girls/shirt_and_pant/41.jpg",
+    "assets/images/products/Girls/shirt_and_pant/42.jpg",
+    "assets/images/products/Girls/shirt_and_pant/43.jpg",
   ];
 
-  //Girls\Shorts & Cargo
+  //Girls\short_and_cargo
   static List girlsShortsAndCargoList = [
-    "assets/images/products/Girls/Shorts & Cargo/1.jpg",
-    "assets/images/products/Girls/Shorts & Cargo/2.jpg",
-    "assets/images/products/Girls/Shorts & Cargo/3.jpg",
-    "assets/images/products/Girls/Shorts & Cargo/4.jpg",
-    "assets/images/products/Girls/Shorts & Cargo/5.jpg",
-    "assets/images/products/Girls/Shorts & Cargo/6.jpg",
-    "assets/images/products/Girls/Shorts & Cargo/7.jpg",
-    "assets/images/products/Girls/Shorts & Cargo/8.png",
+    "assets/images/products/Girls/short_and_cargo/1.jpg",
+    "assets/images/products/Girls/short_and_cargo/2.jpg",
+    "assets/images/products/Girls/short_and_cargo/3.jpg",
+    "assets/images/products/Girls/short_and_cargo/4.jpg",
+    "assets/images/products/Girls/short_and_cargo/5.jpg",
+    "assets/images/products/Girls/short_and_cargo/6.jpg",
+    "assets/images/products/Girls/short_and_cargo/7.jpg",
+    "assets/images/products/Girls/short_and_cargo/8.png",
   ];
 
   //Girls\Sweaters
@@ -375,69 +366,58 @@ class AllListsManager {
   //Girls\T-Shirts
   static List girlsTshirtsList = [];
 
-
-
-
   //Juit Product Section ->
   static List justProductList = [];
 
-
-
   //Leather Product List -> Clear
   static List leatherProductList = [
-    "assets/images/products/Leather Products/1.jpg",
-    "assets/images/products/Leather Products/2.jpg",
-    "assets/images/products/Leather Products/3.jpg",
-    "assets/images/products/Leather Products/4.jpg",
-    "assets/images/products/Leather Products/5.jpg",
-    "assets/images/products/Leather Products/6.jpg",
-    "assets/images/products/Leather Products/7.jpg",
-    "assets/images/products/Leather Products/8.jpg",
-    "assets/images/products/Leather Products/9.jpg",
-    "assets/images/products/Leather Products/10.jpg",
-    "assets/images/products/Leather Products/11.jpg",
-    "assets/images/products/Leather Products/12.jpg",
-    "assets/images/products/Leather Products/13.jpg",
-    "assets/images/products/Leather Products/14.jpg",
-    "assets/images/products/Leather Products/15.jpg",
-    "assets/images/products/Leather Products/16.jpg",
-    "assets/images/products/Leather Products/17.jpg",
-    "assets/images/products/Leather Products/18.jpg",
-    "assets/images/products/Leather Products/19.jpg",
-    "assets/images/products/Leather Products/20.jpg",
-    "assets/images/products/Leather Products/21.jpg",
-    "assets/images/products/Leather Products/22.jpg",
-    "assets/images/products/Leather Products/23.jpg",
-    "assets/images/products/Leather Products/24.jpg",
-    "assets/images/products/Leather Products/25.jpg",
-    "assets/images/products/Leather Products/26.jpg",
-    "assets/images/products/Leather Products/27.jpg",
-    "assets/images/products/Leather Products/28.jpg",
-    "assets/images/products/Leather Products/29.jpg",
-    "assets/images/products/Leather Products/30.jpg",
-    "assets/images/products/Leather Products/31.jpg",
-    "assets/images/products/Leather Products/32.jpg",
-    "assets/images/products/Leather Products/33.jpg",
-    "assets/images/products/Leather Products/34.jpg",
-    "assets/images/products/Leather Products/35.jpg",
-    "assets/images/products/Leather Products/36.jpg",
-    "assets/images/products/Leather Products/37.jpg",
-    "assets/images/products/Leather Products/38.jpg",
-    "assets/images/products/Leather Products/39.jpg",
-    "assets/images/products/Leather Products/40.jpg",
-    "assets/images/products/Leather Products/41.jpg",
-    "assets/images/products/Leather Products/42.jpg",
-    "assets/images/products/Leather Products/43.jpg",
-    "assets/images/products/Leather Products/44.jpg",
-    "assets/images/products/Leather Products/45.jpg",
-    "assets/images/products/Leather Products/46.jpg",
+    "assets/images/products/leather_products/1.jpg",
+    "assets/images/products/leather_products/2.jpg",
+    "assets/images/products/leather_products/3.jpg",
+    "assets/images/products/leather_products/4.jpg",
+    "assets/images/products/leather_products/5.jpg",
+    "assets/images/products/leather_products/6.jpg",
+    "assets/images/products/leather_products/7.jpg",
+    "assets/images/products/leather_products/8.jpg",
+    "assets/images/products/leather_products/9.jpg",
+    "assets/images/products/leather_products/10.jpg",
+    "assets/images/products/leather_products/11.jpg",
+    "assets/images/products/leather_products/12.jpg",
+    "assets/images/products/leather_products/13.jpg",
+    "assets/images/products/leather_products/14.jpg",
+    "assets/images/products/leather_products/15.jpg",
+    "assets/images/products/leather_products/16.jpg",
+    "assets/images/products/leather_products/17.jpg",
+    "assets/images/products/leather_products/18.jpg",
+    "assets/images/products/leather_products/19.jpg",
+    "assets/images/products/leather_products/20.jpg",
+    "assets/images/products/leather_products/21.jpg",
+    "assets/images/products/leather_products/22.jpg",
+    "assets/images/products/leather_products/23.jpg",
+    "assets/images/products/leather_products/24.jpg",
+    "assets/images/products/leather_products/25.jpg",
+    "assets/images/products/leather_products/26.jpg",
+    "assets/images/products/leather_products/27.jpg",
+    "assets/images/products/leather_products/28.jpg",
+    "assets/images/products/leather_products/29.jpg",
+    "assets/images/products/leather_products/30.jpg",
+    "assets/images/products/leather_products/31.jpg",
+    "assets/images/products/leather_products/32.jpg",
+    "assets/images/products/leather_products/33.jpg",
+    "assets/images/products/leather_products/34.jpg",
+    "assets/images/products/leather_products/35.jpg",
+    "assets/images/products/leather_products/36.jpg",
+    "assets/images/products/leather_products/37.jpg",
+    "assets/images/products/leather_products/38.jpg",
+    "assets/images/products/leather_products/39.jpg",
+    "assets/images/products/leather_products/40.jpg",
+    "assets/images/products/leather_products/41.jpg",
+    "assets/images/products/leather_products/42.jpg",
+    "assets/images/products/leather_products/43.jpg",
+    "assets/images/products/leather_products/44.jpg",
+    "assets/images/products/leather_products/45.jpg",
+    "assets/images/products/leather_products/46.jpg",
   ];
-
-
-
-
-
-
 
   //Mens Section -> Clear
 
@@ -475,7 +455,6 @@ class AllListsManager {
     "assets/images/products/men/Jackets/17.jpg",
   ];
 
-
   //MensJeansList
   static List mensJeansList = [
     "assets/images/means_jeans/Picture1.png",
@@ -490,7 +469,7 @@ class AllListsManager {
     "assets/images/means_jeans/Picture10.png",
     "assets/images/means_jeans/Picture11.png",
     "assets/images/means_jeans/Picture12.png",
-    "assets/images/means_jeans/Picture13.png",
+    // "assets/images/means_jeans/Picture13.jpg",
     "assets/images/products/men/jens/14.jpg",
     "assets/images/products/men/jens/15.jpg",
     "assets/images/products/men/jens/16.png",
@@ -518,39 +497,37 @@ class AllListsManager {
     "assets/images/products/men/jens/38.jpg",
   ];
 
-
   //MenPolo List
   static List mensPoloShirts = [];
 
-  //Men Shirts & Pants List
+  //Men shirt_and_pant List
   static List menShirtsAndPantsList = [
-    "assets/images/products/men/Shirts & Pants/1.jpg",
-    "assets/images/products/men/Shirts & Pants/2.jpg",
-    "assets/images/products/men/Shirts & Pants/3.jpg",
-    "assets/images/products/men/Shirts & Pants/4.jpg",
+    "assets/images/products/men/shirt_and_pant/1.jpg",
+    "assets/images/products/men/shirt_and_pant/2.jpg",
+    "assets/images/products/men/shirt_and_pant/3.jpg",
+    "assets/images/products/men/shirt_and_pant/4.jpg",
   ];
 
   //Mens Shorts And Cargo List
   static List mensShortsAndCargoList = [
-    "assets/images/products/men/Shorts & Cargo/1.jpg",
-    "assets/images/products/men/Shorts & Cargo/2.jpg",
-    "assets/images/products/men/Shorts & Cargo/3.jpg",
-    "assets/images/products/men/Shorts & Cargo/4.png",
-    "assets/images/products/men/Shorts & Cargo/5.png",
-    "assets/images/products/men/Shorts & Cargo/6.png",
-    "assets/images/products/men/Shorts & Cargo/7.png",
-    "assets/images/products/men/Shorts & Cargo/8.png",
-    "assets/images/products/men/Shorts & Cargo/9.png",
-    "assets/images/products/men/Shorts & Cargo/10.png",
-    "assets/images/products/men/Shorts & Cargo/11.jpg",
-    "assets/images/products/men/Shorts & Cargo/12.jpg",
-    "assets/images/products/men/Shorts & Cargo/13.jpg",
-    "assets/images/products/men/Shorts & Cargo/14.jpg",
-    "assets/images/products/men/Shorts & Cargo/15.jpg",
-    "assets/images/products/men/Shorts & Cargo/16.jpg",
-    "assets/images/products/men/Shorts & Cargo/17.jpg",
+    "assets/images/products/men/short_and_cargo/1.jpg",
+    "assets/images/products/men/short_and_cargo/2.jpg",
+    "assets/images/products/men/short_and_cargo/3.jpg",
+    "assets/images/products/men/short_and_cargo/4.png",
+    "assets/images/products/men/short_and_cargo/5.png",
+    "assets/images/products/men/short_and_cargo/6.png",
+    "assets/images/products/men/short_and_cargo/7.png",
+    "assets/images/products/men/short_and_cargo/8.png",
+    "assets/images/products/men/short_and_cargo/9.png",
+    "assets/images/products/men/short_and_cargo/10.png",
+    "assets/images/products/men/short_and_cargo/11.jpg",
+    "assets/images/products/men/short_and_cargo/12.jpg",
+    "assets/images/products/men/short_and_cargo/13.jpg",
+    "assets/images/products/men/short_and_cargo/14.jpg",
+    "assets/images/products/men/short_and_cargo/15.jpg",
+    "assets/images/products/men/short_and_cargo/16.jpg",
+    "assets/images/products/men/short_and_cargo/17.jpg",
   ];
-
 
   //Mens Sweaters List
   static List mensSweatersList = [
@@ -590,14 +567,10 @@ class AllListsManager {
     "assets/images/products/men/Sweaters/34.jpg",
     "assets/images/products/men/Sweaters/35.jpg",
     "assets/images/products/men/Sweaters/36.jpg",
-
   ];
 
   //Mens T-Shirts List
   static List mensTShirtsList = [];
-
-
-
 
   //Womens Section -> clear
   //Womens HoodiesSection
@@ -614,22 +587,22 @@ class AllListsManager {
   //Women Polo Shirtts List
   static List womenPoloShirtsList = [];
 
-  //Women Shirts & Pants List
+  //Women shirt_and_pant List
   static List womenShirtsAndPantsList = [
-    "assets/images/products/Women/Shirts & Pants/1.png",
-    "assets/images/products/Women/Shirts & Pants/2.png",
-    "assets/images/products/Women/Shirts & Pants/3.png",
-    "assets/images/products/Women/Shirts & Pants/4.png",
-    "assets/images/products/Women/Shirts & Pants/5.png",
+    "assets/images/products/Women/shirt_and_pant/1.png",
+    "assets/images/products/Women/shirt_and_pant/2.png",
+    "assets/images/products/Women/shirt_and_pant/3.png",
+    "assets/images/products/Women/shirt_and_pant/4.png",
+    "assets/images/products/Women/shirt_and_pant/5.png",
   ];
 
-  //Women Shorts & Cargo List
+  //Women short_and_cargo List
   static List womenShortsAndCargoList = [
-    "assets/images/products/Women/Shorts & Cargo/1.png",
-    "assets/images/products/Women/Shorts & Cargo/2.png",
-    "assets/images/products/Women/Shorts & Cargo/3.png",
-    "assets/images/products/Women/Shorts & Cargo/4.png",
-    "assets/images/products/Women/Shorts & Cargo/5.png",
+    "assets/images/products/Women/short_and_cargo/1.png",
+    "assets/images/products/Women/short_and_cargo/2.png",
+    "assets/images/products/Women/short_and_cargo/3.png",
+    "assets/images/products/Women/short_and_cargo/4.png",
+    "assets/images/products/Women/short_and_cargo/5.png",
   ];
 
   //Women Sweaters List
@@ -747,101 +720,97 @@ class AllListsManager {
     "assets/images/products/Women/Sweaters/111.jpg",
     "assets/images/products/Women/Sweaters/112.jpg",
     "assets/images/products/Women/Sweaters/113.jpg",
-
   ];
 
   //Womens T-Shirts List
   static List womensTShirtsList = [];
 
+  static List womensClothList = [
+    "assets/images/womens_cloth/1.png",
+    "assets/images/womens_cloth/2.png",
+    "assets/images/womens_cloth/3.png",
+    "assets/images/womens_cloth/4.png",
+    "assets/images/womens_cloth/5.png",
+    "assets/images/womens_cloth/6.png",
+    "assets/images/womens_cloth/7.png",
+    "assets/images/womens_cloth/8.png",
+    "assets/images/womens_cloth/9.png",
+    "assets/images/womens_cloth/10.png",
+    "assets/images/womens_cloth/11.png",
+    "assets/images/womens_cloth/12.png",
+    "assets/images/womens_cloth/13.png",
+    "assets/images/womens_cloth/14.png",
+    "assets/images/womens_cloth/15.png",
+    "assets/images/womens_cloth/16.png",
+    "assets/images/womens_cloth/17.png",
+    "assets/images/womens_cloth/18.png",
+    "assets/images/womens_cloth/19.png",
+    "assets/images/womens_cloth/20.png",
+    "assets/images/womens_cloth/21.png",
+    "assets/images/womens_cloth/22.png",
+    "assets/images/womens_cloth/23.png",
+  ];
 
+  static List kidsClothList = [
+    "assets/images/kids_cloth/1.jpg",
+    "assets/images/kids_cloth/2.jpg",
+    "assets/images/kids_cloth/3.jpg",
+    "assets/images/kids_cloth/4.jpg",
+    "assets/images/kids_cloth/5.jpg",
+    "assets/images/kids_cloth/6.jpg",
+    "assets/images/kids_cloth/7.jpg",
+    "assets/images/kids_cloth/8.jpg",
+    "assets/images/kids_cloth/9.jpg",
+    "assets/images/kids_cloth/10.jpg",
+    "assets/images/kids_cloth/11.jpg",
+    "assets/images/kids_cloth/12.jpg",
+    "assets/images/kids_cloth/13.jpg",
+    "assets/images/kids_cloth/14.jpg",
+    "assets/images/kids_cloth/15.jpg",
+    "assets/images/kids_cloth/16.jpg",
+    "assets/images/kids_cloth/17.jpg",
+    "assets/images/kids_cloth/18.jpg",
+    "assets/images/kids_cloth/19.jpg",
+    "assets/images/kids_cloth/20.jpg",
+    "assets/images/kids_cloth/21.jpg",
+    "assets/images/kids_cloth/22.jpg",
+    "assets/images/kids_cloth/23.jpg",
+    "assets/images/kids_cloth/24.jpg",
+    "assets/images/kids_cloth/25.jpg",
+    "assets/images/kids_cloth/26.jpg",
+    "assets/images/kids_cloth/27.jpg",
+    "assets/images/kids_cloth/28.jpg",
+    "assets/images/kids_cloth/29.jpg",
+    "assets/images/kids_cloth/30.jpg",
+    "assets/images/kids_cloth/31.jpg",
+    "assets/images/kids_cloth/32.jpg",
+    "assets/images/kids_cloth/33.jpg",
+    "assets/images/kids_cloth/34.jpg",
+    "assets/images/kids_cloth/35.jpg",
+    "assets/images/kids_cloth/36.jpg",
+    "assets/images/kids_cloth/37.jpg",
+    "assets/images/kids_cloth/38.jpg",
+    "assets/images/kids_cloth/39.jpg",
+    "assets/images/kids_cloth/40.jpg",
+    "assets/images/kids_cloth/41.jpg",
+    "assets/images/kids_cloth/42.jpg",
+    "assets/images/kids_cloth/43.jpg",
+    "assets/images/kids_cloth/44.jpg",
+    "assets/images/kids_cloth/45.jpg",
+    "assets/images/kids_cloth/46.jpg",
+    "assets/images/kids_cloth/47.jpg",
+    "assets/images/kids_cloth/48.jpg",
+    "assets/images/kids_cloth/49.jpg",
+    "assets/images/kids_cloth/50.jpg",
+    "assets/images/kids_cloth/51.jpg",
+    "assets/images/kids_cloth/52.jpg",
+    "assets/images/kids_cloth/53.jpg",
+    "assets/images/kids_cloth/54.jpg",
+    "assets/images/kids_cloth/55.jpg",
+    "assets/images/kids_cloth/56.jpg",
+  ];
 
-
-  // static List womensClothList = [
-  //   "assets/images/womens_cloth/1.png",
-  //   "assets/images/womens_cloth/2.png",
-  //   "assets/images/womens_cloth/3.png",
-  //   "assets/images/womens_cloth/4.png",
-  //   "assets/images/womens_cloth/5.png",
-  //   "assets/images/womens_cloth/6.png",
-  //   "assets/images/womens_cloth/7.png",
-  //   "assets/images/womens_cloth/8.png",
-  //   "assets/images/womens_cloth/9.png",
-  //   "assets/images/womens_cloth/10.png",
-  //   "assets/images/womens_cloth/11.png",
-  //   "assets/images/womens_cloth/12.png",
-  //   "assets/images/womens_cloth/13.png",
-  //   "assets/images/womens_cloth/14.png",
-  //   "assets/images/womens_cloth/15.png",
-  //   "assets/images/womens_cloth/16.png",
-  //   "assets/images/womens_cloth/17.png",
-  //   "assets/images/womens_cloth/18.png",
-  //   "assets/images/womens_cloth/19.png",
-  //   "assets/images/womens_cloth/20.png",
-  //   "assets/images/womens_cloth/21.png",
-  //   "assets/images/womens_cloth/22.png",
-  //   "assets/images/womens_cloth/23.png",
-  // ];
-  //
-  // static List kidsClothList = [
-  //   "assets/images/kids_cloth/1.jpg",
-  //   "assets/images/kids_cloth/2.jpg",
-  //   "assets/images/kids_cloth/3.jpg",
-  //   "assets/images/kids_cloth/4.jpg",
-  //   "assets/images/kids_cloth/5.jpg",
-  //   "assets/images/kids_cloth/6.jpg",
-  //   "assets/images/kids_cloth/7.jpg",
-  //   "assets/images/kids_cloth/8.jpg",
-  //   "assets/images/kids_cloth/9.jpg",
-  //   "assets/images/kids_cloth/10.jpg",
-  //   "assets/images/kids_cloth/11.jpg",
-  //   "assets/images/kids_cloth/12.jpg",
-  //   "assets/images/kids_cloth/13.jpg",
-  //   "assets/images/kids_cloth/14.jpg",
-  //   "assets/images/kids_cloth/15.jpg",
-  //   "assets/images/kids_cloth/16.jpg",
-  //   "assets/images/kids_cloth/17.jpg",
-  //   "assets/images/kids_cloth/18.jpg",
-  //   "assets/images/kids_cloth/19.jpg",
-  //   "assets/images/kids_cloth/20.jpg",
-  //   "assets/images/kids_cloth/21.jpg",
-  //   "assets/images/kids_cloth/22.jpg",
-  //   "assets/images/kids_cloth/23.jpg",
-  //   "assets/images/kids_cloth/24.jpg",
-  //   "assets/images/kids_cloth/25.jpg",
-  //   "assets/images/kids_cloth/26.jpg",
-  //   "assets/images/kids_cloth/27.jpg",
-  //   "assets/images/kids_cloth/28.jpg",
-  //   "assets/images/kids_cloth/29.jpg",
-  //   "assets/images/kids_cloth/30.jpg",
-  //   "assets/images/kids_cloth/31.jpg",
-  //   "assets/images/kids_cloth/32.jpg",
-  //   "assets/images/kids_cloth/33.jpg",
-  //   "assets/images/kids_cloth/34.jpg",
-  //   "assets/images/kids_cloth/35.jpg",
-  //   "assets/images/kids_cloth/36.jpg",
-  //   "assets/images/kids_cloth/37.jpg",
-  //   "assets/images/kids_cloth/38.jpg",
-  //   "assets/images/kids_cloth/39.jpg",
-  //   "assets/images/kids_cloth/40.jpg",
-  //   "assets/images/kids_cloth/41.jpg",
-  //   "assets/images/kids_cloth/42.jpg",
-  //   "assets/images/kids_cloth/43.jpg",
-  //   "assets/images/kids_cloth/44.jpg",
-  //   "assets/images/kids_cloth/45.jpg",
-  //   "assets/images/kids_cloth/46.jpg",
-  //   "assets/images/kids_cloth/47.jpg",
-  //   "assets/images/kids_cloth/48.jpg",
-  //   "assets/images/kids_cloth/49.jpg",
-  //   "assets/images/kids_cloth/50.jpg",
-  //   "assets/images/kids_cloth/51.jpg",
-  //   "assets/images/kids_cloth/52.jpg",
-  //   "assets/images/kids_cloth/53.jpg",
-  //   "assets/images/kids_cloth/54.jpg",
-  //   "assets/images/kids_cloth/55.jpg",
-  //   "assets/images/kids_cloth/56.jpg",
-  // ];
-
-      static  List mainSliderImageList = [
+  static List mainSliderImageList = [
     "assets/images/main_slider_images/1.png",
     "assets/images/main_slider_images/2.png",
     "assets/images/main_slider_images/3.png",
@@ -868,9 +837,6 @@ class AllListsManager {
     QualityAssurancePageText.QualityPoint7,
     QualityAssurancePageText.QualityPoint8,
   ];
-
-
-
 
   //Our Clients Page List
   static List ourClientsPageList = [

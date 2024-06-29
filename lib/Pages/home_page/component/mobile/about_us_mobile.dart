@@ -16,7 +16,7 @@ class AboutUsMobile extends StatelessWidget {
         mobile: 1400,
         tablet: 1200,
         desktop: 900,
-      ) ,
+      ),
       width: double.infinity,
       padding: EdgeInsets.symmetric(horizontal: 2.sw),
       color: const Color(0xFFF4F0EC).withOpacity(0.3),
@@ -78,18 +78,18 @@ class AboutUsMobile extends StatelessWidget {
             height: 3.sh,
           ),
 
-          getValueForScreenType<bool>(
-            context: context,
-            mobile: true,
-            tablet: false,
-            desktop: false,
-          ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
-          : getValueForScreenType<bool>(
-            context: context,
-            mobile: false,
-            tablet: true,
-            desktop: false,
-          ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
+          // getValueForScreenType<bool>(
+          //   context: context,
+          //   mobile: true,
+          //   tablet: false,
+          //   desktop: false,
+          // ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
+          // : getValueForScreenType<bool>(
+          //   context: context,
+          //   mobile: false,
+          //   tablet: true,
+          //   desktop: false,
+          // ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
 
           //Description
           // Expanded(
@@ -101,9 +101,6 @@ class AboutUsMobile extends StatelessWidget {
           //     fontFamily: "Rajdhani",
           //   ),
           // )
-
-
-
 
           AutoSizeText(
             HomePageText.aboutUsDescription,

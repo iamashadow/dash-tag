@@ -59,7 +59,7 @@ class AboutUsTablet extends StatelessWidget {
               padding: const EdgeInsets.all(10),
               height: 450,
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(10),
               ),
               child: Image.asset(
                 "assets/images/means_jeans/Picture1.png",
@@ -80,18 +80,18 @@ class AboutUsTablet extends StatelessWidget {
             fontFamily: "Caveat",
           ),
 
-          getValueForScreenType<bool>(
-            context: context,
-            mobile: true,
-            tablet: false,
-            desktop: false,
-          ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
-              : getValueForScreenType<bool>(
-            context: context,
-            mobile: false,
-            tablet: true,
-            desktop: false,
-          ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
+          // getValueForScreenType<bool>(
+          //   context: context,
+          //   mobile: true,
+          //   tablet: false,
+          //   desktop: false,
+          // ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
+          //     : getValueForScreenType<bool>(
+          //   context: context,
+          //   mobile: false,
+          //   tablet: true,
+          //   desktop: false,
+          // ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
 
           //Description
           // Align(
@@ -107,7 +107,6 @@ class AboutUsTablet extends StatelessWidget {
           //   ),
           // )
 
-
           AutoSizeText(
             HomePageText.aboutUsDescription,
             maxLines: 17,
@@ -122,8 +121,6 @@ class AboutUsTablet extends StatelessWidget {
             minFontSize: 28,
             stepGranularity: 1, // Ensure this is a divisor of minFontSize
           )
-
-
         ],
       ),
     );

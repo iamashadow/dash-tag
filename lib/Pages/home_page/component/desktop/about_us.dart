@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -19,12 +20,7 @@ class AboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: getValueForScreenType<double>(
-        context: context,
-        mobile: 500,
-        tablet: 700,
-        desktop: 1000,
-      ) ,
+      height: 700,
       width: double.maxFinite,
       padding: const EdgeInsets.only(left: 30, right: 50),
       color: const Color(0xFFF4F0EC).withOpacity(0.3),
@@ -35,13 +31,12 @@ class AboutUsPage extends StatelessWidget {
         children: [
           //SizedBOx
           SizedBox(
-            height: getValueForScreenType<double>(
-                context: context,
-                mobile: 0,
-              tablet: 0,
-              desktop: 5.sh,
-            )
-          ),
+              height: getValueForScreenType<double>(
+            context: context,
+            mobile: 0,
+            tablet: 0,
+            desktop: 5.sh,
+          )),
 
           //Dash And Tag Resources
           CustomText(
@@ -66,18 +61,18 @@ class AboutUsPage extends StatelessWidget {
             fontFamily: "Caveat",
           ),
 
-          getValueForScreenType<bool>(
-            context: context,
-            mobile: true,
-            tablet: false,
-            desktop: false,
-          ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
-              : getValueForScreenType<bool>(
-            context: context,
-            mobile: false,
-            tablet: true,
-            desktop: false,
-          ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
+          // getValueForScreenType<bool>(
+          //   context: context,
+          //   mobile: true,
+          //   tablet: false,
+          //   desktop: false,
+          // ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
+          //     : getValueForScreenType<bool>(
+          //   context: context,
+          //   mobile: false,
+          //   tablet: true,
+          //   desktop: false,
+          // ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
 
           //Art FAshion Text, Image & Description
           Row(
@@ -97,7 +92,7 @@ class AboutUsPage extends StatelessWidget {
                         context: context,
                         mobile: 0,
                         tablet: 0,
-                        desktop: 5.sh,
+                        desktop: 50,
                       ),
                       textAlign: TextAlign.center,
                       fontWeight: FontWeight.bold,
@@ -106,20 +101,22 @@ class AboutUsPage extends StatelessWidget {
 
                     //Image
 
-                    Card(
-                      elevation: 5,
-                      child: Container(
-                        // width: 500,
-                        // height: 350,
-                        width: 45.sw,
-                        height: 25.sh,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            image: const DecorationImage(
-                                fit: BoxFit.fill,
-                                image: AssetImage(
-                                  "assets/images/means_jeans/Picture1.png",
-                                ))),
+                    FittedBox(
+                      child: Card(
+                        elevation: 5,
+                        child: Container(
+                          // width: 500,
+                          // height: 350,
+                          width: 45.sw,
+                          height: 300,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
+                              image: const DecorationImage(
+                                  fit: BoxFit.fill,
+                                  image: AssetImage(
+                                    "assets/images/means_jeans/Picture1.png",
+                                  ))),
+                        ),
                       ),
                     ),
                   ],
@@ -128,14 +125,15 @@ class AboutUsPage extends StatelessWidget {
               SizedBox(
                 width: 1.sw,
               ),
-              Expanded(
-                child: Align(
-                  alignment: Alignment.center,
-                  child: CustomText(
-                    title: HomePageText.aboutUsDescription,
-                    fontColor: Colors.black,
-                    textAlign: TextAlign.start,
-                    fontSize: 2.sw,
+              const Expanded(
+                child: AutoSizeText(
+                  HomePageText.aboutUsDescription,
+                  minFontSize: 20,
+                  maxFontSize: 35,
+                  stepGranularity: 1,
+                  maxLines: 18,
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
                     fontFamily: "Rajdhani",
                   ),
                 ),

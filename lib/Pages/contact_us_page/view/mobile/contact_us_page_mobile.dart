@@ -1,4 +1,7 @@
+import 'package:dash_and_tag_web_site/controller/main_controller.dart';
+import 'package:dash_and_tag_web_site/universal_widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import '../../../../Utils/All_Colors/all_colors.dart';
 import '../../../footer/footer.dart';
@@ -7,12 +10,14 @@ import '../../component/mobile/contact_information_mobile.dart';
 import '../../component/mobile/message_submit_form_mobile.dart';
 
 class ContactUsPageMobile extends StatelessWidget {
-  const ContactUsPageMobile({super.key});
+  ContactUsPageMobile({super.key});
+  final MainController controller = Get.find();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorManager.contactUsPageWebBackgroundColor,
+      drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
           ProductsPageHeaderImage(

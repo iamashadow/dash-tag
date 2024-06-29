@@ -44,6 +44,7 @@ dependencies:
   simple_gradient_text: ^1.2.3
   syncfusion_flutter_pdfviewer: ^26.1.35
   universal_html: ^2.2.4
+  url_launcher: ^6.3.0
 
 dev_dependencies:
   flutter_lints: ^4.0.0
@@ -72,6 +73,31 @@ flutter:
     - assets/images/services/
     - assets/images/clients_images/
     - assets/images/profile_pdf/
+    - assets/images/products/Accessories/
+    - assets/images/products/Boys/Hoodies/
+    - assets/images/products/Boys/jens/
+    - assets/images/products/Boys/shirt_and_pant/
+    - assets/images/products/Boys/short_and_cargo/
+    - assets/images/products/Boys/Sweaters/
+    - assets/images/products/Girls/Hoodies/
+    - assets/images/products/Girls/jens/
+    - assets/images/products/Girls/shirt_and_pant/
+    - assets/images/products/Girls/short_and_cargo/
+    - assets/images/products/Girls/Sweaters/
+    - assets/images/products/leather_products/
+    - assets/images/products/men/Hoodies/
+    - assets/images/products/men/Jackets/
+    - assets/images/products/men/jens/
+    - assets/images/products/men/shirt_and_pant/
+    - assets/images/products/men/short_and_cargo/
+    - assets/images/products/men/Sweaters/
+    - assets/images/products/Women/Hoodies/
+    - assets/images/products/Women/Sweaters/
+    - assets/images/products/Women/short_and_cargo/
+    - assets/images/products/Women/shirt_and_pant/
+    - assets/images/products/Boys/shirt_and_pant/
+    - assets/images/products/Boys/short_and_cargo/
+    - assets/images/products/Boys/Sweaters/
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
