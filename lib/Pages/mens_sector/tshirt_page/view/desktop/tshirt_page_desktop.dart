@@ -27,8 +27,8 @@ class TshirtPageDesktop extends StatelessWidget {
           const SizedBox(height: 50),
           ProductImageShowingListViewBuilder(
             items: List<int>.generate(
-                AllListsManager.kidsClothList.length, (index) => index),
-            itemsList: List<String>.from(AllListsManager.kidsClothList),
+                AllListsManager.mensJeansList.length, (index) => index),
+            itemsList: List<String>.from(AllListsManager.mensJeansList),
             productContainerWidth: 30.sw,
             productContainerHeight: 30.sh,
           ),

@@ -27,8 +27,8 @@ class MenTshirtPageMobile extends StatelessWidget {
           Expanded(
             child: ProductImageShowingListviewbuilderMobile(
               items: List<int>.generate(
-                  AllListsManager.kidsClothList.length, (index) => index),
-              itemsList: List<String>.from(AllListsManager.kidsClothList),
+                  AllListsManager.mensJeansList.length, (index) => index),
+              itemsList: List<String>.from(AllListsManager.mensJeansList),
               containerHeight: 30.sh,
               containerWidth: 40.sw,
             ),

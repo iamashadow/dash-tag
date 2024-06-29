@@ -91,7 +91,7 @@ class OurProductSectionMobile extends StatelessWidget {
                   border: Border.all(color: Colors.black),
                 ),
                 child: CarouselSlider(
-                    items: AllListsManager.womensClothList
+                    items: AllListsManager.mensJeansList
                         .map((e) => Image.asset(e,
                             width: Get.width, height: 60.sh, fit: BoxFit.fill))
                         .toList(),
@@ -129,7 +129,7 @@ class OurProductSectionMobile extends StatelessWidget {
                   border: Border.all(color: Colors.black),
                 ),
                 child: CarouselSlider(
-                    items: AllListsManager.kidsClothList
+                    items: AllListsManager.mensJeansList
                         .map((e) => Image.asset(
                               e,
                               fit: BoxFit.fill,
