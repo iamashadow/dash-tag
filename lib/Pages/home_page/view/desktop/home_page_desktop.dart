@@ -35,17 +35,17 @@ class HomePageDesktop extends StatelessWidget {
 
         const OurProductsSection(),
 
-        const OurCompliencesSection(
-          sectionHeight: 50.0,
+        OurCompliencesSection(
+          sectionHeight: 35,
           sectionPadding: 0.02,
           titleFontSize: 5.0,
           titleSpacing: 4.0,
           carouselHeight: 300.0,
-          imageWidth: 300.0,
-          imageHeight: 300.0,
+          imageWidth: Get.width,
+          imageHeight: Get.width,
           buttonPadding: 10.0,
           buttonIconSize: 20.0,
-          viewPortFraction: 0.3,
+          viewPortFraction: 0.2,
         ),
 
         const Footer(),

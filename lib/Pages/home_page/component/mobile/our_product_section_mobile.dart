@@ -17,13 +17,16 @@ class OurProductSectionMobile extends StatelessWidget {
         mobile: false,
         tablet: false,
         desktop: true,
-      ) ? 60.sh
+      )
+          ? 60.sh
           : getValueForScreenType<bool>(
-        context: context,
-        mobile: false,
-        tablet: true,
-        desktop: false,
-      ) ? 50.sh : 240.sh,
+              context: context,
+              mobile: false,
+              tablet: true,
+              desktop: false,
+            )
+              ? 50.sh
+              : 240.sh,
       // color: Colors.amber,
       padding: EdgeInsets.symmetric(horizontal: 5.screenWidth),
       child: Column(
@@ -55,7 +58,7 @@ class OurProductSectionMobile extends StatelessWidget {
                 child: CarouselSlider(
                     items: AllListsManager.mensJeansList
                         .map((e) => Image.asset(e,
-                            width: Get.width, height: 60.sh, fit: BoxFit.fill))
+                            width: Get.width, height: 60.sh, fit: BoxFit.cover))
                         .toList(),
                     options: CarouselOptions(
                       aspectRatio: 0.8,
@@ -93,7 +96,7 @@ class OurProductSectionMobile extends StatelessWidget {
                 child: CarouselSlider(
                     items: AllListsManager.womensClothList
                         .map((e) => Image.asset(e,
-                            width: Get.width, height: 60.sh, fit: BoxFit.fill))
+                            width: Get.width, height: 60.sh, fit: BoxFit.cover))
                         .toList(),
                     options: CarouselOptions(
                       aspectRatio: 0.8,
@@ -132,7 +135,7 @@ class OurProductSectionMobile extends StatelessWidget {
                     items: AllListsManager.kidsClothList
                         .map((e) => Image.asset(
                               e,
-                              fit: BoxFit.fill,
+                              fit: BoxFit.cover,
                               width: Get.width,
                               height: 60.sh,
                             ))

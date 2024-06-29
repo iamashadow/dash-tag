@@ -28,9 +28,88 @@ class FooterInfo extends StatelessWidget {
                     fit: BoxFit.contain,
                   ),
                   const SizedBox(width: 10),
-
+                  Expanded(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Dash&Tag',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24,
+                            height: 1.5,
+                          ),
+                        ),
+                        Text(
+                          ContactUsPageText.bdBranchTextAddress,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 13,
+                            height: 1.5,
+                          ),
+                        ),
+                        SizedBox(
+                            height: getValueForScreenType<double>(
+                          context: context,
+                          mobile: 10,
+                          tablet: 20,
+                          desktop: 20,
+                        )),
+                        Text(
+                          ContactUsPageText.phoneNumber,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            height: 1.5,
+                          ),
+                        ),
+                        SizedBox(
+                          height: getValueForScreenType<double>(
+                            context: context,
+                            mobile: 8,
+                            tablet: 8,
+                            desktop: 16,
+                          ),
+                        ),
+                        Text(
+                          ContactUsPageText.emailAddress,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w500,
+                            fontSize: 14,
+                            height: 1.5,
+                          ),
+                        ),
+                        SizedBox(
+                          height: getValueForScreenType<double>(
+                            context: context,
+                            mobile: 8,
+                            tablet: 8,
+                            desktop: 16,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              )
+            : Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Image.asset(
+                    AllImages.webSiteLogo,
+                    width: 20.sw,
+                    height: 20.sh,
+                    fit: BoxFit.contain,
+                  ),
+                  const SizedBox(width: 10),
                   Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.end,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       const Text(
@@ -51,14 +130,13 @@ class FooterInfo extends StatelessWidget {
                           height: 1.5,
                         ),
                       ),
-
                       SizedBox(
                           height: getValueForScreenType<double>(
-                            context: context,
-                            mobile: 10,
-                            tablet: 20,
-                            desktop: 20,
-                          )),
+                        context: context,
+                        mobile: 10,
+                        tablet: 20,
+                        desktop: 20,
+                      )),
                       Text(
                         ContactUsPageText.phoneNumber,
                         style: const TextStyle(
@@ -68,7 +146,6 @@ class FooterInfo extends StatelessWidget {
                           height: 1.5,
                         ),
                       ),
-
                       SizedBox(
                         height: getValueForScreenType<double>(
                           context: context,
@@ -86,7 +163,6 @@ class FooterInfo extends StatelessWidget {
                           height: 1.5,
                         ),
                       ),
-
                       SizedBox(
                         height: getValueForScreenType<double>(
                           context: context,
@@ -98,89 +174,7 @@ class FooterInfo extends StatelessWidget {
                     ],
                   ),
                 ],
-              )
-            : Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.asset(
-              AllImages.webSiteLogo,
-              width: 20.sw,
-              height: 20.sh,
-              fit: BoxFit.contain,
-            ),
-            const SizedBox(width: 10),
-
-            Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  'Dash&Tag',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 24,
-                    height: 1.5,
-                  ),
-                ),
-                Text(
-                  ContactUsPageText.bdBranchTextAddress,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 13,
-                    height: 1.5,
-                  ),
-                ),
-
-                SizedBox(
-                    height: getValueForScreenType<double>(
-                      context: context,
-                      mobile: 10,
-                      tablet: 20,
-                      desktop: 20,
-                    )),
-                Text(
-                  ContactUsPageText.phoneNumber,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 14,
-                    height: 1.5,
-                  ),
-                ),
-
-                SizedBox(
-                  height: getValueForScreenType<double>(
-                    context: context,
-                    mobile: 8,
-                    tablet: 8,
-                    desktop: 16,
-                  ),
-                ),
-                Text(
-                  ContactUsPageText.emailAddress,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 14,
-                    height: 1.5,
-                  ),
-                ),
-
-                SizedBox(
-                  height: getValueForScreenType<double>(
-                    context: context,
-                    mobile: 8,
-                    tablet: 8,
-                    desktop: 16,
-                  ),
-                ),
-              ],
-            ),
-                        ],
-                      ),
+              ),
       ],
     );
   }

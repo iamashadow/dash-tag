@@ -170,7 +170,7 @@ class OurCompliencesSection extends StatelessWidget {
                   ),
             ),
             const SizedBox(
-              height: 40,
+              height: 20,
             ),
             Expanded(
               child: Row(
@@ -242,7 +242,15 @@ class OurCompliencesSection extends StatelessWidget {
                 ],
               ),
             ),
-            const Spacer(),
+            getValueForScreenType<bool>(
+                    context: context,
+                    mobile: false,
+                    tablet: false,
+                    desktop: true)
+                ? Container(
+                    height: 150,
+                  )
+                : const Spacer(),
           ],
         ),
       ),
