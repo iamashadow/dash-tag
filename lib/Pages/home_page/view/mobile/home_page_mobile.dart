@@ -103,6 +103,37 @@ class HomePageMobile extends StatelessWidget {
         //   viewPortFraction: 0.3,
         // ),
 
+        getValueForScreenType<bool>(
+          context: context,
+          mobile: true,
+          tablet: true,
+          desktop: true,
+        )
+            ? const OurCompliencesSection(
+          sectionHeight: 50.0,
+          sectionPadding: 0.02,
+          titleFontSize: 5.0,
+          titleSpacing: 4.0,
+          carouselHeight: 300.0,
+          imageWidth: 300.0,
+          imageHeight: 300.0,
+          buttonPadding: 10.0,
+          buttonIconSize: 20.0,
+          viewPortFraction: 0.3,
+        ) :
+        const OurCompliencesSection(
+          sectionHeight: 50.0,
+          sectionPadding: 0.02,
+          titleFontSize: 5.0,
+          titleSpacing: 4.0,
+          carouselHeight: 300.0,
+          imageWidth: 300.0,
+          imageHeight: 300.0,
+          buttonPadding: 10.0,
+          buttonIconSize: 20.0,
+          viewPortFraction: 0.3,
+        ),
+
         const Footer(),
       ]),
     );

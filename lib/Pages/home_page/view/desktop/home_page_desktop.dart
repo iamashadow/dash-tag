@@ -17,36 +17,6 @@ class HomePageDesktop extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   automaticallyImplyLeading: false,
-      //   backgroundColor: Colors.white,
-      //   surfaceTintColor: Colors.white,
-      //   leading: Image.asset(
-      //     AllImages.webSiteLogoTransparent,
-      //     width: 50,
-      //     height: 50,
-      //   ),
-      //   title: const Text('Dash&Tag'),
-      //   actions: [
-      //     SizedBox(
-      //       width: Get.width * 0.5,
-      //       child: PlutoMenuBar(
-      //         mode: PlutoMenuBarMode.hover,
-      //         menus: controller.convertAppBarActionsToPlutoMenuItems(
-      //             controller.appbarActions),
-      //         itemStyle: const PlutoMenuItemStyle(
-      //           textStyle: TextStyle(
-      //             color: Colors.black,
-      //             fontSize: 16,
-      //             fontWeight: FontWeight.bold,
-      //           ),
-      //         ),
-      //         borderColor: Colors.transparent,
-      //       ),
-      //     ),
-      //     const FooterBottomSocialButtons(),
-      //   ],
-      // ),
       body: ListView(children: [
         //header appbar
         CustomAppbar(controller: controller),
@@ -55,17 +25,34 @@ class HomePageDesktop extends StatelessWidget {
         const AboutUsPage(),
 
         WhyChooseUsSection(
-          cardNumber: 4,
+          cardNumber: 3,
           cardHeight: 70.sh,
           cardWidth: 60.sh,
-          paddingonCard: 12.sw,
-          // titleSize: 4.sw,
-          // subtitleSize: 3.sw,
+          paddingonCard: 10.sw,
+          titleSize: 45,
+          subtitleSize: 15,
         ),
 
         const OurProductsSection(),
 
-        OurCompliencesSection(
+        getValueForScreenType<bool>(
+            context: context,
+            mobile: true,
+          tablet: true,
+          desktop: true,
+        )
+        ? OurCompliencesSection(
+          sectionHeight: 50.0,
+          sectionPadding: 0.02,
+          titleFontSize: 5.0,
+          titleSpacing: 4.0,
+          carouselHeight: 300.0,
+          imageWidth: 300.0,
+          imageHeight: 300.0,
+          buttonPadding: 10.0,
+          buttonIconSize: 20.0,
+          viewPortFraction: 0.3,
+        ) : OurCompliencesSection(
           sectionHeight: 50.0,
           sectionPadding: 0.02,
           titleFontSize: 5.0,

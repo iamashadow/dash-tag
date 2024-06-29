@@ -1,6 +1,7 @@
 import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import '../../../../Universal_Widgets/custom_text.dart';
 import '../../../mission_vission_page/view/desktop/mission_vission_desktop_page.dart';
 import '../../../../Utils/All_Texts/HomePageText/home_page_text.dart';
@@ -18,17 +19,28 @@ class AboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 700,
+      height: getValueForScreenType<double>(
+        context: context,
+        mobile: 500,
+        tablet: 700,
+        desktop: 1000,
+      ) ,
       width: double.maxFinite,
       padding: const EdgeInsets.only(left: 30, right: 50),
       color: const Color(0xFFF4F0EC).withOpacity(0.3),
+      // color: Colors.red,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           //SizedBOx
-          const SizedBox(
-            height: 50,
+          SizedBox(
+            height: getValueForScreenType<double>(
+                context: context,
+                mobile: 0,
+              tablet: 0,
+              desktop: 5.sh,
+            )
           ),
 
           //Dash And Tag Resources
@@ -36,7 +48,12 @@ class AboutUsPage extends StatelessWidget {
             title: HomePageText.aboutUsResources,
             letterSpacing: 7,
             fontColor: Colors.blue,
-            fontSize: 20,
+            fontSize: getValueForScreenType<double>(
+              context: context,
+              mobile: 0,
+              tablet: 0,
+              desktop: 2.sw,
+            ),
             fontFamily: "Rajdhani",
           ),
 
@@ -48,6 +65,19 @@ class AboutUsPage extends StatelessWidget {
             fontSize: 50,
             fontFamily: "Caveat",
           ),
+
+          getValueForScreenType<bool>(
+            context: context,
+            mobile: true,
+            tablet: false,
+            desktop: false,
+          ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
+              : getValueForScreenType<bool>(
+            context: context,
+            mobile: false,
+            tablet: true,
+            desktop: false,
+          ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
 
           //Art FAshion Text, Image & Description
           Row(
@@ -63,7 +93,12 @@ class AboutUsPage extends StatelessWidget {
                     //Art & Fashion Text
                     CustomText(
                       title: HomePageText.aboutUsArtAndFashion,
-                      fontSize: 50,
+                      fontSize: getValueForScreenType<double>(
+                        context: context,
+                        mobile: 0,
+                        tablet: 0,
+                        desktop: 5.sh,
+                      ),
                       textAlign: TextAlign.center,
                       fontWeight: FontWeight.bold,
                       fontFamily: "Rajdhani",
@@ -74,8 +109,10 @@ class AboutUsPage extends StatelessWidget {
                     Card(
                       elevation: 5,
                       child: Container(
-                        width: 500,
-                        height: 350,
+                        // width: 500,
+                        // height: 350,
+                        width: 45.sw,
+                        height: 25.sh,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
                             image: const DecorationImage(
@@ -88,8 +125,8 @@ class AboutUsPage extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(
-                width: 10,
+              SizedBox(
+                width: 1.sw,
               ),
               Expanded(
                 child: Align(
@@ -98,7 +135,7 @@ class AboutUsPage extends StatelessWidget {
                     title: HomePageText.aboutUsDescription,
                     fontColor: Colors.black,
                     textAlign: TextAlign.start,
-                    fontSize: 20,
+                    fontSize: 2.sw,
                     fontFamily: "Rajdhani",
                   ),
                 ),

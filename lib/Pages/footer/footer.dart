@@ -19,11 +19,11 @@ class Footer extends StatelessWidget {
       width: Get.width,
       height: getValueForScreenType<double>(
         context: context,
-        mobile: 130.sh,
-        tablet: 100.sh,
-        desktop: 55.sh,
+        mobile: 70.sh,
+        tablet: 1000,
+        desktop: 900,
       ),
-      padding: EdgeInsets.symmetric(horizontal: Get.width * 0.1),
+      padding: EdgeInsets.symmetric(horizontal: 5.sw),
       color: Colors.black,
       child: getValueForScreenType<bool>(
         context: context,
@@ -31,17 +31,47 @@ class Footer extends StatelessWidget {
         tablet: false,
         desktop: false,
       )
-          ? const Column(
+          ? Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 // FooterContact(),
                 FooterInfo(),
-                FooterSiteMap(),
-                FooterCompany(),
+                SizedBox(height: getValueForScreenType<double>(
+                  context: context,
+                  mobile: 10,
+                  tablet: 0,
+                  desktop: 0,
+                ),
+                ),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    FooterSiteMap(),
+                    FooterCompany(),
+                  ],
+                ),
+                SizedBox(
+                  height: getValueForScreenType<double>(
+                  context: context,
+                  mobile: 40,
+                  tablet: 0,
+                  desktop: 0,
+                ),
+                ),
+
                 FooterSubscribe(),
                 // FooterBottom(),
               ],
             )
-          : const Stack(
+
+          : getValueForScreenType<bool>(
+        context: context,
+        mobile: false,
+        tablet: true,
+        desktop: false,
+      )
+         ? Stack(
               clipBehavior: Clip.none,
               children: [
                 FooterContact(),
@@ -49,21 +79,69 @@ class Footer extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
                     SizedBox(height: 140),
+                    FooterInfo(),
+                    SizedBox(height: getValueForScreenType<double>(
+                      context: context,
+                      mobile: 10,
+                      tablet: 60,
+                      desktop: 60,
+                    )),
+
                     Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        FooterInfo(),
                         FooterSiteMap(),
                         FooterCompany(),
-                        FooterSubscribe(),
                       ],
                     ),
                     SizedBox(height: 40),
+
+
+                    FooterSubscribe(),
+                    SizedBox(height: 40),
+
+
                     FooterBottom(),
                   ],
                 ),
               ],
-            ),
+            )
+          : const Stack(
+        clipBehavior: Clip.none,
+        children: [
+          FooterContact(),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              SizedBox(height: 140),
+
+              // SizedBox(height: getValueForScreenType<double>(
+              //   context: context,
+              //   mobile: 10,
+              //   tablet: 60,
+              //   desktop: 60,
+              // )),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  FooterInfo(),
+                  FooterSiteMap(),
+                  FooterCompany()
+                ],
+              ),
+              SizedBox(height: 40),
+
+
+              FooterSubscribe(),
+              SizedBox(height: 40),
+
+
+              FooterBottom(),
+            ],
+          ),
+        ],
+      )
+      ,
     );
   }
 }

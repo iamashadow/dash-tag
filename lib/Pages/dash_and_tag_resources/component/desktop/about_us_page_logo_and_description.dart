@@ -44,6 +44,7 @@ class AboutUsPageLogoAndDescription extends StatelessWidget {
               width: logoWidth,
               padding: const EdgeInsets.all(10),
               decoration: BoxDecoration(
+                // color: Colors.red,
                 borderRadius: BorderRadius.circular(10),
               ),
               child: Image.asset(

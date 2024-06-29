@@ -12,7 +12,18 @@ class OurProductSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250.sh,
+      height: getValueForScreenType<bool>(
+        context: context,
+        mobile: false,
+        tablet: false,
+        desktop: true,
+      ) ? 60.sh
+          : getValueForScreenType<bool>(
+        context: context,
+        mobile: false,
+        tablet: true,
+        desktop: false,
+      ) ? 50.sh : 240.sh,
       // color: Colors.amber,
       padding: EdgeInsets.symmetric(horizontal: 5.screenWidth),
       child: Column(

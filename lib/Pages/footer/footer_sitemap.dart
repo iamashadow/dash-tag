@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../Utils/All_Texts/Contact_Us_Page_Text/contact_us_page_text.dart';
+
 class FooterSiteMap extends StatelessWidget {
   const FooterSiteMap({
     Key? key,
@@ -11,6 +13,7 @@ class FooterSiteMap extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+
           const Text(
             'Site Map',
             style: TextStyle(

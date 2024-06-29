@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
@@ -10,7 +11,12 @@ class AboutUsMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 125.sh,
+      height: getValueForScreenType<double>(
+        context: context,
+        mobile: 1400,
+        tablet: 1200,
+        desktop: 900,
+      ) ,
       width: double.infinity,
       padding: EdgeInsets.symmetric(horizontal: 2.sw),
       color: const Color(0xFFF4F0EC).withOpacity(0.3),
@@ -68,17 +74,51 @@ class AboutUsMobile extends StatelessWidget {
             fontSize: 15.sw,
             fontFamily: "Caveat",
           ),
+          SizedBox(
+            height: 3.sh,
+          ),
+
+          getValueForScreenType<bool>(
+            context: context,
+            mobile: true,
+            tablet: false,
+            desktop: false,
+          ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
+          : getValueForScreenType<bool>(
+            context: context,
+            mobile: false,
+            tablet: true,
+            desktop: false,
+          ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
 
           //Description
-          Expanded(
-            child: CustomText(
-              title: HomePageText.aboutUsDescription,
-              fontColor: Colors.black,
-              textAlign: TextAlign.center,
-              fontSize: 3.5.sw,
+          // Expanded(
+          //   child: CustomText(
+          //     title: HomePageText.aboutUsDescription,
+          //     fontColor: Colors.black,
+          //     textAlign: TextAlign.start,
+          //     fontSize: 3.5.sw,
+          //     fontFamily: "Rajdhani",
+          //   ),
+          // )
+
+
+
+
+          AutoSizeText(
+            HomePageText.aboutUsDescription,
+            textAlign: TextAlign.start,
+            minFontSize: 18,
+            maxFontSize: 21,
+            stepGranularity: 1,
+            maxLines: 22,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              fontSize: 21,
+              color: Colors.black,
               fontFamily: "Rajdhani",
             ),
-          )
+          ),
         ],
       ),
     );

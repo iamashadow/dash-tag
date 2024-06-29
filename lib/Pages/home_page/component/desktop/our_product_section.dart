@@ -11,8 +11,15 @@ class OurProductsSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 55.sh,
-      padding: const EdgeInsets.symmetric(horizontal: 20),
+      // color: Colors.red,
+      height: getValueForScreenType<double>(
+        context: context,
+        mobile: 80.sh,
+        tablet: 50.sh,
+        desktop: 800,
+      ),
+      // padding: const EdgeInsets.symmetric(vertical: 20),
+      margin: const EdgeInsets.symmetric(horizontal: 20),
       child: Column(
         children: [
           Text('Our Products',
@@ -36,7 +43,7 @@ class OurProductsSection extends StatelessWidget {
                       )),
                   const SizedBox(height: 20),
                   Container(
-                    width: 400,
+                    width: 300,
                     height: 500,
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -72,7 +79,7 @@ class OurProductsSection extends StatelessWidget {
                       )),
                   const SizedBox(height: 20),
                   Container(
-                    width: 400,
+                    width: 300,
                     height: 500,
                     decoration: BoxDecoration(
                       color: Colors.white,
@@ -108,7 +115,7 @@ class OurProductsSection extends StatelessWidget {
                       )),
                   const SizedBox(height: 20),
                   Container(
-                    width: 400,
+                    width: 300,
                     height: 500,
                     decoration: BoxDecoration(
                       color: Colors.white,

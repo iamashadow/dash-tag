@@ -1,5 +1,9 @@
+import 'dart:math';
+
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 import '../../../../Universal_Widgets/custom_text.dart';
@@ -11,10 +15,16 @@ class AboutUsTablet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200.sh,
+      height: getValueForScreenType<double>(
+        context: context,
+        mobile: 1200,
+        tablet: 1600,
+        desktop: 1000,
+      ),
       width: double.maxFinite,
       padding: const EdgeInsets.only(left: 30, right: 50),
       color: const Color(0xFFF4F0EC).withOpacity(0.3),
+      // color: Colors.red,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -70,19 +80,50 @@ class AboutUsTablet extends StatelessWidget {
             fontFamily: "Caveat",
           ),
 
+          getValueForScreenType<bool>(
+            context: context,
+            mobile: true,
+            tablet: false,
+            desktop: false,
+          ) ? Card(child: Text("Mobile", style: TextStyle(color: Colors.red),))
+              : getValueForScreenType<bool>(
+            context: context,
+            mobile: false,
+            tablet: true,
+            desktop: false,
+          ) ? Card(child: Text("Tablet", style: TextStyle(color: Colors.red),)) : Card(child: Text("Desktop", style: TextStyle(color: Colors.red),)),
+
           //Description
-          Align(
-            alignment: Alignment.center,
-            child: Expanded(
-              child: CustomText(
-                title: HomePageText.aboutUsDescription,
-                fontColor: Colors.black,
-                textAlign: TextAlign.start,
-                fontSize: 3.5.sw,
-                fontFamily: "Rajdhani",
-              ),
+          // Align(
+          //   alignment: Alignment.center,
+          //   child: Expanded(
+          //     child: CustomText(
+          //       title: HomePageText.aboutUsDescription,
+          //       fontColor: Colors.black,
+          //       textAlign: TextAlign.center,
+          //       fontSize: Get.width*0.03,
+          //       fontFamily: "Rajdhani",
+          //     ),
+          //   ),
+          // )
+
+
+          AutoSizeText(
+            HomePageText.aboutUsDescription,
+            maxLines: 17,
+            textAlign: TextAlign.start,
+            overflow: TextOverflow.ellipsis,
+            style: TextStyle(
+              fontSize: Get.width * 0.03,
+              color: Colors.black,
+              fontFamily: "Rajdhani",
             ),
+            maxFontSize: 30,
+            minFontSize: 28,
+            stepGranularity: 1, // Ensure this is a divisor of minFontSize
           )
+
+
         ],
       ),
     );
