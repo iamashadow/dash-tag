@@ -1,3 +1,4 @@
+import 'package:dash_and_tag_web_site/Pages/all_product_show_case/accessories_page.dart';
 import 'package:dash_and_tag_web_site/Pages/contact_us_page/contact_us_root.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/men_jeans/mens_jeans.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.dart';
@@ -61,17 +62,37 @@ class AppRoutes {
   static const String quality = '/services/quality';
   static const String clients = '/clients';
   static const String contact = '/contact';
+  static const String accessoeies = '/accessories';
+  static const String leatherproduct = '/leatherproduct';
 
   static List<GetPage<dynamic>> pages = [
     GetPage(name: home, page: () => HomePageRoot()),
     GetPage(name: aboutResources, page: () => DashAndTagResoucesRoot()),
     GetPage(name: missionVision, page: () => MissionVissionRoot()),
-    GetPage(name: mensjeans, page: () => MeansJeans()),
-    GetPage(name: menstshirts, page: () => MensTshirtRoot()),
-    GetPage(name: menspoloshirts, page: () => PoloShirts()),
+    // GetPage(name: mensjeans, page: () => MeansJeans()),
+    // GetPage(name: menstshirts, page: () => MensTshirtRoot()),
+    // GetPage(name: menspoloshirts, page: () => PoloShirts()),
     GetPage(name: contact, page: () => ContactUsRoot()),
     GetPage(name: clients, page: () => OurClientsRoot()),
     GetPage(name: services, page: () => ServicesPageRoot()),
     GetPage(name: profile, page: () => ProfilePage()),
+    GetPage(name: accessoeies, page: () => ProductShowcasePage()),
+    GetPage(name: leatherproduct, page: () => ProductShowcasePage()),
+    GetPage(name: menstshirts, page: () => ProductShowcasePage()),
+    GetPage(name: mensshirtspants, page: () => ProductShowcasePage()),
+    GetPage(name: mensjeans, page: () => ProductShowcasePage()),
+    GetPage(name: mensjackets, page: () => ProductShowcasePage()),
+    GetPage(name: womenstshirts, page: () => ProductShowcasePage()),
+    GetPage(name: womensshirtspants, page: () => ProductShowcasePage()),
+    GetPage(name: womensjeans, page: () => ProductShowcasePage()),
+    GetPage(name: womensjackets, page: () => ProductShowcasePage()),
+    GetPage(name: boystshirts, page: () => ProductShowcasePage()),
+    GetPage(name: boysshirtspants, page: () => ProductShowcasePage()),
+    GetPage(name: boysjeans, page: () => ProductShowcasePage()),
+    GetPage(name: boysjackets, page: () => ProductShowcasePage()),
+    GetPage(name: girlstshirts, page: () => ProductShowcasePage()),
+    GetPage(name: girlsshirtspants, page: () => ProductShowcasePage()),
+    GetPage(name: girlsjeans, page: () => ProductShowcasePage()),
+    GetPage(name: girlsjackets, page: () => ProductShowcasePage()),
   ];
 }
