@@ -30,6 +30,7 @@ class CustomAppbar extends StatelessWidget {
       ),
       color: Colors.white,
       child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           GestureDetector(
             onTap: () {
@@ -41,7 +42,6 @@ class CustomAppbar extends StatelessWidget {
               height: 50,
             ),
           ),
-          const Spacer(),
           getValueForScreenType<bool>(
             context: context,
             mobile: true,
@@ -59,38 +59,42 @@ class CustomAppbar extends StatelessWidget {
               : Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    SizedBox(
-                      width: getValueForScreenType<double>(
-                        context: context,
-                        mobile: 0,
-                        tablet: 65.sw,
-                        desktop: 100.sw,
-                      ),
-                      child: PlutoMenuBar(
-                        mode: PlutoMenuBarMode.hover,
-                        menus: controller.convertAppBarActionsToPlutoMenuItems(
-                            controller.appbarActions),
-                        itemStyle: PlutoMenuItemStyle(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: getValueForScreenType<double>(
-                              context: context,
-                              mobile: 5,
-                              tablet: 5,
-                              desktop: 12,
-                            ),
-                          ),
-                          textStyle: TextStyle(
-                            color: Colors.black,
-                            fontSize: getValueForScreenType<double>(
-                              context: context,
-                              mobile: 5,
-                              tablet: 10,
-                              desktop: 14,
-                            ),
-                            fontWeight: FontWeight.bold,
-                          ),
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: SizedBox(
+                        width: getValueForScreenType<double>(
+                          context: context,
+                          mobile: 0,
+                          tablet: 350,
+                          desktop: 550,
                         ),
-                        borderColor: Colors.transparent,
+                        child: PlutoMenuBar(
+                          mode: PlutoMenuBarMode.hover,
+                          menus:
+                              controller.convertAppBarActionsToPlutoMenuItems(
+                                  controller.appbarActions),
+                          itemStyle: PlutoMenuItemStyle(
+                            padding: EdgeInsets.symmetric(
+                              horizontal: getValueForScreenType<double>(
+                                context: context,
+                                mobile: 5,
+                                tablet: 5,
+                                desktop: 12,
+                              ),
+                            ),
+                            textStyle: TextStyle(
+                              color: Colors.black,
+                              fontSize: getValueForScreenType<double>(
+                                context: context,
+                                mobile: 5,
+                                tablet: 10,
+                                desktop: 14,
+                              ),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          borderColor: Colors.transparent,
+                        ),
                       ),
                     ),
                     const FooterBottomSocialButtons()
