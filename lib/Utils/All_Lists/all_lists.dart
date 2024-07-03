@@ -421,61 +421,16 @@ class AllListsManager {
     "assets/images/products/leather_products/46.jpg",
   ];
 
+
+
+
+
+
+
   //Mens Section -> Clear
-
-  //men\Hoodies
-  static List mensHoodiesList = [
-    "assets/images/products/men/Hoodies/1.jpg",
-    "assets/images/products/men/Hoodies/2.png",
-    "assets/images/products/men/Hoodies/3.png",
-    "assets/images/products/men/Hoodies/4.jpg",
-    "assets/images/products/men/Hoodies/5.jpg",
-    "assets/images/products/men/Hoodies/6.jpg",
-    "assets/images/products/men/Hoodies/7.jpg",
-    "assets/images/products/men/Hoodies/8.jpg",
-    "assets/images/products/men/Hoodies/9.png",
-  ];
-
-  //men\Jackets
-  static List mensJacketsList = [
-    "assets/images/products/men/Jackets/1.jpg",
-    "assets/images/products/men/Jackets/2.png",
-    "assets/images/products/men/Jackets/3.png",
-    "assets/images/products/men/Jackets/4.png",
-    "assets/images/products/men/Jackets/5.png",
-    "assets/images/products/men/Jackets/6.png",
-    "assets/images/products/men/Jackets/7.png",
-    "assets/images/products/men/Jackets/8.png",
-    "assets/images/products/men/Jackets/9.png",
-    "assets/images/products/men/Jackets/10.png",
-    "assets/images/products/men/Jackets/11.png",
-    "assets/images/products/men/Jackets/12.png",
-    "assets/images/products/men/Jackets/13.jpg",
-    "assets/images/products/men/Jackets/14.jpg",
-    "assets/images/products/men/Jackets/15.jpg",
-    "assets/images/products/men/Jackets/16.jpg",
-    "assets/images/products/men/Jackets/17.jpg",
-  ];
 
   //MensJeansList
   static List mensJeansList = [
-    "assets/images/means_jeans/Picture1.png",
-    "assets/images/means_jeans/Picture2.jpg",
-    "assets/images/means_jeans/Picture3.png",
-    "assets/images/means_jeans/Picture4.jpg",
-    "assets/images/means_jeans/Picture5.jpg",
-    "assets/images/means_jeans/Picture6.jpg",
-    "assets/images/means_jeans/Picture7.jpg",
-    "assets/images/means_jeans/Picture8.jpg",
-    "assets/images/means_jeans/Picture9.png",
-    "assets/images/means_jeans/Picture10.png",
-    "assets/images/means_jeans/Picture11.png",
-    "assets/images/means_jeans/Picture12.png",
-    // "assets/images/means_jeans/Picture13.jpg",
-    "assets/images/products/men/jens/14.jpg",
-    "assets/images/products/men/jens/15.jpg",
-    "assets/images/products/men/jens/16.png",
-    "assets/images/products/men/jens/17.png",
     "assets/images/products/men/jens/18.png",
     "assets/images/products/men/jens/19.png",
     "assets/images/products/men/jens/20.png",
@@ -492,22 +447,140 @@ class AllListsManager {
     "assets/images/products/men/jens/31.png",
     "assets/images/products/men/jens/32.png",
     "assets/images/products/men/jens/33.png",
-    "assets/images/products/men/jens/34.jpg",
-    "assets/images/products/men/jens/35.jpg",
-    "assets/images/products/men/jens/36.jpg",
-    "assets/images/products/men/jens/37.jpg",
-    "assets/images/products/men/jens/38.jpg",
+  ];
+
+  //Mens T-Shirts List
+  static List mensTShirtsList = [
+    "assets/images/products/men/T-Shirts/1.png",
+    "assets/images/products/men/T-Shirts/2.png",
+    "assets/images/products/men/T-Shirts/3.png",
+    "assets/images/products/men/T-Shirts/4.png",
+    "assets/images/products/men/T-Shirts/5.png",
+    "assets/images/products/men/T-Shirts/6.png",
+    "assets/images/products/men/T-Shirts/7.png",
+    "assets/images/products/men/T-Shirts/8.png",
+    "assets/images/products/men/T-Shirts/9.png",
+    "assets/images/products/men/T-Shirts/10.png",
+    "assets/images/products/men/T-Shirts/11.png",
+    "assets/images/products/men/T-Shirts/12.png",
+    "assets/images/products/men/T-Shirts/13.png",
+    "assets/images/products/men/T-Shirts/14.png",
+    "assets/images/products/men/T-Shirts/15.png",
+    "assets/images/products/men/T-Shirts/16.png",
+    "assets/images/products/men/T-Shirts/17.png",
+    "assets/images/products/men/T-Shirts/18.png",
+    "assets/images/products/men/T-Shirts/19.png",
+    "assets/images/products/men/T-Shirts/20.png",
+    "assets/images/products/men/T-Shirts/22.png",
+    "assets/images/products/men/T-Shirts/23.png",
+    "assets/images/products/men/T-Shirts/24.png",
+    "assets/images/products/men/T-Shirts/25.png",
+    "assets/images/products/men/T-Shirts/26.png",
+    "assets/images/products/men/T-Shirts/27.png",
+    "assets/images/products/men/T-Shirts/28.png",
+    "assets/images/products/men/T-Shirts/29.png",
+    "assets/images/products/men/T-Shirts/30.png",
+    "assets/images/products/men/T-Shirts/31.png",
+    "assets/images/products/men/T-Shirts/32.png",
+    "assets/images/products/men/T-Shirts/33.png",
+    "assets/images/products/men/T-Shirts/34.png",
+  ];
+
+  //men\Hoodies
+  static List mensHoodiesList = [
+    "assets/images/products/men/Hoodies/1.jpg",
+    "assets/images/products/men/Hoodies/2.png",
+    "assets/images/products/men/Hoodies/3.png",
+    "assets/images/products/men/Hoodies/4.jpg",
+    "assets/images/products/men/Hoodies/5.jpg",
+    "assets/images/products/men/Hoodies/6.jpg",
+    "assets/images/products/men/Hoodies/7.jpg",
+    "assets/images/products/men/Hoodies/8.jpg",
+    "assets/images/products/men/Hoodies/9.png",
+    "assets/images/products/men/Hoodies/10.png",
+  ];
+
+  //men\Jackets
+  static List mensJacketsList = [
+    "assets/images/products/men/Jackets/1.png",
+    "assets/images/products/men/Jackets/2.png",
+    "assets/images/products/men/Jackets/3.png",
+    "assets/images/products/men/Jackets/4.png",
+    "assets/images/products/men/Jackets/5.png",
+    "assets/images/products/men/Jackets/6.png",
+    "assets/images/products/men/Jackets/7.png",
+    "assets/images/products/men/Jackets/8.png",
+    "assets/images/products/men/Jackets/9.png",
+    "assets/images/products/men/Jackets/12.png",
+    "assets/images/products/men/Jackets/13.jpg",
+    "assets/images/products/men/Jackets/14.jpg",
+    "assets/images/products/men/Jackets/15.jpg",
+    "assets/images/products/men/Jackets/16.jpg",
+    "assets/images/products/men/Jackets/17.jpg",
+    "assets/images/products/men/Jackets/18.png",
+    "assets/images/products/men/Jackets/19.png",
+    "assets/images/products/men/Jackets/20.png",
+    "assets/images/products/men/Jackets/21.jpg",
   ];
 
   //MenPolo List
-  static List mensPoloShirts = [];
+  static List mensPoloShirts = [
+    "assets/images/products/men/Polo Shirts/1.png",
+    "assets/images/products/men/Polo Shirts/2.png",
+    "assets/images/products/men/Polo Shirts/3.png",
+    "assets/images/products/men/Polo Shirts/4.png",
+    "assets/images/products/men/Polo Shirts/5.png",
+    "assets/images/products/men/Polo Shirts/6.jpg",
+    "assets/images/products/men/Polo Shirts/7.png",
+    "assets/images/products/men/Polo Shirts/8.png",
+    "assets/images/products/men/Polo Shirts/9.png",
+    "assets/images/products/men/Polo Shirts/10.png",
+    "assets/images/products/men/Polo Shirts/11.png",
+    "assets/images/products/men/Polo Shirts/12.png",
+    "assets/images/products/men/Polo Shirts/13.png",
+    "assets/images/products/men/Polo Shirts/14.png",
+    "assets/images/products/men/Polo Shirts/15.png",
+    "assets/images/products/men/Polo Shirts/16.png",
+    "assets/images/products/men/Polo Shirts/17.png",
+
+  ];
 
   //Men shirt_and_pant List
   static List menShirtsAndPantsList = [
-    "assets/images/products/men/shirt_and_pant/1.jpg",
-    "assets/images/products/men/shirt_and_pant/2.jpg",
-    "assets/images/products/men/shirt_and_pant/3.jpg",
-    "assets/images/products/men/shirt_and_pant/4.jpg",
+    "assets/images/products/men/shirt_and_pant/3.png",
+    "assets/images/products/men/shirt_and_pant/5.png",
+    "assets/images/products/men/shirt_and_pant/6.png",
+    "assets/images/products/men/shirt_and_pant/7.png",
+    "assets/images/products/men/shirt_and_pant/8.png",
+    "assets/images/products/men/shirt_and_pant/9.png",
+    "assets/images/products/men/shirt_and_pant/10.png",
+    "assets/images/products/men/shirt_and_pant/11.png",
+    "assets/images/products/men/shirt_and_pant/12.png",
+    "assets/images/products/men/shirt_and_pant/13.png",
+    "assets/images/products/men/shirt_and_pant/14.png",
+    "assets/images/products/men/shirt_and_pant/15.png",
+    "assets/images/products/men/shirt_and_pant/16.png",
+    "assets/images/products/men/shirt_and_pant/17.png",
+    "assets/images/products/men/shirt_and_pant/18.png",
+    "assets/images/products/men/shirt_and_pant/19.png",
+    "assets/images/products/men/shirt_and_pant/20.png",
+    "assets/images/products/men/shirt_and_pant/21.png",
+    "assets/images/products/men/shirt_and_pant/22.png",
+    "assets/images/products/men/shirt_and_pant/23.png",
+    "assets/images/products/men/shirt_and_pant/24.png",
+    "assets/images/products/men/shirt_and_pant/25.png",
+    "assets/images/products/men/shirt_and_pant/26.png",
+    "assets/images/products/men/shirt_and_pant/27.png",
+    "assets/images/products/men/shirt_and_pant/28.png",
+    "assets/images/products/men/shirt_and_pant/29.png",
+    "assets/images/products/men/shirt_and_pant/30.png",
+    "assets/images/products/men/shirt_and_pant/31.png",
+    "assets/images/products/men/shirt_and_pant/32.png",
+    "assets/images/products/men/shirt_and_pant/33.png",
+    "assets/images/products/men/shirt_and_pant/34.png",
+    "assets/images/products/men/shirt_and_pant/35.png",
+    "assets/images/products/men/shirt_and_pant/36.png",
+    "assets/images/products/men/shirt_and_pant/37.png",
   ];
 
   //Mens Shorts And Cargo List
@@ -529,6 +602,25 @@ class AllListsManager {
     "assets/images/products/men/short_and_cargo/15.jpg",
     "assets/images/products/men/short_and_cargo/16.jpg",
     "assets/images/products/men/short_and_cargo/17.jpg",
+    "assets/images/products/men/short_and_cargo/18.png",
+    "assets/images/products/men/short_and_cargo/19.png",
+    "assets/images/products/men/short_and_cargo/20.png",
+    "assets/images/products/men/short_and_cargo/21.png",
+    "assets/images/products/men/short_and_cargo/22.png",
+    "assets/images/products/men/short_and_cargo/23.png",
+    "assets/images/products/men/short_and_cargo/24.png",
+    "assets/images/products/men/short_and_cargo/25.png",
+    "assets/images/products/men/short_and_cargo/26.png",
+    "assets/images/products/men/short_and_cargo/27.png",
+    "assets/images/products/men/short_and_cargo/28.png",
+    "assets/images/products/men/short_and_cargo/29.png",
+    "assets/images/products/men/short_and_cargo/30.png",
+    "assets/images/products/men/short_and_cargo/31.png",
+    "assets/images/products/men/short_and_cargo/32.png",
+    "assets/images/products/men/short_and_cargo/33.png",
+    "assets/images/products/men/short_and_cargo/34.png",
+    "assets/images/products/men/short_and_cargo/35.png",
+
   ];
 
   //Mens Sweaters List
@@ -569,10 +661,34 @@ class AllListsManager {
     "assets/images/products/men/Sweaters/34.jpg",
     "assets/images/products/men/Sweaters/35.jpg",
     "assets/images/products/men/Sweaters/36.jpg",
+    "assets/images/products/men/Sweaters/37.png",
+    "assets/images/products/men/Sweaters/38.png",
+    "assets/images/products/men/Sweaters/39.png",
+    "assets/images/products/men/Sweaters/40.png",
+    "assets/images/products/men/Sweaters/41.png",
+    "assets/images/products/men/Sweaters/42.png",
+    "assets/images/products/men/Sweaters/43.png",
+    "assets/images/products/men/Sweaters/44.png",
+    "assets/images/products/men/Sweaters/45.png",
+    "assets/images/products/men/Sweaters/46.png",
+    "assets/images/products/men/Sweaters/47.png",
+    "assets/images/products/men/Sweaters/48.png",
+    "assets/images/products/men/Sweaters/49.png",
+    "assets/images/products/men/Sweaters/50.png",
+    "assets/images/products/men/Sweaters/51.png",
+    "assets/images/products/men/Sweaters/52.png",
+    "assets/images/products/men/Sweaters/53.png",
+    "assets/images/products/men/Sweaters/54.png",
+    "assets/images/products/men/Sweaters/55.png",
+    "assets/images/products/men/Sweaters/56.png",
+    "assets/images/products/men/Sweaters/57.png",
   ];
 
-  //Mens T-Shirts List
-  static List mensTShirtsList = [];
+
+
+
+
+
 
   //Womens Section -> clear
   //Womens HoodiesSection

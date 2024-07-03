@@ -16,6 +16,7 @@ class AppRoutes {
   static const String aboutResources = '/about_resources';
   static const String missionVision = '/mission_vision';
   static const String profile = '/profile';
+
   static const String mens = '/products/mens';
   static const String mensjeans = '/products/mens/jeans';
   static const String menstshirts = '/products/mens/tshirts';
@@ -78,10 +79,15 @@ class AppRoutes {
     GetPage(name: profile, page: () => ProfilePage()),
     GetPage(name: accessoeies, page: () => ProductShowcasePage()),
     GetPage(name: leatherproduct, page: () => ProductShowcasePage()),
+
     GetPage(name: menstshirts, page: () => ProductShowcasePage()),
     GetPage(name: mensshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: mensjeans, page: () => ProductShowcasePage()),
     GetPage(name: mensjackets, page: () => ProductShowcasePage()),
+    GetPage(name: menspoloshirts, page: () => ProductShowcasePage()),
+    GetPage(name: mensshortscargo, page: () => ProductShowcasePage()),
+    GetPage(name: menssweaters, page: () => ProductShowcasePage()),
+
     GetPage(name: womenstshirts, page: () => ProductShowcasePage()),
     GetPage(name: womensshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: womensjeans, page: () => ProductShowcasePage()),

@@ -25,14 +25,20 @@ class ProductShowcasePage extends StatelessWidget {
         return "Leather Products";
       case AppRoutes.menshoodies:
         return "Men's Hoodies";
+      case AppRoutes.menspoloshirts:
+        return "Men's Polo Shirts";
       case AppRoutes.menstshirts:
         return "Men's T-Shirts";
+      case AppRoutes.mensshortscargo:
+        return "Men's Shorts & Cargo";
       case AppRoutes.mensshirtspants:
-        return "Men's Shirts";
+        return "Men's Shirts & Pants";
       case AppRoutes.mensjeans:
-        return "Men's Pants";
+        return "Men's Jens";
       case AppRoutes.mensjackets:
         return "Men's Jackets";
+      case AppRoutes.menssweaters:
+        return "Men's Sweaters";
       case AppRoutes.womenstshirts:
         return "Women's T-Shirts";
       case AppRoutes.womensshirtspants:
@@ -75,8 +81,14 @@ class ProductShowcasePage extends StatelessWidget {
         return AllListsManager.mensHoodiesList;
       case AppRoutes.menstshirts:
         return AllListsManager.mensTShirtsList;
+      case AppRoutes.menssweaters:
+        return AllListsManager.mensSweatersList;
+      case AppRoutes.menspoloshirts:
+        return AllListsManager.mensPoloShirts;
       case AppRoutes.mensshirtspants:
         return AllListsManager.menShirtsAndPantsList;
+      case AppRoutes.mensshortscargo:
+        return AllListsManager.mensShortsAndCargoList;
       case AppRoutes.mensjeans:
         return AllListsManager.mensJeansList;
       case AppRoutes.mensjackets:
