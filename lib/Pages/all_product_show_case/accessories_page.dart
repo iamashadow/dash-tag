@@ -151,20 +151,20 @@ class ProductShowcasePage extends StatelessWidget {
               ),
               itemCount: currentList.length,
               itemBuilder: (context, index) => Container(
-                    // width: 350,
-                    // height: getValueForScreenType<double>(
-                    //     context: context,
-                    //     mobile: 50,
-                    //     tablet: 400,
-                    //     desktop: 500),
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(color: Colors.black),
-                    ),
-                    child: Image.asset(
-                      currentList[index],
-                    ),
-                  )),
+                // width: 350,
+                // height: getValueForScreenType<double>(
+                //     context: context,
+                //     mobile: 50,
+                //     tablet: 400,
+                //     desktop: 500),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(color: Colors.black),
+                ),
+                child: Image.asset(
+                  currentList[index],
+                ),
+              )),
           const SizedBox(height: 250),
           const Footer(),
         ],

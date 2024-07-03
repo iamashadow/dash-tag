@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'footer_bottom.dart';
+import 'footer_bottom_licence.dart';
 import 'footer_company.dart';
 import 'footer_contact.dart';
 import 'footer_info.dart';
@@ -62,7 +63,10 @@ class Footer extends StatelessWidget {
                 ),
 
                 FooterSubscribe(),
-                // FooterBottom(),
+                Align(
+                  alignment: Alignment.center,
+                    child: FooterBottomLicence(),
+                ),
               ],
             )
           : getValueForScreenType<bool>(

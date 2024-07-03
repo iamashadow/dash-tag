@@ -20,7 +20,7 @@ class MainController extends GetxController {
       title: 'About',
       path: "",
       categories: [
-        Category(title: 'About CRV Resources', path: AppRoutes.aboutResources),
+        Category(title: 'About Dash & Tag Fashion', path: AppRoutes.aboutResources),
         Category(title: 'Mission & Vision', path: AppRoutes.missionVision),
       ],
     ),
@@ -69,8 +69,7 @@ class MainController extends GetxController {
             Category(title: 'Jackets', path: AppRoutes.girlsjackets),
           ],
         ),
-        Category(title: "Accessories", path: AppRoutes.accessoeies),
-        Category(title: "Leather", path: AppRoutes.leatherproduct),
+
       ],
     ),
     AppBarAction(
@@ -128,6 +127,8 @@ class MainController extends GetxController {
       }
     }).toList();
   }
+
+
 
   final CarouselController carouselController = CarouselController();
 }

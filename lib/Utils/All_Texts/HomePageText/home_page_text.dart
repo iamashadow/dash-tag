@@ -4,10 +4,11 @@ class HomePageText {
    */
 
   static const String aboutUsResources = "Welcome to Dash & Tag";
+  static const String webSiteName = "Dash & Tag Fashion";
   static const String aboutUs = "About Us";
   static const String aboutUsDescription =
-      "We are  buying exporter of knit & woven garments, home textile and leather products for global buyers. We source, "
-      "organize production, negotiate prices, organize quality inspection & technical evaluation including pattern designing and arrange shipping at most"
+      "We are  buying exporter of knit & woven garments, home textile products for global buyers. We source, "
+      "organize production, negotiate prices, organize quality inspection & technical evaluation including pattern designing and arrange shipping at most "
       "competitive rates. With all your sourcing needs covered under one roof, we offer a complete peace of mind to all our buyers. Since our establishment"
       "in 2021; we mainly export goods from India and Bangladesh. We have a very strong manufacturing / supplier base and are quality and environment "
       "cautious organization having state of the art compliant factories equipped with the most modern machineries, capable of producing any style / quantity "
@@ -16,7 +17,7 @@ class HomePageText {
       " resource to maximize the potential of your business and protect its interests as if they were our own, while offering you the "
       " freedom to focus on your core business objectives.";
 
-  static const String aboutUsArtAndFashion = "Art & Science of \nFashion";
+  static const String aboutUsArtAndFashion = "Dash & Tag \nFashion";
 
   /*
    @ Why Choose Us

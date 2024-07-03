@@ -23,10 +23,10 @@ class FooterBottom extends StatelessWidget {
           SizedBox(
               height: 100,
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children:  [
                   FooterBottomLicence(),
-                  FooterBottomSocialButtons(),
+                  // FooterBottomSocialButtons(),
                 ],
               )
               // : Column(

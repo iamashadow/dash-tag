@@ -174,7 +174,7 @@ class _HowItWorksCardItemState extends State<HowItWorksCardItem> {
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: getValueForScreenType<double>(
-                        context: context, mobile: 15, tablet: 25, desktop: 30),
+                        context: context, mobile: 15, tablet: 25, desktop: 20),
                   ),
                   maxLines: 1,
                 ),

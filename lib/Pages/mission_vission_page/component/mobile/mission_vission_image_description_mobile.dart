@@ -35,15 +35,23 @@ class MissionVissionImageDescriptionMobile extends StatelessWidget {
           children: [
 
             //Mission Vission Image
-            Container(
-              height: imageHeight,
-              width: imageWidth,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                  image: DecorationImage(
+            Center(
+              child: Card(
+                elevation: 10,
+                child: Container(
+                  height: imageHeight,
+                  width: imageWidth,
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    // color: Colors.red,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: Image.asset(
+                    AllImages.webSiteLogo,
                     fit: BoxFit.cover,
-                    image: AssetImage(AllImages.missionVissionImage),
-                  )),
+                  ),
+                ),
+              ),
             ),
             SizedBox(
               height: 3.sh,

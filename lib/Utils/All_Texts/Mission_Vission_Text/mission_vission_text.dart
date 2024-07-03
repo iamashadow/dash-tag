@@ -1,10 +1,10 @@
 class MissionVissionText{
-  static const String missionVissionTitle = "Mission Vission Value";
+  static const String missionVissionTitle = "Mission & Vision ";
 
   static const String missionTitle = "Mission";
   static const String missionTitleDescription = "To deliver optimum quality solutions to the global clients and expand our growing "
       "international market through continuous search for further improved quality and achieve good reputation in the global market "
-      "by producing high quality apparels from Bangladesh, on competitive price, delivering within required lead time, & ensuring "
+      "by producing high quality apparels from Bangladesh & India, on competitive price, delivering within required lead time, & ensuring "
       "the continuous improvement in customer's satisfaction.";
 
   static const String vissionTitle = "Vission";

@@ -2,12 +2,14 @@ import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Texts/Contact_Us_Page_Text/contact_us_page_text.dart';
 import 'package:flutter/material.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 
 class ContactInformationShowingWidget extends StatelessWidget {
 
   IconData? icon;
   String? title;
-  String? subTitle;
+  String? subTitle1;
+  String? subTitle2;
   double? litTileHeight;
   double? listTileWidth;
   double? titleFontSize;
@@ -15,11 +17,13 @@ class ContactInformationShowingWidget extends StatelessWidget {
 
 
 
+
   ContactInformationShowingWidget({super.key,
 
     this.icon,
     this.title,
-    this.subTitle,
+    this.subTitle1,
+    this.subTitle2,
     this.listTileWidth,
     this.litTileHeight,
     this.titleFontSize,
@@ -39,6 +43,7 @@ class ContactInformationShowingWidget extends StatelessWidget {
             leading: Container(
               width: listTileWidth,
               height: litTileHeight,
+              padding: const EdgeInsets.all(10),
               decoration: const BoxDecoration(
                 color: ColorManager.blueColor,
                 shape: BoxShape.circle,
@@ -46,14 +51,29 @@ class ContactInformationShowingWidget extends StatelessWidget {
               child: Icon(icon, color: Colors.white),
             ),
             title: CustomText(
-              title: title,
+              title: title ?? "",
               fontColor: ColorManager.whiteColor,
               fontSize: titleFontSize,
             ),
-            subtitle: CustomText(
-              title: subTitle,
-              fontSize: subTitleFontSize,
-              fontColor: ColorManager.whiteColor,
+            subtitle: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomText(
+                  title: subTitle1 ?? "",
+                  fontSize: subTitleFontSize,
+                  fontColor: ColorManager.whiteColor,
+                ),
+
+                SizedBox(height: 0.10.sh,),
+
+                CustomText(
+                  title: subTitle2 ?? "",
+                  fontSize: subTitleFontSize,
+                  fontColor: ColorManager.whiteColor,
+
+                ),
+              ],
             ),
           ),
         ),

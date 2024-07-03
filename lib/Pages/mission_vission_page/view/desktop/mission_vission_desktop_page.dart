@@ -36,7 +36,7 @@ class MissionVissionPageDesktop extends StatelessWidget {
 
           //Mission Vission Image & Mission Vission Description
           MissionVissionImageAndDescription(
-            imageWidth: 60.sw,
+            imageWidth: 40.sw,
             imageHeight: 40.sw,
             descriptionFontSize: 2.5.sw,
             descriptionContainerWidth: 100.sw,

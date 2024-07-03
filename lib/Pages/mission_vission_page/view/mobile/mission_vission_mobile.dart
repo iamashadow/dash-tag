@@ -36,7 +36,7 @@ class MissionVissionMobile extends StatelessWidget {
 
           //Mission Vission Image & Mission Vission Description
           MissionVissionImageDescriptionMobile(
-            imageWidth: double.maxFinite,
+            imageWidth: 40.sw,
             imageHeight: 40.sw,
             descriptionFontSize: 4.sw,
             descriptionContainerWidth: 100.sw,
