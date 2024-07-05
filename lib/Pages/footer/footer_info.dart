@@ -21,11 +21,21 @@ class FooterInfo extends StatelessWidget {
         )
             ? Row(
                 children: [
-                  Image.asset(
-                    AllImages.webSiteLogo,
-                    width: 20.sw,
-                    height: 20.sh,
-                    fit: BoxFit.contain,
+                  Card(
+                    elevation: 10,
+                    child: Container(
+                      height: 12.sh,
+                      width: 20.sw,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        // color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Image.asset(
+                        AllImages.webSiteLogo,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
                   const SizedBox(width: 10),
                   Expanded(
@@ -59,7 +69,7 @@ class FooterInfo extends StatelessWidget {
                           desktop: 20,
                         )),
                         Text(
-                          ContactUsPageText.phoneNumber,
+                          ContactUsPageText.phoneNumber1,
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w500,
@@ -97,15 +107,31 @@ class FooterInfo extends StatelessWidget {
                   ),
                 ],
               )
-            : Row(
+        : getValueForScreenType<bool>(
+          context: context,
+          mobile: false,
+          tablet: true,
+          desktop: false,
+        )
+            ? Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset(
-                    AllImages.webSiteLogo,
-                    width: 20.sw,
-                    height: 20.sh,
-                    fit: BoxFit.contain,
+                  Card(
+                    elevation: 10,
+                    child: Container(
+                      height: 20.sh,
+                      width: 20.sw,
+                      padding: const EdgeInsets.all(10),
+                      decoration: BoxDecoration(
+                        // color: Colors.red,
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Image.asset(
+                        AllImages.webSiteLogo,
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
                   const SizedBox(width: 10),
                   Column(
@@ -138,7 +164,7 @@ class FooterInfo extends StatelessWidget {
                         desktop: 20,
                       )),
                       Text(
-                        ContactUsPageText.phoneNumber,
+                        ContactUsPageText.phoneNumber1,
                         style: const TextStyle(
                           color: Colors.white,
                           fontWeight: FontWeight.w500,
@@ -174,7 +200,95 @@ class FooterInfo extends StatelessWidget {
                     ],
                   ),
                 ],
+              )
+        :Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Card(
+              elevation: 10,
+              child: Container(
+                height: 20.sh,
+                width: 40.sw,
+                padding: const EdgeInsets.all(10),
+                decoration: BoxDecoration(
+                  // color: Colors.red,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Image.asset(
+                  AllImages.webSiteLogo,
+                  fit: BoxFit.cover,
+                ),
               ),
+            ),
+            const SizedBox(width: 10),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Dash&Tag',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                    height: 1.5,
+                  ),
+                ),
+                Text(
+                  ContactUsPageText.bdBranchTextAddress,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 13,
+                    height: 1.5,
+                  ),
+                ),
+                SizedBox(
+                    height: getValueForScreenType<double>(
+                      context: context,
+                      mobile: 10,
+                      tablet: 20,
+                      desktop: 20,
+                    )),
+                Text(
+                  ContactUsPageText.phoneNumber1,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 14,
+                    height: 1.5,
+                  ),
+                ),
+                SizedBox(
+                  height: getValueForScreenType<double>(
+                    context: context,
+                    mobile: 8,
+                    tablet: 8,
+                    desktop: 16,
+                  ),
+                ),
+                Text(
+                  ContactUsPageText.emailAddress,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                    fontSize: 14,
+                    height: 1.5,
+                  ),
+                ),
+                SizedBox(
+                  height: getValueForScreenType<double>(
+                    context: context,
+                    mobile: 8,
+                    tablet: 8,
+                    desktop: 16,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
       ],
     );
   }

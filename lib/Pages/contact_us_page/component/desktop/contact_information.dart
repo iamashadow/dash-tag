@@ -4,6 +4,7 @@ import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Texts/Contact_Us_Page_Text/contact_us_page_text.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 class ContactInformation extends StatelessWidget {
   const ContactInformation({super.key});
@@ -13,6 +14,8 @@ class ContactInformation extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+
+        //Contact us Text
         CustomText(
           title: ContactUsPageText.contactUsText,
           fontSize: 30,
@@ -21,64 +24,71 @@ class ContactInformation extends StatelessWidget {
         ),
         const SizedBox(height: 20,),
 
+        //Branch Address Bangladesh
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.bdBranchText,
-          subTitle: ContactUsPageText.bdBranchTextAddress,
+          subTitle1: ContactUsPageText.bdBranchTextAddress,
         ),
         const SizedBox(height: 20,),
 
+        //Branch Address India
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.indiaBranchText,
-          subTitle: ContactUsPageText.indiaBranchTAddress,
+          subTitle1: ContactUsPageText.indiaBranchTAddress,
         ),
         const SizedBox(height: 20,),
 
+        //Branch Address England
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.englandBranchText,
-          subTitle: ContactUsPageText.englandBranchAddress,
+          subTitle1: ContactUsPageText.englandBranchAddress,
         ),
         const SizedBox(height: 20,),
 
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.phone,
           title: ContactUsPageText.phoneText,
-          subTitle: ContactUsPageText.phoneNumber,
+          subTitle1: ContactUsPageText.phoneNumber1,
+          subTitle2: ContactUsPageText.phoneNumber2,
         ),
         const SizedBox(height: 20,),
 
         ContactInformationShowingWidget(
-          icon: FontAwesomeIcons.mailchimp,
+          icon: FontAwesomeIcons.envelope,
           title: ContactUsPageText.emailText,
-          subTitle: ContactUsPageText.emailAddress,
+          subTitle1: ContactUsPageText.emailAddress,
+          subTitle2: ContactUsPageText.infoEmailAddress,
         ),
         const SizedBox(height: 70,),
 
         CustomText(
-          title: ContactUsPageText.keepInTouchText,
+          title: ContactUsPageText.stayWithUsText,
           fontWeight: FontWeight.bold,
           fontColor: ColorManager.whiteColor,
           letterSpacing: 2,
         ),
         const SizedBox(height: 20,),
 
-        const Row(
-          children: [
-            Icon(FontAwesomeIcons.twitter, color: ColorManager.whiteColor,),
-            SizedBox(width: 40,),
 
-            Icon(FontAwesomeIcons.facebook, color: ColorManager.whiteColor,),
-            SizedBox(width: 40,),
-
-            Icon(FontAwesomeIcons.instagram, color: ColorManager.whiteColor,),
-            SizedBox(width: 40,),
-
-            Icon(FontAwesomeIcons.linkedin, color: ColorManager.whiteColor,),
-
-          ],
-        ),
+        //
+        // const Row(
+        //   children: [
+        //     Icon(FontAwesomeIcons.twitter, color: ColorManager.whiteColor,),
+        //     SizedBox(width: 40,),
+        //
+        //     Icon(FontAwesomeIcons.facebook, color: ColorManager.whiteColor,),
+        //     SizedBox(width: 40,),
+        //
+        //     Icon(FontAwesomeIcons.instagram, color: ColorManager.whiteColor,),
+        //     SizedBox(width: 40,),
+        //
+        //     Icon(FontAwesomeIcons.linkedin, color: ColorManager.whiteColor,),
+        //
+        //   ],
+        // ),
 
 
       ],

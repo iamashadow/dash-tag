@@ -88,16 +88,24 @@ flutter:
     - assets/images/products/men/Hoodies/
     - assets/images/products/men/Jackets/
     - assets/images/products/men/jens/
+    - assets/images/products/men/T-Shirts/
+    - assets/images/products/men/Polo Shirts/
     - assets/images/products/men/shirt_and_pant/
     - assets/images/products/men/short_and_cargo/
     - assets/images/products/men/Sweaters/
     - assets/images/products/Women/Hoodies/
+    - assets/images/products/Women/Jens/
+    - assets/images/products/Women/T-Shirts/
     - assets/images/products/Women/Sweaters/
+    - assets/images/products/Women/Polo Shirts/
     - assets/images/products/Women/short_and_cargo/
     - assets/images/products/Women/shirt_and_pant/
     - assets/images/products/Boys/shirt_and_pant/
     - assets/images/products/Boys/short_and_cargo/
     - assets/images/products/Boys/Sweaters/
+    - assets/images/products/Boys/Hoodies/
+    - assets/images/products/Boys/Polo Shirts/
+    - assets/images/products/Boys/T-Shirts/
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

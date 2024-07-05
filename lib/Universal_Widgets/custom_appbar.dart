@@ -1,10 +1,14 @@
+import 'package:dash_and_tag_web_site/Universal_Widgets/custom_text.dart';
+import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
+import 'package:dash_and_tag_web_site/Utils/All_Texts/HomePageText/home_page_text.dart';
 import 'package:dash_and_tag_web_site/Utils/routes.dart';
 import 'package:dash_and_tag_web_site/controller/main_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pluto_menu_bar/pluto_menu_bar.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:simple_gradient_text/simple_gradient_text.dart';
 
 import '../Pages/home_page/component/desktop/widgets/footer_bottom_social_buttons.dart';
 
@@ -32,14 +36,42 @@ class CustomAppbar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
+          // GradientText(
+          //   HomePageText.webSiteName,
+          //   style: const TextStyle(
+          //     fontSize: 30,
+          //     fontWeight: FontWeight.bold,
+          //   ),
+          //   gradientType: GradientType.linear,
+          //   colors: const [
+          //     Color(0xFF00BFFF), // DeepSkyBlue
+          //     Color(0xFF00FFFF), // Aqua
+          //   ],
+          //
+          // ),
           GestureDetector(
             onTap: () {
               Get.toNamed(AppRoutes.home);
             },
-            child: Image.asset(
-              AllImages.webSiteLogoTransparent,
-              width: 50,
-              height: 50,
+            child: GradientText(
+              HomePageText.webSiteName,
+              style: const TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.bold,
+                shadows: [
+
+                   Shadow(
+                     blurRadius: 10.0,
+                     color: Colors.black38,
+                     offset: Offset(5.0, 5.0),
+                   )
+                ]
+              ),
+              gradientType: GradientType.linear,
+              colors: const [
+                Color(0xFF8A2BE2), // BlueViolet
+                Color(0xFFFF69B4), // HotPink
+              ],
             ),
           ),
           getValueForScreenType<bool>(
@@ -97,7 +129,7 @@ class CustomAppbar extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const FooterBottomSocialButtons()
+                    // const FooterBottomSocialButtons()
                   ],
                 ),
         ],

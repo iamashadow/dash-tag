@@ -7,7 +7,7 @@ class AllImages {
   static String webSiteLogo = "assets/images/website_logo/web_site_logo.png";
   static String webSiteLogoTransparent = "assets/images/website_logo/web_site_logo_transparent.png";
 
-  static String clientsLogo1 = "assets/images/clients_images/1.jpg";
+  static String clientsLogo1 = "assets/images/clients_images/1.png";
   static String clientsLogo2 = "assets/images/clients_images/2.jpg";
   static String clientsLogo3 = "assets/images/clients_images/3.png";
   static String clientsLogo4 = "assets/images/clients_images/4.jpg";
@@ -16,7 +16,7 @@ class AllImages {
 
   static String brandManagementImage = "assets/images/services/brandmanagement.jpg";
   static String designingImage = "assets/images/services/designing.jpg";
-  static String logisticsImage = "assets/images/services/logistics.jpg";
+  static String logisticsImage = "assets/images/services/logistics.png";
   static String merchandiseImage = "assets/images/services/merchandise.jpg";
   static String qualityAssuranceImage = "assets/images/services/quality.png";
   static String socialComplienceImage = "assets/images/services/socialcomplience.png";

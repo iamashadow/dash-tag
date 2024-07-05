@@ -1,5 +1,6 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:dash_and_tag_web_site/Pages/mens_sector/polo_shirts/polo_shirts.dart';
+import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
@@ -20,7 +21,7 @@ class AboutUsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 700,
+      height: 750,
       width: double.maxFinite,
       padding: const EdgeInsets.only(left: 30, right: 50),
       color: const Color(0xFFF4F0EC).withOpacity(0.3),
@@ -47,7 +48,7 @@ class AboutUsPage extends StatelessWidget {
               context: context,
               mobile: 0,
               tablet: 0,
-              desktop: 2.sw,
+              desktop: 4.sw,
             ),
             fontFamily: "Rajdhani",
           ),
@@ -103,19 +104,23 @@ class AboutUsPage extends StatelessWidget {
 
                     FittedBox(
                       child: Card(
-                        elevation: 5,
-                        child: Container(
-                          // width: 500,
-                          // height: 350,
-                          width: 45.sw,
-                          height: 300,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              image: const DecorationImage(
-                                  fit: BoxFit.fill,
-                                  image: AssetImage(
-                                    "assets/images/means_jeans/Picture1.png",
-                                  ))),
+                        elevation: 10,
+                        surfaceTintColor: Colors.red,
+                        child: Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Container(
+                            // width: 500,
+                            // height: 350,
+                            width: 35.sw,
+                            height: 300,
+                            decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(10),
+                                image: DecorationImage(
+                                    fit: BoxFit.fill,
+                                    image: AssetImage(
+                                      AllImages.webSiteLogo,
+                                    ))),
+                          ),
                         ),
                       ),
                     ),

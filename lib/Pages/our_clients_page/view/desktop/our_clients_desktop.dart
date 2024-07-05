@@ -28,22 +28,27 @@ class OurClientsPageDesktop extends StatelessWidget {
             padding: const EdgeInsets.all(50.0),
             child: Expanded(
               child: AlignedGridView.count(
-                  crossAxisCount: 3,
+                  crossAxisCount: 2,
                   shrinkWrap: true,
                   itemCount: AllListsManager.ourClientsPageList.length,
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: const EdgeInsets.all(10.0),
-                      child: Container(
-                        height: 200,
-                        width: 200,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: ColorManager.blueColor),
-                            image: DecorationImage(
-                              fit: BoxFit.contain,
-                              image: AssetImage(
-                                  AllListsManager.ourClientsPageList[index]),
-                            )),
+                      child: Card(
+                        elevation: 10,
+                        color: Colors.white,
+                        child: Container(
+                          height: 200,
+                          width: 200,
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                              border: Border.all(color: ColorManager.blueColor),
+                              image: DecorationImage(
+                                fit: BoxFit.contain,
+                                image: AssetImage(
+                                    AllListsManager.ourClientsPageList[index]),
+                              )),
+                        ),
                       ),
                     );
                   }),

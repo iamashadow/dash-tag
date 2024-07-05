@@ -25,7 +25,7 @@ class ContactInformationTablet extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.bdBranchText,
-          subTitle: ContactUsPageText.bdBranchTextAddress,
+          subTitle1: ContactUsPageText.bdBranchTextAddress,
           listTileWidth: 50,
           litTileHeight: 50,
         ),
@@ -34,7 +34,7 @@ class ContactInformationTablet extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.indiaBranchText,
-          subTitle: ContactUsPageText.indiaBranchTAddress,
+          subTitle1: ContactUsPageText.indiaBranchTAddress,
           listTileWidth: 50,
           litTileHeight: 50,
         ),
@@ -43,7 +43,7 @@ class ContactInformationTablet extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.englandBranchText,
-          subTitle: ContactUsPageText.englandBranchAddress,
+          subTitle1: ContactUsPageText.englandBranchAddress,
           listTileWidth: 50,
           litTileHeight: 50,
         ),
@@ -52,7 +52,8 @@ class ContactInformationTablet extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.phone,
           title: ContactUsPageText.phoneText,
-          subTitle: ContactUsPageText.phoneNumber,
+          subTitle1: ContactUsPageText.phoneNumber1!,
+          subTitle2: ContactUsPageText.phoneNumber2!,
           listTileWidth: 50,
           litTileHeight: 50,
         ),
@@ -61,7 +62,8 @@ class ContactInformationTablet extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.mailchimp,
           title: ContactUsPageText.emailText,
-          subTitle: ContactUsPageText.emailAddress,
+          subTitle1: ContactUsPageText.emailAddress!,
+          subTitle2: ContactUsPageText.infoEmailAddress!,
           listTileWidth: 50,
           litTileHeight: 50,
         ),

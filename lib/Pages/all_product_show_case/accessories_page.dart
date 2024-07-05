@@ -25,30 +25,50 @@ class ProductShowcasePage extends StatelessWidget {
         return "Leather Products";
       case AppRoutes.menshoodies:
         return "Men's Hoodies";
+      case AppRoutes.menspoloshirts:
+        return "Men's Polo Shirts";
       case AppRoutes.menstshirts:
         return "Men's T-Shirts";
+      case AppRoutes.mensshortscargo:
+        return "Men's Shorts & Cargo";
       case AppRoutes.mensshirtspants:
-        return "Men's Shirts";
+        return "Men's Shirts & Pants";
       case AppRoutes.mensjeans:
-        return "Men's Pants";
+        return "Men's Jens";
       case AppRoutes.mensjackets:
         return "Men's Jackets";
+      case AppRoutes.menssweaters:
+        return "Men's Sweaters";
       case AppRoutes.womenstshirts:
         return "Women's T-Shirts";
       case AppRoutes.womensshirtspants:
-        return "Women's Shirts";
+        return "Women's Shirts & Pants";
       case AppRoutes.womensjeans:
-        return "Women's Pants";
-      case AppRoutes.womensjackets:
-        return "Women's Jackets";
+        return "Women's Jens";
+      case AppRoutes.womenspoloshirts:
+        return "Women's Polo Shirts";
+      case AppRoutes.womensshortscargo:
+        return "Women's Shorts & Cargo";
+      case AppRoutes.womenssweaters:
+        return "Women's Sweaters";
+      case AppRoutes.womenshoodies:
+        return "Women's Hoodies";
       case AppRoutes.boystshirts:
         return "Boy's T-Shirts";
+      case AppRoutes.boyspoloshirts:
+        return "Boy's Polo Shirts";
       case AppRoutes.boysshirtspants:
-        return "Boy's Shirts";
+        return "Boy's Shirts & Pants";
+      case AppRoutes.boyshortscargo:
+        return "Boy's Shorts & Cargo";
       case AppRoutes.boysjeans:
-        return "Boy's Pants";
-      case AppRoutes.boysjackets:
-        return "Boy's Jackets";
+        return "Boy's Jeans";
+      case AppRoutes.boyssweaters:
+        return "Boy's Sweaters";
+      case AppRoutes.boyshoodies:
+        return "Boy's Hoodies";
+      // case AppRoutes.boysjackets:
+      //   return "Boy's Jackets";
       case AppRoutes.girlstshirts:
         return "Girl's T-Shirts";
       case AppRoutes.girlsshirtspants:
@@ -75,8 +95,14 @@ class ProductShowcasePage extends StatelessWidget {
         return AllListsManager.mensHoodiesList;
       case AppRoutes.menstshirts:
         return AllListsManager.mensTShirtsList;
+      case AppRoutes.menssweaters:
+        return AllListsManager.mensSweatersList;
+      case AppRoutes.menspoloshirts:
+        return AllListsManager.mensPoloShirts;
       case AppRoutes.mensshirtspants:
         return AllListsManager.menShirtsAndPantsList;
+      case AppRoutes.mensshortscargo:
+        return AllListsManager.mensShortsAndCargoList;
       case AppRoutes.mensjeans:
         return AllListsManager.mensJeansList;
       case AppRoutes.mensjackets:
@@ -85,17 +111,29 @@ class ProductShowcasePage extends StatelessWidget {
         return AllListsManager.womensTShirtsList;
       case AppRoutes.womensshirtspants:
         return AllListsManager.womenShirtsAndPantsList;
+      case AppRoutes.womensshortscargo:
+        return AllListsManager.womenShortsAndCargoList;
       case AppRoutes.womensjeans:
         return AllListsManager.womenJensList;
-      case AppRoutes.womensjackets:
+      case AppRoutes.womenspoloshirts:
+        return AllListsManager.womenPoloShirtsList;
+      case AppRoutes.womenshoodies:
+        return AllListsManager.womenHoodiesList;
+      case AppRoutes.womenssweaters:
         return AllListsManager.womenSweatersList;
       case AppRoutes.boystshirts:
         return AllListsManager.boysTShirtsList;
       case AppRoutes.boysshirtspants:
         return AllListsManager.boysShirtsAndPantsList;
+      case AppRoutes.boyspoloshirts:
+        return AllListsManager.boysPoloShirtList;
       case AppRoutes.boysjeans:
         return AllListsManager.boysJensList;
-      case AppRoutes.boysjackets:
+      case AppRoutes.boyshortscargo:
+        return AllListsManager.boysShortsAndCargoList;
+      case AppRoutes.boyshoodies:
+        return AllListsManager.boysHoodiesList;
+      case AppRoutes.boyssweaters:
         return AllListsManager.boysSweatersList;
       case AppRoutes.girlstshirts:
         return AllListsManager.girlsTshirtsList;
@@ -116,6 +154,7 @@ class ProductShowcasePage extends StatelessWidget {
     List currentList = getListBasedOnSelection();
 
     return Scaffold(
+      backgroundColor: ColorManager.webBackgroundColor.withOpacity(0.5),
       drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
@@ -144,13 +183,19 @@ class ProductShowcasePage extends StatelessWidget {
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: getValueForScreenType<int>(
                     context: context, mobile: 1, tablet: 2, desktop: 3),
-                mainAxisSpacing: 20,
-                crossAxisSpacing: 20,
+                mainAxisSpacing: getValueForScreenType<double>(
+                    context: context, mobile: 20, tablet: 20, desktop: 100),
+                crossAxisSpacing: getValueForScreenType<double>(
+                    context: context, mobile: 20, tablet: 20, desktop: 1.sw*10.5),
                 childAspectRatio: getValueForScreenType<double>(
-                    context: context, mobile: 0.9, tablet: 0.8, desktop: 0.7),
+                    context: context, mobile: 0.9, tablet: 0.8, desktop: 0.9),
               ),
               itemCount: currentList.length,
-              itemBuilder: (context, index) => Container(
+              itemBuilder: (context, index) => Card(
+                elevation: 10,
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Container(
                     // width: 350,
                     // height: getValueForScreenType<double>(
                     //     context: context,
@@ -159,12 +204,14 @@ class ProductShowcasePage extends StatelessWidget {
                     //     desktop: 500),
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      border: Border.all(color: Colors.black),
+                      // border: Border.all(color: Colors.blue),
                     ),
                     child: Image.asset(
                       currentList[index],
                     ),
-                  )),
+                  ),
+                ),
+              )),
           const SizedBox(height: 250),
           const Footer(),
         ],

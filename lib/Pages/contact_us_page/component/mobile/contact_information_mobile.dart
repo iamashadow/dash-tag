@@ -25,7 +25,7 @@ class ContactInformationMobile extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.bdBranchText,
-          subTitle: ContactUsPageText.bdBranchTextAddress,
+          subTitle1: ContactUsPageText.bdBranchTextAddress,
           listTileWidth: 50,
           litTileHeight: 50,
           titleFontSize: 20,
@@ -36,7 +36,7 @@ class ContactInformationMobile extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.indiaBranchText,
-          subTitle: ContactUsPageText.indiaBranchTAddress,
+          subTitle1: ContactUsPageText.indiaBranchTAddress,
           listTileWidth: 50,
           litTileHeight: 50,
           titleFontSize: 20,
@@ -47,7 +47,7 @@ class ContactInformationMobile extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.locationDot,
           title: ContactUsPageText.englandBranchText,
-          subTitle: ContactUsPageText.englandBranchAddress,
+          subTitle1: ContactUsPageText.englandBranchAddress,
           listTileWidth: 50,
           litTileHeight: 50,
           titleFontSize: 20,
@@ -58,7 +58,8 @@ class ContactInformationMobile extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.phone,
           title: ContactUsPageText.phoneText,
-          subTitle: ContactUsPageText.phoneNumber,
+          subTitle1: ContactUsPageText.phoneNumber1,
+          subTitle2: ContactUsPageText.phoneNumber2,
           listTileWidth: 50,
           litTileHeight: 50,
           titleFontSize: 20,
@@ -69,7 +70,8 @@ class ContactInformationMobile extends StatelessWidget {
         ContactInformationShowingWidget(
           icon: FontAwesomeIcons.mailchimp,
           title: ContactUsPageText.emailText,
-          subTitle: ContactUsPageText.emailAddress,
+          subTitle1: ContactUsPageText.emailAddress,
+          subTitle2: ContactUsPageText.infoEmailAddress,
           listTileWidth: 50,
           litTileHeight: 50,
           titleFontSize: 20,
@@ -86,22 +88,22 @@ class ContactInformationMobile extends StatelessWidget {
         ),
         const SizedBox(height: 20,),
 
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Icon(FontAwesomeIcons.twitter, color: ColorManager.whiteColor,),
-            SizedBox(width: 40,),
-
-            Icon(FontAwesomeIcons.facebook, color: ColorManager.whiteColor,),
-            SizedBox(width: 40,),
-
-            Icon(FontAwesomeIcons.instagram, color: ColorManager.whiteColor,),
-            SizedBox(width: 40,),
-
-            Icon(FontAwesomeIcons.linkedin, color: ColorManager.whiteColor,),
-
-          ],
-        ),
+        // const Row(
+        //   mainAxisAlignment: MainAxisAlignment.start,
+        //   children: [
+        //     Icon(FontAwesomeIcons.twitter, color: ColorManager.whiteColor,),
+        //     SizedBox(width: 40,),
+        //
+        //     Icon(FontAwesomeIcons.facebook, color: ColorManager.whiteColor,),
+        //     SizedBox(width: 40,),
+        //
+        //     Icon(FontAwesomeIcons.instagram, color: ColorManager.whiteColor,),
+        //     SizedBox(width: 40,),
+        //
+        //     Icon(FontAwesomeIcons.linkedin, color: ColorManager.whiteColor,),
+        //
+        //   ],
+        // ),
 
 
       ],

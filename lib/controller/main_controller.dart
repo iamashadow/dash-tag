@@ -20,7 +20,7 @@ class MainController extends GetxController {
       title: 'About',
       path: "",
       categories: [
-        Category(title: 'About CRV Resources', path: AppRoutes.aboutResources),
+        Category(title: 'About Dash & Tag Fashion', path: AppRoutes.aboutResources),
         Category(title: 'Mission & Vision', path: AppRoutes.missionVision),
       ],
     ),
@@ -33,30 +33,41 @@ class MainController extends GetxController {
           title: 'Mens',
           path: "",
           categories: [
+            Category(title: 'Jens', path: AppRoutes.mensjeans),
             Category(title: 'T-Shirts', path: AppRoutes.menstshirts),
-            Category(title: 'Shirts', path: AppRoutes.mensshirtspants),
-            Category(title: 'Pants', path: AppRoutes.mensjeans),
+            Category(title: 'Polo Shirts', path: AppRoutes.menspoloshirts),
+            Category(title: 'Shirts & Pants', path: AppRoutes.mensshirtspants),
+            Category(title: 'Shorts & Cargo', path: AppRoutes.mensshortscargo),
             Category(title: 'Jackets', path: AppRoutes.mensjackets),
+            Category(title: 'Sweaters', path: AppRoutes.menssweaters),
+            // Category(title: 'Shirts', path: AppRoutes.mensshirtspants),
+            // Category(title: 'Pants', path: AppRoutes.mensjeans),
           ],
         ),
         Category(
           title: 'Womens',
           path: "",
           categories: [
+            Category(title: 'Jens', path: AppRoutes.womensjeans),
             Category(title: 'T-Shirts', path: AppRoutes.womenstshirts),
-            Category(title: 'Shirts', path: AppRoutes.womensshirtspants),
-            Category(title: 'Pants', path: AppRoutes.womensjeans),
-            Category(title: 'Jackets', path: AppRoutes.womensjackets),
+            Category(title: 'Polo Shirt', path: AppRoutes.womenspoloshirts),
+            Category(title: 'Shirts & Pants', path: AppRoutes.womensshirtspants),
+            Category(title: 'Hoodies', path: AppRoutes.womenshoodies),
+            Category(title: 'Shorts & Cargo', path: AppRoutes.womensshortscargo),
+            Category(title: 'Sweaters', path: AppRoutes.womenssweaters),
           ],
         ),
         Category(
           title: 'Boys',
           path: "",
           categories: [
+            Category(title: 'Jens', path: AppRoutes.boysjeans),
             Category(title: 'T-Shirts', path: AppRoutes.boystshirts),
-            Category(title: 'Shirts', path: AppRoutes.boysshirtspants),
-            Category(title: 'Pants', path: AppRoutes.boysjeans),
-            Category(title: 'Jackets', path: AppRoutes.boysjackets),
+            Category(title: 'Polo Shirts', path: AppRoutes.boyspoloshirts),
+            Category(title: 'Shirts & Pants', path: AppRoutes.boysshirtspants),
+            Category(title: 'Hoodies', path: AppRoutes.boyshoodies),
+            Category(title: 'Shorts & Cargo', path: AppRoutes.boyshortscargo),
+            Category(title: 'Sweaters', path: AppRoutes.boyssweaters),
           ],
         ),
         Category(
@@ -69,8 +80,7 @@ class MainController extends GetxController {
             Category(title: 'Jackets', path: AppRoutes.girlsjackets),
           ],
         ),
-        Category(title: "Accessories", path: AppRoutes.accessoeies),
-        Category(title: "Leather", path: AppRoutes.leatherproduct),
+
       ],
     ),
     AppBarAction(
@@ -128,6 +138,8 @@ class MainController extends GetxController {
       }
     }).toList();
   }
+
+
 
   final CarouselController carouselController = CarouselController();
 }

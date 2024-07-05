@@ -16,6 +16,7 @@ class AppRoutes {
   static const String aboutResources = '/about_resources';
   static const String missionVision = '/mission_vision';
   static const String profile = '/profile';
+
   static const String mens = '/products/mens';
   static const String mensjeans = '/products/mens/jeans';
   static const String menstshirts = '/products/mens/tshirts';
@@ -43,7 +44,7 @@ class AppRoutes {
   static const String boysshirtspants = '/products/boys/shirtpants';
   static const String boyshoodies = '/products/boys/hoodies';
   static const String boyshortscargo = '/products/boys/shortscargo';
-  static const String boysjackets = '/products/boys/jackets';
+  // static const String boysjackets = '/products/boys/jackets';
   static const String boyssweaters = '/products/boys/sweaters';
   //same for girls
   static const String girls = '/products/girls';
@@ -78,18 +79,35 @@ class AppRoutes {
     GetPage(name: profile, page: () => ProfilePage()),
     GetPage(name: accessoeies, page: () => ProductShowcasePage()),
     GetPage(name: leatherproduct, page: () => ProductShowcasePage()),
+
     GetPage(name: menstshirts, page: () => ProductShowcasePage()),
     GetPage(name: mensshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: mensjeans, page: () => ProductShowcasePage()),
     GetPage(name: mensjackets, page: () => ProductShowcasePage()),
+    GetPage(name: menspoloshirts, page: () => ProductShowcasePage()),
+    GetPage(name: mensshortscargo, page: () => ProductShowcasePage()),
+    GetPage(name: menssweaters, page: () => ProductShowcasePage()),
+
     GetPage(name: womenstshirts, page: () => ProductShowcasePage()),
     GetPage(name: womensshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: womensjeans, page: () => ProductShowcasePage()),
-    GetPage(name: womensjackets, page: () => ProductShowcasePage()),
+    GetPage(name: womenssweaters, page: () => ProductShowcasePage()),
+    GetPage(name: womenspoloshirts, page: () => ProductShowcasePage()),
+    GetPage(name: womenshoodies, page: () => ProductShowcasePage()),
+    GetPage(name: womensshortscargo, page: () => ProductShowcasePage()),
+
+
+
     GetPage(name: boystshirts, page: () => ProductShowcasePage()),
+    GetPage(name: boyspoloshirts, page: () => ProductShowcasePage()),
     GetPage(name: boysshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: boysjeans, page: () => ProductShowcasePage()),
-    GetPage(name: boysjackets, page: () => ProductShowcasePage()),
+    GetPage(name: boyshoodies, page: () => ProductShowcasePage()),
+    GetPage(name: boyshortscargo, page: () => ProductShowcasePage()),
+    GetPage(name: boyssweaters, page: () => ProductShowcasePage()),
+
+
+
     GetPage(name: girlstshirts, page: () => ProductShowcasePage()),
     GetPage(name: girlsshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: girlsjeans, page: () => ProductShowcasePage()),

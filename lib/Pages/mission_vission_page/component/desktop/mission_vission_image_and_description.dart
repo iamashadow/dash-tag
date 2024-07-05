@@ -39,18 +39,21 @@ class MissionVissionImageAndDescription extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               //Mission Vission Image
-              Container(
-                // width: 60.sw,
-                // height: 40.sw,
-
-                height: imageHeight,
-                width: imageWidth,
-                decoration: BoxDecoration(
+              Card(
+                elevation: 10,
+                child: Container(
+                  height: imageHeight,
+                  width: imageWidth,
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    // color: Colors.red,
                     borderRadius: BorderRadius.circular(10),
-                    image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: AssetImage(AllImages.missionVissionImage),
-                    )),
+                  ),
+                  child: Image.asset(
+                    AllImages.webSiteLogo,
+                    fit: BoxFit.cover,
+                  ),
+                ),
               ),
               SizedBox(
                 width: 3.sw,

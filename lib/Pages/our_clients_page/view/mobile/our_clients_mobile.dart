@@ -36,16 +36,20 @@ class OurClientsMobile extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return Padding(
                       padding: const EdgeInsets.all(10.0),
-                      child: Container(
-                        height: 200,
-                        width: 200,
-                        decoration: BoxDecoration(
-                            border: Border.all(color: ColorManager.blueColor),
-                            image: DecorationImage(
-                              fit: BoxFit.contain,
-                              image: AssetImage(
-                                  AllListsManager.ourClientsPageList[index]),
-                            )),
+                      child: Card(
+                        elevation: 10,
+                        color: Colors.white,
+                        child: Container(
+                          height: 200,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              border: Border.all(color: ColorManager.blueColor),
+                              image: DecorationImage(
+                                fit: BoxFit.contain,
+                                image: AssetImage(
+                                    AllListsManager.ourClientsPageList[index]),
+                              )),
+                        ),
                       ),
                     );
                   }),
