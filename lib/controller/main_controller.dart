@@ -74,10 +74,13 @@ class MainController extends GetxController {
           title: 'Girls',
           path: "",
           categories: [
+            Category(title: 'Jeans', path: AppRoutes.girlsjeans),
             Category(title: 'T-Shirts', path: AppRoutes.girlstshirts),
-            Category(title: 'Shirts', path: AppRoutes.girlsshirtspants),
-            Category(title: 'Pants', path: AppRoutes.girlsjeans),
-            Category(title: 'Jackets', path: AppRoutes.girlsjackets),
+            Category(title: 'Polo Shirts', path: AppRoutes.girlspoloshirts),
+            Category(title: 'Shirts & Pants', path: AppRoutes.girlsshirtspants),
+            Category(title: 'Hoodies', path: AppRoutes.girlshoodies),
+            Category(title: 'Shorts & Cargo', path: AppRoutes.girlshortscargo),
+            Category(title: 'Sweaters', path: AppRoutes.girlssweaters),
           ],
         ),
 
