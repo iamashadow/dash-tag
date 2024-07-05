@@ -103,6 +103,9 @@ flutter:
     - assets/images/products/Boys/shirt_and_pant/
     - assets/images/products/Boys/short_and_cargo/
     - assets/images/products/Boys/Sweaters/
+    - assets/images/products/Boys/Hoodies/
+    - assets/images/products/Boys/Polo Shirts/
+    - assets/images/products/Boys/T-Shirts/
 
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see

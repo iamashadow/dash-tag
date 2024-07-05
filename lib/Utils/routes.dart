@@ -44,7 +44,7 @@ class AppRoutes {
   static const String boysshirtspants = '/products/boys/shirtpants';
   static const String boyshoodies = '/products/boys/hoodies';
   static const String boyshortscargo = '/products/boys/shortscargo';
-  static const String boysjackets = '/products/boys/jackets';
+  // static const String boysjackets = '/products/boys/jackets';
   static const String boyssweaters = '/products/boys/sweaters';
   //same for girls
   static const String girls = '/products/girls';
@@ -99,9 +99,15 @@ class AppRoutes {
 
 
     GetPage(name: boystshirts, page: () => ProductShowcasePage()),
+    GetPage(name: boyspoloshirts, page: () => ProductShowcasePage()),
     GetPage(name: boysshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: boysjeans, page: () => ProductShowcasePage()),
-    GetPage(name: boysjackets, page: () => ProductShowcasePage()),
+    GetPage(name: boyshoodies, page: () => ProductShowcasePage()),
+    GetPage(name: boyshortscargo, page: () => ProductShowcasePage()),
+    GetPage(name: boyssweaters, page: () => ProductShowcasePage()),
+
+
+
     GetPage(name: girlstshirts, page: () => ProductShowcasePage()),
     GetPage(name: girlsshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: girlsjeans, page: () => ProductShowcasePage()),

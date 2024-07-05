@@ -55,12 +55,20 @@ class ProductShowcasePage extends StatelessWidget {
         return "Women's Hoodies";
       case AppRoutes.boystshirts:
         return "Boy's T-Shirts";
+      case AppRoutes.boyspoloshirts:
+        return "Boy's Polo Shirts";
       case AppRoutes.boysshirtspants:
-        return "Boy's Shirts";
+        return "Boy's Shirts & Pants";
+      case AppRoutes.boyshortscargo:
+        return "Boy's Shorts & Cargo";
       case AppRoutes.boysjeans:
-        return "Boy's Pants";
-      case AppRoutes.boysjackets:
-        return "Boy's Jackets";
+        return "Boy's Jeans";
+      case AppRoutes.boyssweaters:
+        return "Boy's Sweaters";
+      case AppRoutes.boyshoodies:
+        return "Boy's Hoodies";
+      // case AppRoutes.boysjackets:
+      //   return "Boy's Jackets";
       case AppRoutes.girlstshirts:
         return "Girl's T-Shirts";
       case AppRoutes.girlsshirtspants:
@@ -117,9 +125,15 @@ class ProductShowcasePage extends StatelessWidget {
         return AllListsManager.boysTShirtsList;
       case AppRoutes.boysshirtspants:
         return AllListsManager.boysShirtsAndPantsList;
+      case AppRoutes.boyspoloshirts:
+        return AllListsManager.boysPoloShirtList;
       case AppRoutes.boysjeans:
         return AllListsManager.boysJensList;
-      case AppRoutes.boysjackets:
+      case AppRoutes.boyshortscargo:
+        return AllListsManager.boysShortsAndCargoList;
+      case AppRoutes.boyshoodies:
+        return AllListsManager.boysHoodiesList;
+      case AppRoutes.boyssweaters:
         return AllListsManager.boysSweatersList;
       case AppRoutes.girlstshirts:
         return AllListsManager.girlsTshirtsList;
