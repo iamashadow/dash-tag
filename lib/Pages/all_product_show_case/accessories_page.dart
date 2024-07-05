@@ -73,8 +73,12 @@ class ProductShowcasePage extends StatelessWidget {
         return "Girl's T-Shirts";
       case AppRoutes.girlsshirtspants:
         return "Girl's Shirts";
+      case AppRoutes.girlshoodies:
+        return "Girl's Hoodies";
       case AppRoutes.girlsjeans:
-        return "Girl's Pants";
+        return "Girl's Jeans";
+      case AppRoutes.girlspoloshirts:
+        return "Girl's Polo Shirts";
       case AppRoutes.girlsjackets:
         return "Girl's Jackets";
 
@@ -137,12 +141,14 @@ class ProductShowcasePage extends StatelessWidget {
         return AllListsManager.boysSweatersList;
       case AppRoutes.girlstshirts:
         return AllListsManager.girlsTshirtsList;
+      case AppRoutes.girlspoloshirts:
+        return AllListsManager.girlsPoloShirtsList;
       case AppRoutes.girlsshirtspants:
         return AllListsManager.girlsShirtsAndPantsList;
       case AppRoutes.girlsjeans:
         return AllListsManager.girlJensList;
-      case AppRoutes.girlsjackets:
-        return AllListsManager.girlsSweatersList;
+      case AppRoutes.girlshoodies:
+        return AllListsManager.girlsHoodiesList;
       default:
         return []; // Return an empty list or a default list
     }
