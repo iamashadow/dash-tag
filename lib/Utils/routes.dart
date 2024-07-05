@@ -91,7 +91,13 @@ class AppRoutes {
     GetPage(name: womenstshirts, page: () => ProductShowcasePage()),
     GetPage(name: womensshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: womensjeans, page: () => ProductShowcasePage()),
-    GetPage(name: womensjackets, page: () => ProductShowcasePage()),
+    GetPage(name: womenssweaters, page: () => ProductShowcasePage()),
+    GetPage(name: womenspoloshirts, page: () => ProductShowcasePage()),
+    GetPage(name: womenshoodies, page: () => ProductShowcasePage()),
+    GetPage(name: womensshortscargo, page: () => ProductShowcasePage()),
+
+
+
     GetPage(name: boystshirts, page: () => ProductShowcasePage()),
     GetPage(name: boysshirtspants, page: () => ProductShowcasePage()),
     GetPage(name: boysjeans, page: () => ProductShowcasePage()),

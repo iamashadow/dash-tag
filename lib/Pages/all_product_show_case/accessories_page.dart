@@ -42,11 +42,17 @@ class ProductShowcasePage extends StatelessWidget {
       case AppRoutes.womenstshirts:
         return "Women's T-Shirts";
       case AppRoutes.womensshirtspants:
-        return "Women's Shirts";
+        return "Women's Shirts & Pants";
       case AppRoutes.womensjeans:
-        return "Women's Pants";
-      case AppRoutes.womensjackets:
-        return "Women's Jackets";
+        return "Women's Jens";
+      case AppRoutes.womenspoloshirts:
+        return "Women's Polo Shirts";
+      case AppRoutes.womensshortscargo:
+        return "Women's Shorts & Cargo";
+      case AppRoutes.womenssweaters:
+        return "Women's Sweaters";
+      case AppRoutes.womenshoodies:
+        return "Women's Hoodies";
       case AppRoutes.boystshirts:
         return "Boy's T-Shirts";
       case AppRoutes.boysshirtspants:
@@ -97,9 +103,15 @@ class ProductShowcasePage extends StatelessWidget {
         return AllListsManager.womensTShirtsList;
       case AppRoutes.womensshirtspants:
         return AllListsManager.womenShirtsAndPantsList;
+      case AppRoutes.womensshortscargo:
+        return AllListsManager.womenShortsAndCargoList;
       case AppRoutes.womensjeans:
         return AllListsManager.womenJensList;
-      case AppRoutes.womensjackets:
+      case AppRoutes.womenspoloshirts:
+        return AllListsManager.womenPoloShirtsList;
+      case AppRoutes.womenshoodies:
+        return AllListsManager.womenHoodiesList;
+      case AppRoutes.womenssweaters:
         return AllListsManager.womenSweatersList;
       case AppRoutes.boystshirts:
         return AllListsManager.boysTShirtsList;
@@ -128,6 +140,7 @@ class ProductShowcasePage extends StatelessWidget {
     List currentList = getListBasedOnSelection();
 
     return Scaffold(
+      backgroundColor: ColorManager.webBackgroundColor.withOpacity(0.5),
       drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
@@ -156,25 +169,33 @@ class ProductShowcasePage extends StatelessWidget {
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: getValueForScreenType<int>(
                     context: context, mobile: 1, tablet: 2, desktop: 3),
-                mainAxisSpacing: 20,
-                crossAxisSpacing: 20,
+                mainAxisSpacing: getValueForScreenType<double>(
+                    context: context, mobile: 20, tablet: 20, desktop: 100),
+                crossAxisSpacing: getValueForScreenType<double>(
+                    context: context, mobile: 20, tablet: 20, desktop: 1.sw*10.5),
                 childAspectRatio: getValueForScreenType<double>(
-                    context: context, mobile: 0.9, tablet: 0.8, desktop: 0.7),
+                    context: context, mobile: 0.9, tablet: 0.8, desktop: 0.9),
               ),
               itemCount: currentList.length,
-              itemBuilder: (context, index) => Container(
-                // width: 350,
-                // height: getValueForScreenType<double>(
-                //     context: context,
-                //     mobile: 50,
-                //     tablet: 400,
-                //     desktop: 500),
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.black),
-                ),
-                child: Image.asset(
-                  currentList[index],
+              itemBuilder: (context, index) => Card(
+                elevation: 10,
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Container(
+                    // width: 350,
+                    // height: getValueForScreenType<double>(
+                    //     context: context,
+                    //     mobile: 50,
+                    //     tablet: 400,
+                    //     desktop: 500),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      // border: Border.all(color: Colors.blue),
+                    ),
+                    child: Image.asset(
+                      currentList[index],
+                    ),
+                  ),
                 ),
               )),
           const SizedBox(height: 250),
