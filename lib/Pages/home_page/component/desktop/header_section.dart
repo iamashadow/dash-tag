@@ -14,13 +14,13 @@ class HeaderSection extends StatelessWidget {
     return Stack(
       children: [
         SizedBox(
-          width: double.infinity,
+          width: Get.width,
           child: CarouselSlider(
             items: AllListsManager.mainSliderImageList
                 .map((e) => Image.network(
                       e,
                       fit: BoxFit.cover,
-                      width: double.infinity,
+                      width: Get.width,
                     ))
                 .toList(),
             options: CarouselOptions(
