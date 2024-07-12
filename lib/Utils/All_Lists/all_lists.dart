@@ -47,31 +47,31 @@ class AllListsManager {
   ];
 
   static List mainSliderImageList = [
-    "assets/images/main_slider_images/1.png",
-    "assets/images/main_slider_images/2.png",
-    "assets/images/main_slider_images/3.png",
-    "assets/images/main_slider_images/4.png",
-    "assets/images/main_slider_images/5.png",
-    "assets/images/main_slider_images/6.png",
-    "assets/images/main_slider_images/7.png",
-    "assets/images/main_slider_images/8.png",
-    "assets/images/main_slider_images/9.png",
-    "assets/images/main_slider_images/10.png",
-    "assets/images/main_slider_images/11.png",
-    "assets/images/main_slider_images/12.png",
-    "assets/images/main_slider_images/13.png",
+    "assets/images/products/men/jens/main_slider_image_1.png",
+    "assets/images/products/men/jens/main_slider_image_2.png",
+    "assets/images/products/men/jens/main_slider_image_3.png",
+    "assets/images/products/men/jens/main_slider_image_4.png",
+    "assets/images/products/men/jens/main_slider_image_5.png",
+    "assets/images/products/men/jens/main_slider_image_6.png",
+    "assets/images/products/men/jens/main_slider_image_7.png",
+    "assets/images/products/men/jens/main_slider_image_8.png",
+    "assets/images/products/men/jens/main_slider_image_9.png",
+    "assets/images/products/men/jens/main_slider_image_10.png",
+    "assets/images/products/men/jens/main_slider_image_11.png",
+    "assets/images/products/men/jens/main_slider_image_12.png",
+    "assets/images/products/men/jens/main_slider_image_13.png",
   ];
 
 
   static List complientsList = [
-    "assets/images/complaients/1.jpeg",
-    "assets/images/complaients/2.png",
-    "assets/images/complaients/3.png",
-    "assets/images/complaients/4.png",
-    "assets/images/complaients/5.png",
-    "assets/images/complaients/6.png",
-    "assets/images/complaients/7.webp",
-    "assets/images/complaients/8.jpg",
+    "assets/images/products/men/jens/complaients_image_1.jpeg",
+    "assets/images/products/men/jens/complaients_image_2.png",
+    "assets/images/products/men/jens/complaients_image_3.png",
+    "assets/images/products/men/jens/complaients_image_4.png",
+    "assets/images/products/men/jens/complaients_image_5.png",
+    "assets/images/products/men/jens/complaients_image_6.png",
+    "assets/images/products/men/jens/complaients_image_7.webp",
+    "assets/images/products/men/jens/complaients_image_8.jpg",
   ];
 
   static List whyChooseUsList = [
