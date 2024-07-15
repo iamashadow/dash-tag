@@ -13,7 +13,7 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: ColorManager.contactUsPageWebBackgroundColor,
+        backgroundColor: ColorManager.webBackgroundColor,
         drawer: CustomDrawer(controller: controller),
         body: Column(
           children: [

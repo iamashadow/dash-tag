@@ -27,7 +27,7 @@ class CustomAppbar extends StatelessWidget {
       padding: EdgeInsets.symmetric(
         horizontal: getValueForScreenType<double>(
           context: context,
-          mobile: 0,
+          mobile: 10,
           tablet: Get.width * 0.04,
           desktop: Get.width * 0.1,
         ),
@@ -55,12 +55,16 @@ class CustomAppbar extends StatelessWidget {
             },
             child: GradientText(
               HomePageText.webSiteName,
-              style: const TextStyle(
-                fontSize: 30,
+              style: TextStyle(
+                fontSize: getValueForScreenType<double>(
+                  context: context,
+                  mobile: 20,
+                  tablet: 30,
+                  desktop: 30,
+                ),
                 fontWeight: FontWeight.bold,
-                shadows: [
-
-                   Shadow(
+                shadows: const [
+                  Shadow(
                      blurRadius: 10.0,
                      color: Colors.black38,
                      offset: Offset(5.0, 5.0),

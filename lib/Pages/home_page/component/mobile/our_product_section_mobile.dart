@@ -12,7 +12,7 @@ class OurProductSectionMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 240.sh,
+      height: 250.sh,
       // color: Colors.amber,
       padding: EdgeInsets.symmetric(horizontal: 5.screenWidth),
       child: Column(
@@ -39,7 +39,7 @@ class OurProductSectionMobile extends StatelessWidget {
                 SizedBox(height: 3.sh),
                 Container(
                   width: Get.width,
-                  height: 60.sh,
+                  height: 70.sh,
                   decoration: const BoxDecoration(
                     color: Colors.white,
                     border: Border(
@@ -97,7 +97,7 @@ class OurProductSectionMobile extends StatelessWidget {
                     ),
                   ),
                   child: CarouselSlider(
-                      items: AllListsManager.mensJeansList
+                      items: AllListsManager.womensClothList
                           .map((e) => Image.asset(e,
                               width: Get.width, height: 60.sh, fit: BoxFit.cover))
                           .toList(),
@@ -144,7 +144,7 @@ class OurProductSectionMobile extends StatelessWidget {
                     ),
                   ),
                   child: CarouselSlider(
-                      items: AllListsManager.mensJeansList
+                      items: AllListsManager.kidsClothList
                           .map((e) => Image.asset(
                                 e,
                                 fit: BoxFit.cover,

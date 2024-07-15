@@ -27,8 +27,8 @@ class DashAndTagResourcesDesktop extends StatelessWidget {
              descriptionCommitFontSize: 3.sw,
              descriptionContainerWidth: 50.sh,
              descriptionFontSize: 2.sw,
-             logoHeight: 22.sh,
-             logoWidth: 45.sw,
+             logoHeight: 30.sh,
+             logoWidth: 30.sh,
            ),
           SizedBox(height: 5.sh,),
 

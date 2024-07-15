@@ -35,85 +35,79 @@ class HomePageMobile extends StatelessWidget {
         //header appbar
         CustomAppbar(controller: controller),
         HeaderSectionMobile(),
-        // const Pages(),
-        const AboutUsMobile(),
 
-        SizedBox(
-          height: 5.sh,
-        ),
-        CustomText(
-          title: HomePageText.whyChooseUs,
-          fontWeight: FontWeight.bold,
-          fontSize: 5.sw,
-          textAlign: TextAlign.start,
-        ),
-        SizedBox(
-          height: 5.sh,
-        ),
-        GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            childAspectRatio: 0.75,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 10),
+          child: Column(
+            children: [
+              const AboutUsMobile(),
+
+              SizedBox(
+                height: 5.sh,
+              ),
+              CustomText(
+                title: HomePageText.whyChooseUs,
+                fontWeight: FontWeight.bold,
+                fontSize: 5.sw,
+                textAlign: TextAlign.start,
+              ),
+              SizedBox(
+                height: 5.sh,
+              ),
+              GridView.builder(
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.75,
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 2.sw),
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                itemCount: AllListsManager.whyChooseUsList.length,
+                itemBuilder: (context, index) {
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Icon(
+                        FontAwesomeIcons.gift,
+                        color: ColorManager.greenColor,
+                        size: 3.sh,
+                      ),
+                      SizedBox(height: 3.sh),
+                      CustomText(
+                        title: AllListsManager.whyChooseUsList[index]["title"],
+                        fontWeight: FontWeight.bold,
+                        fontSize: 5.sw,
+                      ),
+                      SizedBox(height: 2.sh),
+                      CustomText(
+                        title: AllListsManager.whyChooseUsList[index]["description"],
+                        fontWeight: FontWeight.w500,
+                        fontSize: 3.sw,
+                      ),
+                    ],
+                  );
+                },
+              ),
+              SizedBox(
+                height: 5.sh,
+              ),
+
+              const OurProductSectionMobile(),
+
+              const OurCompliencesSection(
+                sectionHeight: 30.0,
+                sectionPadding: 0.02,
+                titleFontSize: 5.0,
+                titleSpacing: 4.0,
+                carouselHeight: 300.0,
+                imageWidth: 300.0,
+                imageHeight: 300.0,
+                buttonPadding: 10.0,
+                buttonIconSize: 20.0,
+                viewPortFraction: 0.3,
+              ),
+            ],
           ),
-          padding: EdgeInsets.symmetric(horizontal: 2.sw),
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          itemCount: AllListsManager.whyChooseUsList.length,
-          itemBuilder: (context, index) {
-            return Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Icon(
-                  FontAwesomeIcons.gift,
-                  color: ColorManager.greenColor,
-                  size: 3.sh,
-                ),
-                SizedBox(height: 3.sh),
-                CustomText(
-                  title: AllListsManager.whyChooseUsList[index]["title"],
-                  fontWeight: FontWeight.bold,
-                  fontSize: 5.sw,
-                ),
-                SizedBox(height: 2.sh),
-                CustomText(
-                  title: AllListsManager.whyChooseUsList[index]["description"],
-                  fontWeight: FontWeight.w500,
-                  fontSize: 3.sw,
-                ),
-              ],
-            );
-          },
-        ),
-        SizedBox(
-          height: 5.sh,
-        ),
-
-        const OurProductSectionMobile(),
-
-        // const OurCompliencesSection(
-        //   sectionHeight: 50.0,
-        //   sectionPadding: 0.02,
-        //   titleFontSize: 5.0,
-        //   titleSpacing: 4.0,
-        //   carouselHeight: 300.0,
-        //   imageWidth: 300.0,
-        //   imageHeight: 300.0,
-        //   buttonPadding: 10.0,
-        //   buttonIconSize: 20.0,
-        //   viewPortFraction: 0.3,
-        // ),
-
-        const OurCompliencesSection(
-          sectionHeight: 30.0,
-          sectionPadding: 0.02,
-          titleFontSize: 5.0,
-          titleSpacing: 4.0,
-          carouselHeight: 300.0,
-          imageWidth: 300.0,
-          imageHeight: 300.0,
-          buttonPadding: 10.0,
-          buttonIconSize: 20.0,
-          viewPortFraction: 0.3,
         ),
 
         const Footer(),

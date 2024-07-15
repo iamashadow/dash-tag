@@ -28,8 +28,8 @@ class DashAndTagResoucesTablet extends StatelessWidget {
             descriptionCommitFontSize: 3.2.sw,
             descriptionContainerWidth: double.maxFinite,
             descriptionFontSize: 3.sw,
-            logoHeight: 65.sh,
-            logoWidth: double.maxFinite,
+            logoHeight: 50.sh,
+            logoWidth: 50.sh,
           ),
           SizedBox(height: 2.sh,),
 

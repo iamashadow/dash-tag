@@ -3,6 +3,7 @@ import 'package:dash_and_tag_web_site/universal_widgets/custom_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import '../../../../Universal_Widgets/custom_appbar.dart';
 import '../../../../Utils/All_Colors/all_colors.dart';
 import '../../../footer/footer.dart';
 import '../../../mission_vission_page/component/desktop/product_page_header_image.dart';
@@ -11,15 +12,17 @@ import '../../component/mobile/message_submit_form_mobile.dart';
 
 class ContactUsPageMobile extends StatelessWidget {
   ContactUsPageMobile({super.key});
-  final MainController controller = Get.find();
+  // final MainController controller = Get.find();
+  final MainController controller = Get.find<MainController>();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorManager.contactUsPageWebBackgroundColor,
-      drawer: CustomDrawer(controller: controller),
+      // drawer: CustomDrawer(controller: controller),
       body: ListView(
         children: [
+          CustomAppbar(controller: controller),
           ProductsPageHeaderImage(
             title: "Contact Us",
             fontSize: 10.sw,
@@ -44,7 +47,7 @@ class ContactUsPageMobile extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 250),
+          // const SizedBox(height: 250),
           const Footer(),
         ],
       ),

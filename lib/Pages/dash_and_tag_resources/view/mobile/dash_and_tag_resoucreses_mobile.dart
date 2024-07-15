@@ -34,7 +34,7 @@ class DashAndTagResoucresesMobile extends StatelessWidget {
             descriptionCommitFontSize: 4.sw,
             descriptionContainerWidth: 50.sh,
             descriptionFontSize: 3.5.sw,
-            logoHeight: 40.sh,
+            logoHeight: 50.sh,
             logoWidth: double.maxFinite,
           ),
           SizedBox(

@@ -14,8 +14,9 @@ class OurProductsSection extends StatelessWidget {
       // color: Colors.red,
       height: getValueForScreenType<double>(
         context: context,
-        mobile: 80.sh,
-        tablet: 50.sh,
+        mobile: 800,
+        // tablet: 50.sh,
+        tablet: 700,
         desktop: 750,
       ),
       // padding: const EdgeInsets.symmetric(vertical: 20),
@@ -46,7 +47,13 @@ class OurProductsSection extends StatelessWidget {
                           )),
                       const SizedBox(height: 10),
                       Container(
-                        width: 270,
+                        // width: 270,
+                        width: getValueForScreenType<double>(
+                          context: context,
+                          mobile: 80,
+                          tablet: 150,
+                          desktop: 270,
+                        ),
                         height: 500,
                         decoration: const BoxDecoration(
                           color: Colors.white,
@@ -92,7 +99,13 @@ class OurProductsSection extends StatelessWidget {
                           )),
                       const SizedBox(height: 10),
                       Container(
-                        width: 270,
+                        // width: 270,
+                        width: getValueForScreenType<double>(
+                          context: context,
+                          mobile: 80,
+                          tablet: 150,
+                          desktop: 270,
+                        ),
                         height: 500,
                         decoration: const BoxDecoration(
                           color: Colors.white,
@@ -138,7 +151,13 @@ class OurProductsSection extends StatelessWidget {
                           )),
                       const SizedBox(height: 10),
                       Container(
-                        width: 270,
+                        // width: 270,
+                        width: getValueForScreenType<double>(
+                          context: context,
+                          mobile: 80,
+                          tablet: 150,
+                          desktop: 270,
+                        ),
                         height: 500,
                         decoration: const BoxDecoration(
                           color: Colors.white,

@@ -38,7 +38,8 @@ class HomePageTablet extends StatelessWidget {
           subtitleSize: 20,
         ),
 
-        const OurProductSectionTablet(),
+        const OurProductsSection(),
+        // const OurProductSectionTablet(),
         // OurCompliencesSection(
         //   sectionHeight: 50.0,
         //   sectionPadding: 0.02,
