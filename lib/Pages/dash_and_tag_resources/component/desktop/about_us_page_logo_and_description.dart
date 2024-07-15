@@ -1,3 +1,129 @@
+// import 'package:dash_and_tag_web_site/Pages/dash_and_tag_resources/widgets/das_and_tag_bio_commit.dart';
+// import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
+// import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
+// import 'package:flutter/material.dart';
+// import 'package:responsive_builder/responsive_builder.dart';
+// import '../../../../Universal_Widgets/custom_text.dart';
+// import '../../../../Utils/All_Texts/Dash_And_Tag_Resources/dash_and_tag_resources.dart';
+// import '../../../../Utils/All_Texts/HomePageText/home_page_text.dart';
+//
+// class AboutUsPageLogoAndDescription extends StatelessWidget {
+//
+//   double? logoHeight;
+//   double? logoWidth;
+//   double? aboutUsFontSize;
+//   double? descriptionContainerWidth;
+//   double? descriptionFontSize;
+//   double? descriptionCommitFontSize;
+//
+//
+//   AboutUsPageLogoAndDescription({super.key,
+//     this.aboutUsFontSize,
+//     this.descriptionCommitFontSize,
+//     this.descriptionContainerWidth,
+//     this.descriptionFontSize,
+//     this.logoHeight,
+//     this.logoWidth
+//   });
+//
+//   @override
+//   Widget build(BuildContext context) {
+//
+//     return Expanded(
+//       child: Row(
+//         mainAxisAlignment: MainAxisAlignment.center,
+//         crossAxisAlignment: CrossAxisAlignment.center,
+//         children: [
+//           SizedBox(
+//             width: 30.sw,
+//           ),
+//           Card(
+//             elevation: 10,
+//             child: Container(
+//               height: logoHeight,
+//               width: logoWidth,
+//               padding: const EdgeInsets.all(10),
+//               decoration: BoxDecoration(
+//                 // color: Colors.red,
+//                 borderRadius: BorderRadius.circular(10),
+//               ),
+//               child: Image.asset(
+//                   AllImages.webSiteLogo,
+//                 fit: BoxFit.cover,
+//               ),
+//             ),
+//           ),
+//           SizedBox(
+//             width: 5.sw,
+//           ),
+//
+//           Expanded(
+//             child: Column(
+//               children: [
+//                 const SizedBox(
+//                   height: 40,
+//                 ),
+//                 CustomText(
+//                   title: HomePageText.aboutUs,
+//                   letterSpacing: 2,
+//                   fontColor: ColorManager.blueColor,
+//                   fontSize: aboutUsFontSize,
+//                   fontFamily: "Caveat",
+//                 ),
+//
+//                 const SizedBox(
+//                   height: 20,
+//                 ),
+//                 Container(
+//                   // color: Colors.red,
+//                   width: descriptionContainerWidth,
+//                   padding: const EdgeInsets.all(10),
+//                   child: Expanded(
+//                     child: Column(
+//                       crossAxisAlignment: CrossAxisAlignment.start,
+//                       children: [
+//                         CustomText(
+//                           title: DashAndTagResourcesText.dashAndTagBio,
+//                           fontFamily: "Rajdhani",
+//                           letterSpacing: 1,
+//                           fontSize: descriptionFontSize,
+//                         ),
+//                         DasAndTagBioCommit(
+//                           commit: DashAndTagResourcesText.dashAndTagBioCommit1,
+//                           fontSize: descriptionCommitFontSize,
+//                         ),
+//                         DasAndTagBioCommit(
+//                           commit: DashAndTagResourcesText.dashAndTagBioCommit2,
+//                           fontSize: descriptionCommitFontSize,
+//                         ),
+//                         DasAndTagBioCommit(
+//                           commit: DashAndTagResourcesText.dashAndTagBioCommit3,
+//                           fontSize: descriptionCommitFontSize,
+//                         ),
+//                         DasAndTagBioCommit(
+//                           commit: DashAndTagResourcesText.dashAndTagBioCommit4,
+//                           fontSize: descriptionCommitFontSize,
+//                         ),
+//                         DasAndTagBioCommit(
+//                           commit: DashAndTagResourcesText.dashAndTagBioCommit5,
+//                           fontSize: descriptionCommitFontSize,
+//                         ),
+//                       ],
+//                     ),
+//                   ),
+//                 ),
+//               ],
+//             ),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
+
+
+
+//New Code
 import 'package:dash_and_tag_web_site/Pages/dash_and_tag_resources/widgets/das_and_tag_bio_commit.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Colors/all_colors.dart';
 import 'package:dash_and_tag_web_site/Utils/All_Images/all_images.dart';
@@ -8,115 +134,115 @@ import '../../../../Utils/All_Texts/Dash_And_Tag_Resources/dash_and_tag_resource
 import '../../../../Utils/All_Texts/HomePageText/home_page_text.dart';
 
 class AboutUsPageLogoAndDescription extends StatelessWidget {
+  final double? logoHeight;
+  final double? logoWidth;
+  final double? aboutUsFontSize;
+  final double? descriptionContainerWidth;
+  final double? descriptionFontSize;
+  final double? descriptionCommitFontSize;
 
-  double? logoHeight;
-  double? logoWidth;
-  double? aboutUsFontSize;
-  double? descriptionContainerWidth;
-  double? descriptionFontSize;
-  double? descriptionCommitFontSize;
-
-
-  AboutUsPageLogoAndDescription({super.key,
+  const AboutUsPageLogoAndDescription({
+    super.key,
     this.aboutUsFontSize,
     this.descriptionCommitFontSize,
     this.descriptionContainerWidth,
     this.descriptionFontSize,
     this.logoHeight,
-    this.logoWidth
+    this.logoWidth,
   });
 
   @override
   Widget build(BuildContext context) {
-
-    return Expanded(
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          SizedBox(
-            width: 30.sw,
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        SizedBox(
+          width: getValueForScreenType<double>(
+            context: context,
+            mobile: 30,
+            tablet: 60,
+            desktop: 90,
           ),
-          Card(
-            elevation: 10,
-            child: Container(
-              height: logoHeight,
-              width: logoWidth,
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                // color: Colors.red,
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Image.asset(
-                  AllImages.webSiteLogo,
-                fit: BoxFit.cover,
-              ),
+        ),
+        Card(
+          elevation: 10,
+          child: Container(
+            height: logoHeight,
+            width: logoWidth,
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Image.asset(
+              AllImages.webSiteLogo,
+              fit: BoxFit.cover,
             ),
           ),
-          SizedBox(
-            width: 5.sw,
+        ),
+        SizedBox(
+          width: getValueForScreenType<double>(
+            context: context,
+            mobile: 5,
+            tablet: 10,
+            desktop: 15,
           ),
-
-          Expanded(
-            child: Column(
-              children: [
-                const SizedBox(
-                  height: 40,
-                ),
-                CustomText(
-                  title: HomePageText.aboutUs,
-                  letterSpacing: 2,
-                  fontColor: ColorManager.blueColor,
-                  fontSize: aboutUsFontSize,
-                  fontFamily: "Caveat",
-                ),
-
-                const SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  // color: Colors.red,
-                  width: descriptionContainerWidth,
-                  padding: const EdgeInsets.all(10),
-                  child: Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        CustomText(
-                          title: DashAndTagResourcesText.dashAndTagBio,
-                          fontFamily: "Rajdhani",
-                          letterSpacing: 1,
-                          fontSize: descriptionFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit1,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit2,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit3,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit4,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                        DasAndTagBioCommit(
-                          commit: DashAndTagResourcesText.dashAndTagBioCommit5,
-                          fontSize: descriptionCommitFontSize,
-                        ),
-                      ],
+        ),
+        Expanded(
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 40,
+              ),
+              CustomText(
+                title: HomePageText.aboutUs,
+                letterSpacing: 2,
+                fontColor: ColorManager.blueColor,
+                fontSize: aboutUsFontSize,
+                fontFamily: "Caveat",
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Container(
+                width: descriptionContainerWidth,
+                padding: const EdgeInsets.all(10),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    CustomText(
+                      title: DashAndTagResourcesText.dashAndTagBio,
+                      fontFamily: "Rajdhani",
+                      letterSpacing: 1,
+                      fontSize: descriptionFontSize,
                     ),
-                  ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit1,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit2,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit3,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit4,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                    DasAndTagBioCommit(
+                      commit: DashAndTagResourcesText.dashAndTagBioCommit5,
+                      fontSize: descriptionCommitFontSize,
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

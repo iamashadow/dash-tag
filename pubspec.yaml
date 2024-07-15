@@ -62,12 +62,12 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/Complaients/
+#    - assets/images/Complaients/
     - assets/images/means_jeans/
     - assets/images/womens_cloth/
     - assets/images/kids_cloth/
     - assets/images/about_d_t/
-    - assets/images/main_slider_images/
+#    - assets/images/main_slider_images/
     - assets/images/website_logo/
     - assets/images/www/
     - assets/images/services/
